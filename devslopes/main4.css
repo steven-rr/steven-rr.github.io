@@ -1,0 +1,74 @@
+ /*Lecture 14*/
+
+body
+{
+	background-image: url(space.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+
+}
+
+
+.container
+{
+
+
+
+}
+
+
+h1
+{
+	color : #ffffff;
+	text-shadow: 2px 2px 5px black;
+}
+
+h2
+{
+	color: rgb(0, 204, 255);
+	text-shadow: 1px 1px 3px darkblue;
+}
+
+
+
+
+
+.borderImg
+{
+
+	border: 10px solid red ;
+
+}
+
+
+/* Descendent selector is, we have a parent
+and then a child. What we're saying is that
+every single li item under ul, we'll add
+these style rules to it.*/
+ul li 
+{
+	color: white;
+	font-size:  20px;
+
+}
+
+/*This time, we target the list item. What
+this says is when we use this selector, any
+ul that has a child "li", that is only 
+ONE level deep, inherit these style rules.
+It only goes ONE level deep. */
+ul > li
+{
+	color: yellow;
+}
+
+
+
+
+
+
+
+
+
+

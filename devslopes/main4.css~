@@ -1,0 +1,91 @@
+ /*Lecture 12*/
+
+/* we're going to cover backgrounds and borders in CSS:*/
+
+/*we've learned , with backgrounds, we can add colors or 
+gradients. however, "background" is short for a bunch of options
+we may have. for example: 
+
+	1. background-attachment
+	2. background-image
+	3. background-clip 
+	4. background-color
+	5. background-position
+	6. background-size. 
+
+short hand notation is background. however, when we use
+specified version of background property, it will give you
+helper on what values we want to use. let's try 
+background-image*/
+
+/*however, this is taking my smaller image and repeating it. 
+Browser doesn't know what to do with your small image*/
+body
+{
+	background-image: url(space.jpg);
+	/*this makes it not repeat! yay! but now there's whitespace.. */
+	background-repeat: no-repeat;
+	/*this is specific to using image we're working with. 
+	now it fills view port of browser*/
+	background-size: cover;
+	/*we can take these background properties and add them 
+	to additional elements. */
+}
+
+
+.container
+{
+/*	background: linear-gradient(to right,#00ccff, #b3f0ff);
+	box-shadow: 3px 5px 3px black;*/
+
+}
+
+
+h1
+{
+	color : #ffffff;
+	text-shadow: 2px 2px 5px black;
+}
+
+h2
+{
+	color: rgb(0, 204, 255);
+	text-shadow: 1px 1px 3px darkblue;
+}
+
+
+/*now we can add the class. just like using background 
+property, we can use shorthand for border. can add 
+value in there. */
+.borderImg
+{
+	/*we can use shorthand, or we can do specific things, such
+	as:
+		1. border-style
+		2. border-left
+
+	we have tons of options. in this case, just add border to 
+	every single side of the image. 
+
+	first, need to set width, what type of border, and color.*/
+	border: 10px solid red ;
+
+	/*suppose we only wanted one side of the image to have the
+	border, we can just do border-right:
+	"border-right: 2px solid red"*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

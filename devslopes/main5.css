@@ -1,0 +1,89 @@
+ /*Lecture 15*/
+
+body
+{
+	background-image: url(space.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+
+}
+
+
+.container
+{
+
+
+
+}
+
+/*Suppose I have three items with the 
+same attributes. can group them..*/
+
+/*h1
+{
+	color : #ffffff;
+	text-shadow: 2px 2px 5px black;
+}
+
+.class
+{
+	color : #ffffff;
+	text-shadow: 2px 2px 5px black;
+}
+#id
+{
+	color : #ffffff;
+	text-shadow: 2px 2px 5px black;}
+*/
+
+/* We set a standard for all these headers. 
+Down the road, if we want to change this,
+we can add classes and make things a bit
+more specific. Not only can we do element
+selectors, but if we wanted to group in
+a class, we could do that, also the same as
+id. */
+h1, h2, h3, .class, #id
+{
+	color : #ffffff;
+	text-shadow: 2px 2px 5px black;
+	line-height:  1rem;
+	font-family: sans-serif;
+}
+
+
+
+
+
+
+.borderImg
+{
+
+	border: 10px solid red ;
+
+}
+
+
+
+ul li 
+{
+	color: white;
+	font-size:  20px;
+
+}
+
+ul > li
+{
+	color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
