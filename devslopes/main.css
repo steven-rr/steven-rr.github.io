@@ -1,0 +1,65 @@
+/* Devslopes lecture 10 */ 
+
+/* Directly target body by mentioning it in css file*/
+/* Inside curly braces, we can talk about specific syntax to modify body tag*/
+body
+{
+	background-color: #cc99ff;
+
+}
+
+/*How to style tag directly*/
+
+h1 
+{
+	color: red;
+	text-align: center;
+	margin: auto;
+}
+/* How to style a class*/
+.square
+{
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	margin: auto;
+}
+
+/* How to style id:*/
+#circle
+{
+	color: darkred;
+	font-size: 40 px;
+}
+
+/* In reality, for exmaple when we've styled our tag directly,
+every single header 1 tag that I use, it's going to have a
+ color of red and align center. It may not make sense to have
+ every header 1 tag behave this way.. be mindful, this is what
+ doing CSS directly on a tag does. Assigning a broad style 
+ property, to do across everything
+*/
+
+/*
+When we have a lot of elements  on the page, we can assign
+different classes to them. We can create a button class,
+has certain size, font color, padding, and things like that.
+We can create a button class, and every single button that 
+we're using, we can add a button class to it. If we want to use
+same styling across multiple places, a class is good.
+*/
+
+/* For ID's, use sparingly unless it's something very specific.
+ID's are mainly used for interacting your HTML with javascript. */
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+ /*Lecture 11*/
+
+/*one way to do it is to wrap elements around this class.*/
+/*.container 
+{
+	 When you write a color, color name has to exist, 
+	in this case we are going to use darkslateblue
+	background-color: darkslateblue;
+
+}*/
+
+/* now we can do gradient:*/
+
+.container
+{
+	background: linear-gradient(to right,#00ccff, #b3f0ff);
+}
+
+/*another way is to directly change the tag color , 
+we can do hexcode  (second way).*/
+h1
+{
+	color : #ffffff;
+	/* how far out on vertical axis do we want shadow?
+	   how far out on horizontal axis do we want shadow?
+	   can also add a color for the shadow.. 
+	   we can also write a blur radius*/
+	text-shadow: 2px 2px 5px black;
+}
+
+/* yet another way is to use rgb*/
+h2
+{
+	color: rgb(0, 204, 255);
+	text-shadow: 1px 1px 3px darkblue;
+}
+
+
+/*now suppose we want to do gradients, we can google
+CSS gradients. We can use W3 schools. 
+
+Linear gradients can go from left to right, up to down, or diagonal
+
+Radial gradients go from center out.
+
+Tehre's also different support for different browsers.
+we can have fall back, for example:
+
+h1
+{
+	color: red;
+	color: linear_gradient(red, yellow);
+}
+
+goes thru first color, if second color works, it replaces
+first color by second. that way, we have backups.  
