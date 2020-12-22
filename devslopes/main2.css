@@ -14,6 +14,12 @@
 .container
 {
 	background: linear-gradient(to right,#00ccff, #b3f0ff);
+	/*similarly, 
+	vertical axis, 
+	horizontal axis,
+	blur radius,
+	color = black.*/
+	box-shadow: 3px 5px 3px black;
 }
 
 /*another way is to directly change the tag color , 

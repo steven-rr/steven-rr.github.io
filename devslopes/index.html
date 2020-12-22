@@ -1,0 +1,176 @@
+<!--  Author : Steven Rivadeneira -->
+<!-- Specifies which html version-->
+<!DOCTYPE html>
+
+<!-- Need to start HTML  -->
+<html>
+
+<!-- Head is typically not visible, that is typically
+where external font files or CSS is loaded. Title of page
+is also visible from here, though. -->
+<head>
+	<title> 
+		Devslopes- Learn to code 
+	</title>
+</head>
+
+<!-- Sometimes you can link in the bottom of the body also. But,
+usually body is where the body goes. -->
+<body>
+	<table
+		cellspacing = "10">
+	<tr>
+	<td>
+	<img src = "https://yt3.ggpht.com/ytc/AAUvwnhMluFbYwv-as1NFOoI-XL1VHGoih8d_wwhpVWxZQ=s900-c-k-c0x00ffffff-no-rj"  alt = "Devslopes logo" height = "100" width = "100">
+	</td>
+	<td>
+	<h1> Welcome to Devslopes </h1>
+	</td>
+	</tr>
+	</table>
+	<!-- Suppose I want to have a list of linked, suppose i don't care about order. -->
+	<!-- Can make things clickable with tags. Href is link where you want it to go to, inside href you specify the link-->
+	<!-- Now I have some good links. If I want the links to show up horizontally instead of vertically, we need CSS.-->
+	<!-- old Attempt , using UL (limited to vertical without CSS)
+	<ul>
+		<li><a href = "https://google.com"> Home </a></li>
+		<li> <a href = "https://linkedin.com/in/steven-rivadeneira"> About </a> </li>
+		<li> <a href = "#"> Courses </a> </li>
+	</ul>
+	-->
+	<!-- My attempt at making an UL a table row-->
+	<table
+		cellspacing = "10">
+		<tr>
+			<td><a href = "https://google.com"> Home </a> </td>
+			<td><a href = "https://linkedin.com/in/steven-rivadeneira"> About </a></td>
+			<td><a href = "https://ae.gatech.edu/prospective-masters-students"> Courses </a>  </td>
+		</tr>
+	</table>
+	<!--if you want to style this "horizontal rule", need CSS -->
+	<hr>
+	<!-- always make sure you put your text inside of p texts, you never want floating data that's not enclosed in some type of tags.-->
+	<p>
+		Devslopes is the world's most effective and affordable platform to learn how to code. We take practical real world experiences and bring them to you in a fun, hands-on environment. <i><a href= "https://www.google.com/search?q=spacex+rocket&rlz=1C5CHFA_enUS808US808&sxsrf=ALeKk02oYr2WTDBFpGzbFUoqhXbbRdyn_A:1608531316223&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi8ndqNtt7tAhUFmlkKHY_fAGUQ_AUoAnoECDEQBA">this is really cool by the way</a></i>
+	</p>
+	<!-- There's also ordered lists, but we can do that later.. There's more to cover, but not that much. HTML is not that extensive a tool. -->
+	<!-- We don't see tables around much , still sometimes, but not really anymore. We started using tables for padding and spacing, a table is like a table with rows and columns. You can put data, images, etc. Let's try it, the opportunities are endless in how we want ot use them. -->
+	<!-- To create a table, do this. In type of table, there's some attributes we can set, don't have to do it all in CSS.:-->
+	<!-- Have an ugly border with border. Cell spacing is spacing between squares. Cell padding is the padding inside the cell, the area. Let's get rid of the border, it's really ugly.--> 
+	<table
+		cellpadding = "10"
+		cellspacing = "5">
+		<!-- Just made a table row. -->
+		<tr>
+			<!-- td stands for table data, they are columns. For the buttons, we can worry about that when we get to javascript, for now they're static so don't worry about it. -->
+			<td><button> ios 10 course </button></td>
+			<td><button> android course </button></td>
+			<td><button> unity 3d course </button></td>
+		</tr>
+		<tr>
+			<!-- td stands for table data, they are columns. -->
+			<td><button> Web course </button></td>
+			<td><button> Node API course </button></td>
+			<td><button> Angular 2 course </button></td>
+		</tr>
+
+	</table>
+	<hr>
+	<h2> Why Devslopes? </h2>
+	<!-- now we'll do ordered list, numbers it for you: -->
+	<ol>
+		<li>Real-world coding</li>
+		<li>Fun and exciting </li>
+		<li>Affordable</li>
+	</ol>
+	<!-- now we need a video, let's go find one on youtube -->
+	<!-- go to video, and go to embed section. Paste it under ordered list. --> 
+	<!-- i frame allows us to embed this into our website, there's more details that go along with this, but for now we're ommitting because there's depth, and we'll just learn it later.-->
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/zqE-ultsWt0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	<!-- Lastly, we'll want some form of contact --> 
+	<hr>
+	<h2> Contact us </h2>
+	<form>
+		First Name:  
+		<br>
+		<input type = "text" > <br><br>
+		Last Name: <br>
+		<input type = "text" > <br><br>
+		<!-- We have two buttons now, one uses a button tag, while the other uses an input tag. Both can invoke javascript. In HTML , you can do things multiple ways sometimes. Commenting the input tag , so I can look back at how there's two ways at doing things.. -->
+		<button> SUBMIT </button>
+		<!-- <input type = "submit" value ="SUBMIT"> -- >
+	</form>
+
+	<!-- What we just learned is 95% of HTML . Only thing we haven't done is an image. -->
+</body>
+</body>
+
+</html>
+
+
+<!--  To show off to juven how easy HTML is, let's comment this for now.
+<!DOCTYPE html>
+<html>
+  
+<head>
+<title> Steven Rivadeneira </title>
+</head>
+
+<body>
+
+	<h1>
+		<font size="+2">Steven Rivadeneira </font>
+	</h1>
+
+	<h2> 
+		A work in progress.. =). Testing, 1 ,2. 1, 2.
+	 </h2>
+
+	 <br>
+	 <hr>
+	 <br>
+	 
+	 <p> 
+	 	Steven Rivadeneira Engineer .  This website will describe several projects i've worked on.
+	 </p>
+	 <p>
+	 	First of all , my studies. I graduated from MIT in 2017, and I currently have a 4.0 at Georgia tech pursuing Aerospace Engineering. 
+
+	 	Next, I have worked for a NASA contractor where I did data tasking using pandas library in python. And then I joined Lockheed Martin where i've worked C++ GNC Algorithms.
+	 </p>
+	</p>
+	 	I wanted to practice some web development because it seems fun. First I will go over HTML, then over CSS, and lastly over Javascript.
+	 </p>
+  
+ </body>
+
+
+
+</html>
+
+--> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
