@@ -1,0 +1,140 @@
+ /*Lecture 19*/
+
+
+
+body
+{
+
+	background-color: #444;
+	/*text-align: center;*/
+}
+
+.container
+{
+
+
+
+}
+
+h1
+{
+	color : #ffffff;
+	line-height:  2rem;
+	font-family: 'Tangerine', serif, sans-serif;
+}
+
+h2
+{
+	color : #ffffff;
+	line-height:  2rem;
+	font-family: 'Source Code Pro', mono space;
+}
+
+h3
+{
+	color : #ffffff;
+	line-height:  2rem;
+	font-family: 'Nova Flat', cursive;
+}
+
+.formatting
+{
+	font-size: 25px;
+	line-height: 2em;
+	color: white;
+}
+
+a
+{
+	
+	text-decoration: none;
+	font-size: 20px;
+	color: yellow;
+	word-spacing: 30px;
+	
+	text-transform: uppercase;
+	
+}
+
+
+/*this allows our image to stay within the viewport. */
+img
+{
+	/*always take 100% of width of viewport*/
+	max-width: 100%;
+	/*height of auto*/
+	height: auto;
+	/*adding space around image. */
+	padding: 5px;
+	/*opacity works between 0 and 1. */
+	/*0 makes it transparent. if we change this 
+	to 50% opacity (adding 0.5)*/
+	/*1 allows your image to be solid*/
+	opacity: 1.0;
+	/*now , how do we center image? */
+	/*recall our body is text-alig: center, so img
+	is inheriting that property.*/
+
+	/*increases margin to take up entire area left and 
+	right of image. */
+	display: block;
+
+	/*now we're going to take our margin, and use 
+	the auto property. it takes this margin, and d
+	disperses the margin evenly across both side. */
+	margin: auto;
+
+}
+/*gonna be working wiht an image
+first thing we want to do is round the corners. */
+
+/*shaves off 10 px from the corner, radially.
+can specify width and height to work with perfect square
+
+we can specify border raidus as a percentage. can shave
+50% of the corners, for example. in essence, we're working
+with a square, it'll make a circle.  */
+.borderImg
+{
+	/*this is a way to create thumbnail . */
+	border-radius: 10px;
+	/*border-radius: 50%;*/
+	/*added a border of 2px solid, to image */
+	border: 2px solid #ddd;
+	/*specify size of image.*/
+	width: 500px;
+	height: 500px;
+	/*pushes our border slightly out and away from the image. */
+	padding: 5;
+
+	/*if image shrinks, we want to make sure our image
+	scales. this is beacuse we had previously defined
+	a fixed width and height. */
+
+	/*if we remove, remember elemenst stack from left
+	to right. if we inspect, we have a div tag */
+
+}
+
+
+
+ul li 
+{
+	color: white;
+	font-size:  20px;
+
+}
+
+ul > li
+{
+	color: yellow;
+}
+
+/*added borders
+creating thumbnails
+making our images be circles
+centering image by using block and dispersing margin
+evenly
+*/
+
+
