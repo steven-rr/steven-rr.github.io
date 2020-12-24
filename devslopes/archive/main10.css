@@ -1,0 +1,130 @@
+ /*Lecture 20*/
+
+
+
+body
+{
+	background-color: #444;
+}
+
+.container
+{
+
+}
+
+h1
+{
+	color : #ffffff;
+	line-height:  2rem;
+	font-family: 'Tangerine', serif, sans-serif;
+}
+
+h2
+{
+	color : #ffffff;
+	line-height:  2rem;
+	font-family: 'Source Code Pro', mono space;
+}
+
+h3
+{
+	color : #ffffff;
+	line-height:  2rem;
+	font-family: 'Nova Flat', cursive;
+}
+
+.formatting
+{
+	font-size: 25px;
+	line-height: 2em;
+	color: white;
+}
+
+a
+{
+	text-decoration: none;
+	font-size: 20px;
+	color: yellow;
+	word-spacing: 30px;
+	text-transform: uppercase;
+}
+
+
+/*this allows our image to stay within the viewport. */
+img
+{
+	max-width: 100%;
+	height: auto;
+	padding: 5px;
+	opacity: 1.0;
+	/* what margin does is it takes an element
+	and creates space around the element, the element
+	pushes itself away from surrounding elements*/
+	/*can use pixels or percentages for the margin*/
+
+	/*it now has a space around each element. */
+	/*margin: 60px;*/	
+	/*we can also specify the top, right, bottom, left
+	when using margin. */
+	/*now, they swept back to the left of hthe browser,
+	and theres a bottom margin of 60 pixels below each 
+	image.*/
+	margin-bottom: 60px;
+
+	/*now we can work with some padding.*/
+
+}
+.borderImg
+{
+	border-radius: 10px;
+	border: 2px solid #ddd;
+	/* chaneged width and height to be smaller*/
+	width: 200px;
+	height: 200px;
+
+	padding: 5;
+
+}
+
+/*creating button styling*/
+button
+{
+	/*with this styling, we have this red button*/
+	color: white;
+	background: red;
+	border-radius: 12px;
+	/*by default, HTML5 gievs a border, so lets remove 
+	it*/
+	border: none;
+	font-size: 25px;
+
+	/*we can improve this even further, by adding padding*/
+
+	/*padding creates space within the button, whereas
+	margin creates spacing around the image. */
+
+	/*creates space, from within center, and pushes
+	that out. creates 20 px of space from within the 
+	center */
+
+	/*padding goes clockwise, if you add values*/
+	/*also, you can inspect elements to get a feel for 
+	how it works.*/
+	padding: 10px 20px 40px 60px;
+
+}	
+
+ul li 
+{
+	color: white;
+	font-size:  20px;
+
+}
+
+ul > li
+{
+	color: yellow;
+}
+
+
+
