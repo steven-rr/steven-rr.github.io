@@ -263,6 +263,9 @@ float explained well by:
 https://www.youtube.com/watch?v=xara4Z1b18I&ab_channel=tobyonline
  
  TODO: box-sahodw stuff.  (content-box vs. border-box) 
+ it seems to be just if you want to include width and height in
+ the calculation for the box-sizing with the width or the height. 
+
  finish display grid video. ;
 look into media queries
 https://www.w3schools.com/css/css_rwd_mediaqueries.asp
