@@ -1,0 +1,113 @@
+/* i want section headers, nav bars, and other stuff 
+we want things to stack on top of each other, therefore
+*/
+
+/* will take these elements, and take
+them as a block , so they stack on top
+of each other. */
+
+/* add the below title for clarity on what we're doing */
+/* ############## DEFAULTS ############## */
+nav, header, footer
+{
+    display:block;
+
+}
+
+body
+{
+
+    line-height: 1;
+
+
+    margin: 0;
+}
+
+/*  ############## Nav Bar ############## */
+nav
+{
+    width: 100%;
+
+    margin: 0;
+
+}
+
+nav ul
+{
+    background-color: #eee;
+  
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+
+ul.topnav li
+{
+    list-style: none;
+    float: left;
+}
+ul.topnav li.topnav-right
+{
+    float: right
+}
+
+ul.topnav li a
+{
+    display: block;
+    text-decoration:  none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666
+}
+
+ul.topnav li a:hover 
+{
+    background-color: #0080ff;
+    color: #fff;
+}
+
+ul.topnav li.dropdownIcon
+{
+    /* for it to be hidden in desktop..: */
+    display:none;
+
+}
+
+/* now what we want to happen is we want
+5 list items to disappear. */
+
+/*  ############## MOBILE ############## */
+
+/* now we want to do a media query.. 
+@media screen detects screen size, and display
+widths. */
+
+/* so we want to detect media screen and make 
+sure that the width is less than 680 for these
+mobile things to apply. */
+@media screen and (max-width: 680px)
+{
+    /* we're telling that the li to 
+    have display : none EXCEPT , the 
+    for the first child  */
+    ul.topnav li:not(:nth-child(1))
+    {
+        display:none;
+    }
+}
+/* thats the end of this lesson, now we have 
+succesfully hidden the links. */
+/* be mindful that after we do desktop design,
+make sure we do mobile too. the mobile dev
+should happen in parallel with desktop dev...
+NOT desktop first,then mobile dev. that way 
+we aren't making big changes to the desktop dev.
+it 
+
+
+*/
