@@ -14,17 +14,15 @@ body
 label
 {
     font-size: 35px;
+    /* can add a standard bold with this if i wanted to. */
+    /* bold is around 300 ~ font weight, but if i wanted even bolder,
+    i can increase the number.  */
     font-weight: bold;
 }
 p
 {
     font-size: 28px;
     line-height: 1.2;
-}
-article p
-{
-    font-size: 35px;
-    padding: 20px;
 }
 .container
 {
@@ -128,21 +126,22 @@ ul.topnav li.dropdownIcon
 
 div.box
 {
+    /* we want to center all the box elements! */
     text-align: center;
+    /* when both elements are neihgboring, this margin will double. */
     margin: 24px;
     padding: 36px 24px 40px 24px;
     background-color: #fff;
+    /* https://www.cssmatic.com/box-shadow visually shows what
+    box-shadow is doing.  */
+    /* rgba, rgb is the color, and a is the opacity.  */
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) , 
         0 2px 3px 0 rgba(0,0,0, .1);
+    /* we need to add some content, for now it'll just show a line
+    with the above properties.*/
+
 }
 
-div.dbzIcon img
-{
-    display:block;
-    margin: auto;
-    box-shadow: -2px /*horizontal*/ -2px/*vertical*/  20px/*blur*/  2px /*spread*/ rgb(0/*shadowcolor*/,0 /*background*/,0 /*boxcolor*/, .15/*opacity*/) , 2px 2px 17px 2px rgba(0,0,0,1.0);
-    width: 370px;
-}
 button
 {
     font-size: 32px;
@@ -150,6 +149,7 @@ button
     color: #fff;
     background-color: #0069ff;
     padding: 15px 60px;
+    /* so button is easier to work with. */
     display:block;
     text-align: center;
     margin: 5px;
@@ -158,10 +158,13 @@ button
 button.learnMore
 {
     display:block;
+    /* takes all space, and distributes it evenly. */
     margin: auto;
 }
 .icon 
 {
+    /* make sure that it's always stretched as much as it is
+    allowed. it can flex if it needs to, with screen size. */
     width: 100%;   
 }
 
@@ -180,10 +183,11 @@ h1.large
     margin:0 ;
     line-height: 70px;
 }
-
+/* can customize the header with this. */
 h1.section2Header
 {
     font-size: 65px;
+    /* we want to center it.  */
     text-align: center;
 }
 form h2
@@ -198,56 +202,10 @@ input[type="text"]
     padding:  5px;
     border-radius: 7px;
 }
-
-footer.footsy
-{
-    background-color: #666;
-    padding-left: 10%;
-}
-footer.footsy h1
-{
-    color: #fff;
-    font-size: 35px;
-}
-footer.footsy ul
-{
-    list-style: none;
-    text-align: left;
-    /* padding added by default, let's get rid of it. */
-    padding-left: 0;
-}
-footer.footsy ul li
-{
-    color: #fff;
-    font-size: 22px;
-    line-height: 1.2;
-}
-/*  ############## TABLET ############## */
-@media screen and (max-width: 1200px)
-{
-    .col-6
-    {
-        width:50%;
-        margin: 0;
-    }
-    div.leftSide-col, 
-    div.rightSide-col
-    {
-        margin: 15px;
-    }
-    .videoContainer iframe
-    {
-        position: relative;
-        width:100%;
-        margin:0;
-        overflow: hidden;
-    }
-}
-
 /*  ############## MOBILE ############## */
 
 
-@media screen and (max-width: 815px)
+@media screen and (max-width: 680px)
 {
 
     ul.topnav li:not(:nth-child(1))
@@ -285,39 +243,18 @@ footer.footsy ul li
     {
         font-size: 50px;
     }
-    article p
-    {
-        font-size: 25px;
-    }
-    .col-7,
+
     .col-6,
     .col-4
     {
+
         width:100%;
         margin: 0;
     }
-    .col-5
-    {
-        width: 80%;
-        margin: auto;
-    }
-
-    div.mobileStack
-    {
-        width: 50%;
-        display: block;
-
-    }
-
     div.box
     {
         padding: 5px;
         display: block;
-    }
-
-    div.dbzIcon img
-    {
-        width: 100%;
     }
     div.leftSide-col, 
     div.rightSide-col

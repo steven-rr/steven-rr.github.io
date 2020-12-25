@@ -24,6 +24,14 @@ p
 article p
 {
     font-size: 35px;
+    /* the reason we didn't do a margin here, we did a padding instead,
+    because if we added a margin, it's going to push away from the left side,
+    and try running into right column that we're going to be adding there.
+    we'd be taking the paragraph, we'd force space outside of it. instead, when
+    we add padding, it takes the element, keeps it the same size, and increases
+    the space around it, without messing up our columns.  */
+    /* its important that when we're creating elements, we make sure
+    we keep track of any overwritten or inherited properties. */
     padding: 20px;
 }
 .container
@@ -198,56 +206,10 @@ input[type="text"]
     padding:  5px;
     border-radius: 7px;
 }
-
-footer.footsy
-{
-    background-color: #666;
-    padding-left: 10%;
-}
-footer.footsy h1
-{
-    color: #fff;
-    font-size: 35px;
-}
-footer.footsy ul
-{
-    list-style: none;
-    text-align: left;
-    /* padding added by default, let's get rid of it. */
-    padding-left: 0;
-}
-footer.footsy ul li
-{
-    color: #fff;
-    font-size: 22px;
-    line-height: 1.2;
-}
-/*  ############## TABLET ############## */
-@media screen and (max-width: 1200px)
-{
-    .col-6
-    {
-        width:50%;
-        margin: 0;
-    }
-    div.leftSide-col, 
-    div.rightSide-col
-    {
-        margin: 15px;
-    }
-    .videoContainer iframe
-    {
-        position: relative;
-        width:100%;
-        margin:0;
-        overflow: hidden;
-    }
-}
-
 /*  ############## MOBILE ############## */
 
 
-@media screen and (max-width: 815px)
+@media screen and (max-width: 680px)
 {
 
     ul.topnav li:not(:nth-child(1))
@@ -301,20 +263,14 @@ footer.footsy ul li
         width: 80%;
         margin: auto;
     }
-
-    div.mobileStack
-    {
-        width: 50%;
-        display: block;
-
-    }
-
     div.box
     {
         padding: 5px;
         display: block;
     }
-
+    div.dbzIcon
+    {
+    }
     div.dbzIcon img
     {
         width: 100%;

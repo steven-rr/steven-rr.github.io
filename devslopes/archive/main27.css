@@ -11,21 +11,6 @@ body
     margin: 0;
 }
 
-label
-{
-    font-size: 35px;
-    font-weight: bold;
-}
-p
-{
-    font-size: 28px;
-    line-height: 1.2;
-}
-article p
-{
-    font-size: 35px;
-    padding: 20px;
-}
 .container
 {
     width:100%;
@@ -60,11 +45,6 @@ article p
 .col-10 {width: 83.33%; }
 .col-11 {width: 91.66%; }
 .col-12 {width: 100%; }
-
-*
-{
-    box-sizing: border-box;
-}
 
 /*  ############## Nav Bar ############## */
 nav
@@ -125,46 +105,6 @@ ul.topnav li.dropdownIcon
     background: -moz-linear-gradient(#076dff, #65a5ff);
     background: linear-gradient(#076dff, #65a5ff);
 }
-
-div.box
-{
-    text-align: center;
-    margin: 24px;
-    padding: 36px 24px 40px 24px;
-    background-color: #fff;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) , 
-        0 2px 3px 0 rgba(0,0,0, .1);
-}
-
-div.dbzIcon img
-{
-    display:block;
-    margin: auto;
-    box-shadow: -2px /*horizontal*/ -2px/*vertical*/  20px/*blur*/  2px /*spread*/ rgb(0/*shadowcolor*/,0 /*background*/,0 /*boxcolor*/, .15/*opacity*/) , 2px 2px 17px 2px rgba(0,0,0,1.0);
-    width: 370px;
-}
-button
-{
-    font-size: 32px;
-    font-weight: 700;
-    color: #fff;
-    background-color: #0069ff;
-    padding: 15px 60px;
-    display:block;
-    text-align: center;
-    margin: 5px;
-    border-radius: 7px;
-}
-button.learnMore
-{
-    display:block;
-    margin: auto;
-}
-.icon 
-{
-    width: 100%;   
-}
-
 div.leftSide-col
 {
     margin-left: 30%;
@@ -180,12 +120,6 @@ h1.large
     margin:0 ;
     line-height: 70px;
 }
-
-h1.section2Header
-{
-    font-size: 65px;
-    text-align: center;
-}
 form h2
 {
      color: #fff;
@@ -196,58 +130,14 @@ input[type="text"]
     width: 400px;
     min-width: 100px;
     padding:  5px;
+    /* add rounded corners: */
     border-radius: 7px;
-}
 
-footer.footsy
-{
-    background-color: #666;
-    padding-left: 10%;
 }
-footer.footsy h1
-{
-    color: #fff;
-    font-size: 35px;
-}
-footer.footsy ul
-{
-    list-style: none;
-    text-align: left;
-    /* padding added by default, let's get rid of it. */
-    padding-left: 0;
-}
-footer.footsy ul li
-{
-    color: #fff;
-    font-size: 22px;
-    line-height: 1.2;
-}
-/*  ############## TABLET ############## */
-@media screen and (max-width: 1200px)
-{
-    .col-6
-    {
-        width:50%;
-        margin: 0;
-    }
-    div.leftSide-col, 
-    div.rightSide-col
-    {
-        margin: 15px;
-    }
-    .videoContainer iframe
-    {
-        position: relative;
-        width:100%;
-        margin:0;
-        overflow: hidden;
-    }
-}
-
 /*  ############## MOBILE ############## */
 
 
-@media screen and (max-width: 815px)
+@media screen and (max-width: 680px)
 {
 
     ul.topnav li:not(:nth-child(1))
@@ -256,8 +146,13 @@ footer.footsy ul li
     }
     ul.topnav li.dropdownIcon 
     {
+
         display: block;
+
+  
         float: right;
+
+
     }
     ul.topnav.responsive li.dropdownIcon
     {
@@ -281,60 +176,41 @@ footer.footsy ul li
         display: block;
         text-align: left;
     }
-    h1.section2Header
+
+    /* in mobile, want to stack on top of each other. */
+    .col-6
     {
-        font-size: 50px;
-    }
-    article p
-    {
-        font-size: 25px;
-    }
-    .col-7,
-    .col-6,
-    .col-4
-    {
+
         width:100%;
         margin: 0;
     }
-    .col-5
-    {
-        width: 80%;
-        margin: auto;
-    }
-
-    div.mobileStack
-    {
-        width: 50%;
-        display: block;
-
-    }
-
-    div.box
-    {
-        padding: 5px;
-        display: block;
-    }
-
-    div.dbzIcon img
-    {
-        width: 100%;
-    }
+    /* also want margin left to be less. */
+    /* when we add a comma, we are saying we want BOTH these
+    elements to have the following properties */
     div.leftSide-col, 
     div.rightSide-col
     {
         margin: 15px;
     }
-  
+    /* our input fields are also too wide. we can use the attribute
+    selector.*/
     input[type="text"]
     {
         width: 350px;
     }
-
+    /* i dont want it moving around, i don't want anybody to be able
+    to scroll over. we have extra space on the right.  */
     .videoContainer iframe
     {
         position: relative;
+        /* we want video to take 100% of width of column. force vid
+        to take 100% of column that it's in, instead of trying to
+        keep its standard size and overflow off the column. */
         width:100%;
         margin:0;
+        /* sometimes browsers may make content overflow and have
+        the scrollbar, let's try to instead clip the content,
+        instead of the user scrolling side to side.  */
         overflow: hidden;
     }
 }   
