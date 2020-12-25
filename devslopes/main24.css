@@ -99,6 +99,19 @@ mobile things to apply. */
     {
         display:none;
     }
+    ul.topnav li.dropdownIcon 
+    {
+        /* we can give it a new display. */
+        /* now we can position element more easily  */
+        display: block;
+
+        /* need to set this to float right, since
+        it will float left by default from the 
+        inheritance. */
+        float: right;
+
+
+    }
 }
 /* thats the end of this lesson, now we have 
 succesfully hidden the links. */
