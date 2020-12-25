@@ -3,12 +3,11 @@
 <head>
     <title>
     </title>
-    <link rel="stylesheet" href="main25.css">
+    <link rel="stylesheet" href="main26.css">
 
 </head>
 <body>
-    <!-- i dont know that this tag actually dose anything
-    but i think its mainly for organization purposes -->
+
     <nav>
         <ul class = "topnav" id="dropdownClick">
             <li><a href = "#home">Home</a></li>
@@ -17,33 +16,21 @@
             <li><a href = "#about">About</a></li>
             <li class ="topnav-right"><a href = "#signup">Sign Up</a></li>
             <li class ="topnav-right"><a href = "#signin">Sign In</a></li>
-
-            <!-- we add unicode here, so that 
-            we create some icons that work
-            like fonts. We add hamburger
-            icon by selecting trigram here:
-            https://unicode-table.com/en/ -->
-            <!-- whats cool about unicode is
-            we can style them in the same way
-            we style texts. -->
-            <!-- "javascript:void(0)", its undefined so you can just stay there. -->
             <li class= "dropdownIcon"><a href = "javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
         </ul>
     </nav>
 
+    <!-- create a container for each section. -->
+    <div class="container" id="section-1-gradient">
+        
+    </div>
     <script>
         function dropdownMenu()
         {
-            // getting the ID of element
             var x = document.getElementById("dropdownClick");
-            // hey, when this button is clicked,
-            //  i want to create this new class so i can structure
-            // these elements.
             if(x.className == "topnav")
             {
-                // were appending responsive to topnav now.
-                // idk why it has a space, and in the css file
-                // it doesnt seeem to have a space..
+      
                 x.className += " responsive";
                 
             }

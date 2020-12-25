@@ -123,6 +123,10 @@ mobile things to apply. */
     {
         position: relative;
     }
+    /* if you comment this one to display: block, and the one after as display:inline, you can see more
+    clearly why we do inline here, and block there. the reason is that li is one thing, and a is another thing
+    there are two things going on at the same time. so first we inline the list elements, aka, we have a bunch
+    of li elements in the same row. then the display:block allows each element to have a row all to itself. */
     ul.topnav.responsive li 
     {
         display: inline;
