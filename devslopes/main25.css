@@ -119,7 +119,7 @@ mobile things to apply. */
         right: 0;
     }
 
-    ul.topnav.responsive li 
+    ul.topnav.responsive 
     {
         position: relative;
     }
