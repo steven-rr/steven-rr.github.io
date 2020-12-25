@@ -22,7 +22,53 @@
 
     <!-- create a container for each section. -->
     <div class="container" id="section-1-gradient">
-        
+    <!-- we're going to be adding rows and columns. -->
+        <div class="row">
+            <!-- making 2 columns of 50% -->
+            <!-- we add leftSide-col class so that we can modify
+            this col-6 specifically, and not all the col-6 within the file.-->
+            <div class="col-6 leftSide-col">
+                <!-- now we want to nest
+                header tags inside of this.
+                perhaps in the future, want to add 
+                to a group underneath. -->
+                <!-- want to modify only THESE
+                header tags, but not all, so 
+                add a class so we can modify. -->
+                <div>
+                    <!-- we like the margin
+                    that h1 provides, thats why
+                    we chose it. -->
+                    <h1 class="large"> Crazy Radness</h1>
+                    <h1 class="large"> Made for Deslopers</h1></h>
+                </div>
+                <!-- now we want to put in
+                the form :  there's a keyword
+                called form, let's try it.-->
+                <form>
+                    <div>
+                        <h2>Username </h2>
+                        <!-- adding input
+                        field, and adding
+                        class to modify it -->
+                        <!-- type of text allows us to identify in 
+                        Javascript that its a text, we can grab the
+                        type that is in this input field and add
+                        some functionality in here. the name is another way
+                        we can interact thru jaascript. placeholder is default
+                        that user will see. -->
+                        <input class ="inputbox" name="username" type="text" placeholder="Username"> 
+
+                        <h2>Password </h2>
+                        <input class ="inputbox" name="password" type="text" placeholder="Password"> 
+
+                    </div>
+                </form>
+            </div>
+            <div class="col-6">
+                
+            </div>
+        </div>
     </div>
     <script>
         function dropdownMenu()

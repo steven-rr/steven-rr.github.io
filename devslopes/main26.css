@@ -25,6 +25,42 @@ body
     padding-top: 4%;
     padding-bottom: 4%;
 }
+/* we know that we want every row to have
+width of 100%. we also want to be able to
+modify a row easily. can do this with
+display:Flex . */
+.row
+{
+    width:100%;
+    display: flex;
+    /* wrapping elements around when it gets
+    small so we can shift elements around. */
+    flex-wrap: wrap;
+    /* aligns elements around (cross?)-axis */
+    align-items: center;
+}
+
+.row::after
+{
+    display:table;
+    /* removes any floats from right and left */
+    clear:both;
+    /* give it no content to refresh  */
+    content: "";
+}
+/* making columns of different width. */
+.col-1 {width: 8.33%; }
+.col-2 {width: 16.66%; }
+.col-3 {width: 25%; }
+.col-4 {width: 33.33%; }
+.col-5 {width: 41.66%; }
+.col-6 {width: 50%; }
+.col-7 {width: 58.33%; }
+.col-8 {width: 66.66%; }
+.col-9 {width: 75%; }
+.col-10 {width: 83.33%; }
+.col-11 {width: 91.66%; }
+.col-12 {width: 100%; }
 
 /*  ############## Nav Bar ############## */
 nav
@@ -83,7 +119,46 @@ ul.topnav li.dropdownIcon
 /*  ############## Custom Styles ############## */
 #section-1-gradient
 {
-    
+    /* supporting linear gradient across all
+    possible browsers.  */
+    background: #076dff;
+    background: -webkit-linear-gradient(#076dff, #65a5ff);
+    background: -o-linear-gradient(#076dff, #65a5ff);
+    background: -moz-linear-gradient(#076dff, #65a5ff);
+    background: linear-gradient(#076dff, #65a5ff);
+}
+.leftSide-col
+{
+    margin-left: 30%;
+}
+
+h1.large
+{
+    color: #fff;
+    font-size: 56px;
+    margin:0 ;
+    line-height: 70px;
+}
+/* every h2 under form... do this: */
+form h2
+{
+     color: #fff;
+}
+/* we can be specific on which input fields we want. let's be
+specific and add type = text */
+input[type="text"]
+{
+    font-size: 20px;
+    /* we can put this in a percentage, but reason we want px is
+    that we know what size we want for desktop. in future, with
+    media query, we'll customize it further. */
+    width: 400px;
+    /* i dont want the width of this input field to be smaller than
+    100 px.  */
+    min-width: 100px;
+    /* wanting to add space around. */
+    padding:  5px;
+
 }
 /*  ############## MOBILE ############## */
 
