@@ -66,7 +66,7 @@ div.container-main
 
 
 /* ############### mobile  ###################*/
-@media screen and (max-width: 700PX)
+@media screen and (max-width: 700px)
 {
 	nav
 	{
@@ -77,5 +77,16 @@ div.container-main
 		flex-direction: row;
 		justify-content: space-between;
 	}
-	
+	div.container-main
+	{
+		position: fixed;
+		left: 0;
+		top: 60px;
+
+		width: 100%;
+		margin: 0;
+		padding: 0;
+
+
+	}
 }
