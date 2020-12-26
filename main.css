@@ -1,13 +1,19 @@
+
+/* ############### Universal  ###################*/
+
 html, body
 {
 	height: 100%;
 	margin: 0;
-	overflow: hidden;
 
 }
+* 
+{
+	box-sizing: border-box;
+}
 
-
-/* ############### nav bar  ###################*/
+/* ############### Desktop  ###################*/
+/*  --------------- navbar ---------------- */
 nav
 {
 	background-color: black;
@@ -18,8 +24,29 @@ nav
 	top:0;
 	flex-direction: column;
 	justify-content: space-between;
+	align-items: center;
 }
+nav div.nav-main ul
+{
+	padding: 0;
 
+}
+nav div.nav-main ul li a
+{
+	color: #fff;
+	text-decoration: none;
+}
+nav div.social-media ul
+{
+	padding: 0;
+
+}
+nav div.social-media ul li a
+{
+	color: #fff;
+	text-decoration: none;
+} 
+/*  --------------- main body ---------------- */
 
 div.container-main
 {
@@ -34,15 +61,12 @@ div.container-main
 } 
 
 
-* 
-{
-	box-sizing: border-box;
-}
+
 
 
 
 /* ############### mobile  ###################*/
-@media screen and (max-width: 960px)
+@media screen and (max-width: 700PX)
 {
 	nav
 	{
