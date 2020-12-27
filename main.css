@@ -11,6 +11,10 @@ html, body
 {
 	box-sizing: border-box;
 }
+h1
+{
+	color: #fff;
+}
 
 	/* ############### Desktop  ###################*/
 	/*  --------------- navbar ---------------- */
@@ -94,7 +98,7 @@ html, body
 		color: red;
 	}
 	/*  --------------- main body ---------------- */
-
+	/*  --------------- main body container ---------------- */
 	div.container-main
 	{
 		position: absolute;
@@ -104,9 +108,17 @@ html, body
 		height: 100%;
 		margin:0;
 		padding: 0;
-		background-color: gray;
+		background-color: rgb(3, 8, 59);
 	} 
 
+	/*  --------------- main body primary msg ---------------- */
+
+	div.primary-msg
+	{
+		position: absolute;
+		bottom: 40%;
+		left: 10%;
+	}
 
 
 
