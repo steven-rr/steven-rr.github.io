@@ -12,84 +12,144 @@ html, body
 	box-sizing: border-box;
 }
 
-/* ############### Desktop  ###################*/
-/*  --------------- navbar ---------------- */
-nav
-{
-	background-color: black;
-	display:flex;
-	width: 60px;
-	height: 100%;
-	position: fixed;
-	top:0;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-}
-/*  --------------- navbar - navbar main ---------------- */
-nav div.nav-main
-{
-	width: 100%;
-	height: 40%;
-}
-nav div.nav-main ul
-{
-	width: 100%;
-	height: 100%;
-	padding: 0;
-	display:flex;
-	flex-direction: column;
-	list-style-type: none;
-	justify-content: space-between;
-	align-items: center;
-	align-content: center;
 
-}
-nav div.nav-main ul li
-{
-	text-align: center;
-}
-
-nav div.nav-main ul li a
-{
-	color: #fff;
-	text-decoration: none;
-
-}
-nav div.nav-main ul li a i 
-{
-}
-
-/*  --------------- navbar-  social media ---------------- */
-
-nav div.social-media ul
-{
-	padding: 0;
-
-}
-nav div.social-media li 
-{
-	padding: 5px;
-}
-nav div.social-media ul li a
-{
-	color: #fff;
-	text-decoration: none;
+	/* ############### Desktop  ###################*/
+	/*  --------------- navbar ---------------- */
+	nav
+	{
+		background-color: black;
+		display:flex;
+		width: 60px;
+		height: 100%;
+		position: fixed;
+		top:0;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+	/*  --------------- navbar - navbar main ---------------- */
+	nav div.nav-main
+	{
+		width: 100%;
+		height: 40%;
+	}
 	
-} 
-/*  --------------- main body ---------------- */
+	nav div.nav-main ul
+	{
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		display:flex;
+		flex-direction: column;
+		list-style-type: none;
+		justify-content: space-between;
+		align-items: center;
+		align-content: center;
 
-div.container-main
-{
-	position: absolute;
-	left: 60px;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	margin:0;
-	padding: 0;
-	background-color: gray;
-} 
+	}
+	nav div.nav-main ul li
+	{
+		text-align: center;
+	}
+
+	nav div.nav-main ul li a
+	{
+		color: #fff;
+		text-decoration: none;
+
+	}
+	nav div.nav-main ul li a.active,
+	nav div.nav-main ul li a:hover
+	{
+		color: red;
+	}
+	nav div.nav-main ul li a:hover i 
+	{
+		opacity: 0;
+	}
+
+	nav div.nav-main ul li a::after
+	{
+		display: block;
+		position: relative;
+		top: -20px;
+		font-size: 15px;
+		letter-spacing: 2px;
+		width: 100%;
+		text-align: center;
+		opacity: 0;
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+	}
+	
+	nav div.nav-main ul li:nth-child(1)::after
+	{
+		content: 'HOME';
+
+	}
+	nav div.nav-main ul li:nth-child(2) a::after
+	{
+		content: 'ABOUT';
+
+	}
+	nav div.nav-main ul li:nth-child(3) a::after
+	{
+		content: 'SKILLS';
+
+	}
+	nav div.nav-main ul li:nth-child(4) a::after
+	{
+		content: 'PORTFOLIO';
+
+	}
+	nav div.nav-main ul li:nth-child(5) a::after
+	{
+		content: 'CONTACT';
+
+	}
+	nav div.nav-main ul li a::after
+	{
+		opacity: 1;
+	} 
+
+	/*  --------------- navbar-  social media ---------------- */
+
+	nav div.social-media ul
+	{
+		padding: 0;
+
+	}
+	nav div.social-media li 
+	{
+		padding: 5px;
+	}
+	nav div.social-media ul li a
+	{
+		color: #fff;
+		text-decoration: none;
+		
+	} 
+	nav div.social-media ul li a i 
+	{
+		font-size: 20px;
+	}
+	nav div.social-media ul li a:hover
+	{
+		color: red;
+	}
+	/*  --------------- main body ---------------- */
+
+	div.container-main
+	{
+		position: absolute;
+		left: 60px;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		margin:0;
+		padding: 0;
+		background-color: gray;
+	} 
 
 
 
@@ -119,6 +179,11 @@ div.container-main
 		padding: 0;
 	}
 	/*  --------------- navbar main ---------------- */
+	div.nav-main
+	{
+		width: 40%;
+		height: 100%;
+	}
 	div.nav-main ul
 	{
 		display:flex;
