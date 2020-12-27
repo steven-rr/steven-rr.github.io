@@ -1,57 +1,32 @@
 
-
+const num1 = 100;
+const num2 = 50;
 let val;
 
-// converting numbers to strings.
-val = String(555);
-val = String(4+4);
+// simple math with numbers.
+val = num1 + num2;
+val = num1*num2;
+val = num1 - num2;
+val = num1 / num2;
+val = num1 % num2;
 
-//converting bool to string.
-val = String(true);
+// theres math object we can do to get round, absolute, get the power of
+// generate random numbers, things like that.
 
-// Date to a string:
-val = String(new Date());
+// Math is an object that has a lot of different properties and attributes
+// that may be useful for us. 
+val = Math.PI;
+val = Math.E;
+val = Math.round(2.5);
+val = Math.ceil(2.4); // rounds up.
+val = Math.floor(2.8); // rounds down.
+val = Math.sqrt(25); // square root.
+val = Math.abs(-3); //absolute value.
+val = Math.pow(3,2); // 3^2  , power.
+val = Math.min(2,3,4,5); //takes in numbers separated by commas and returns minimum.
+val = Math.max(2,3,4,5); //takes in numbers separated by commas and returns maximum.
+val = Math.random(); //gives us random decimal. 
+val = Math.random() * 20 + 1; //gives us random decimal between 0 and 20.
+val = Math.floor(Math.random() * 20+ 1); // gives us random integer between 0 and 20.
+console.log(val);
 
-//Array to string:
-val = String([1,2,3,4]);
-
-//Another way to convert to string -- toString()
-val = (5).toString();
-val = (true).toString();
-
-// String to Number:
-val = Number('5');
-val = Number(true);
-val = Number(false);
-val = Number(null);
-val = Number('hello');
-
-// passing in 100 as a string, if we parse, we parse an integer
-// and store it in number data type..
-val = parseInt('100');
-// if we want to convert string to float, use this instead.
-val = parseFloat('100.3');
-
-//Output 
-// console.log(val);
-// console.log(typeof val);
-// // console.log(val.length); gets length of string.
-// // toFixed gives me the number wih precision of level "2", or 
-// // whatver precision is specified
-// console.log(val.toFixed(2));
-
-
-// There's also type coercion.
-
-// javascript saw that we're adding a stirng and a number,
-// javacsript took it upon itself to change the 6 to a string, and
-// then did the operation. This is type coercion. 
-const val1 = String(5);
-const val2 = 6;
-const sum = Number(val1 + val2);
-
-console.log(sum);
-console.log(typeof sum);
-
-// next time, we'll look at math objects. there's an object
-// that can help us round, and take square roots, and such. 
