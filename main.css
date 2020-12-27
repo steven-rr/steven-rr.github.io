@@ -26,6 +26,8 @@ nav
 	justify-content: space-between;
 	align-items: center;
 }
+/*  --------------- navbar - navbar main ---------------- */
+
 nav div.nav-main ul
 {
 	padding: 0;
@@ -35,7 +37,18 @@ nav div.nav-main ul li a
 {
 	color: #fff;
 	text-decoration: none;
+	display:block;
+	margin: auto;
+
 }
+nav div.nav-main ul li a i 
+{
+	display:block;
+	width: 10px;
+}
+
+/*  --------------- navbar-  social media ---------------- */
+
 nav div.social-media ul
 {
 	padding: 0;
@@ -49,6 +62,7 @@ nav div.social-media ul li a
 {
 	color: #fff;
 	text-decoration: none;
+	
 } 
 /*  --------------- main body ---------------- */
 
