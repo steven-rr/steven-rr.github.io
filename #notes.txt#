@@ -1,0 +1,10 @@
+
+https://www.youtube.com/watch?v=pk3tsynNZ0w&ab_channel=TraversyMedia
+
+in javascript, we have document.querySelector(".someclass")
+   	       	  or   document.querySelector(".someclass li")
+
+
+which allows you to get any class or an array with addresses in the case of
+"li" elements.
+
