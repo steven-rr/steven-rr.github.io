@@ -12,7 +12,6 @@ html, body
 	box-sizing: border-box;
 }
 
-
 	/* ############### Desktop  ###################*/
 	/*  --------------- navbar ---------------- */
 	nav
@@ -165,4 +164,11 @@ html, body
 		text-decoration: none;
 	}
 
+}
+@media (max-width: 530px)
+{
+	h1
+	{
+		color: red;
+	}
 }
