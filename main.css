@@ -41,6 +41,10 @@ nav div.social-media ul
 	padding: 0;
 
 }
+nav div.social-media li 
+{
+	padding: 5px;
+}
 nav div.social-media ul li a
 {
 	color: #fff;
@@ -68,6 +72,7 @@ div.container-main
 /* ############### mobile  ###################*/
 @media screen and (max-width: 960px)
 {
+	/*  --------------- navbar ---------------- */
 	nav
 	{
 		height: 60px;
@@ -86,7 +91,14 @@ div.container-main
 		margin: 0;
 		padding: 0;
 	}
-
+	/*  --------------- navbar main ---------------- */
+	div.nav-main ul
+	{
+		display:flex;
+		flex-direction: row;
+		list-style-type: none;
+	}
+	/*  --------------- navbar - social media ---------------- */
 	div.social-media ul
 	{
 		display: flex;
