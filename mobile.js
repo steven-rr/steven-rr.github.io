@@ -1,21 +1,21 @@
   // add 0 opacity to main icons.
     //move social media icons
     // add fa-fabars.   
-    let nav_mobile = document.getElementById("mobile-toggle");
-    nav_mobile.style.opacity=  1;
+    // let nav_mobile = document.getElementById("mobile-toggle");
+    // nav_mobile.style.opacity=  1;
 
-    // remove nav main and social media from visibility.
-    let nav_main = document.querySelector(".nav-main");
-    let nav_social = document.querySelector(".social-media");
-    nav_main.style.opacity = 0;
-    nav_social.style.opacity = 0;
+    // // remove nav main and social media from visibility.
+    // let nav_main = document.querySelector(".nav-main");
+    // let nav_social = document.querySelector(".social-media");
+    // nav_main.style.opacity = 0;
+    // nav_social.style.opacity = 0;
     
 
-    // ############## increasing size of bar. ################
-    let body_container = document.querySelector(".container-main");
-    body_container.style.top = "70px";
-    let nav = document.querySelector("nav");
-    nav.style.height = "70px";
+    // // ############## increasing size of bar. ################
+    // let body_container = document.querySelector(".container-main");
+    // body_container.style.top = "70px";
+    // let nav = document.querySelector("nav");
+    // nav.style.height = "70px";
     
 
 
