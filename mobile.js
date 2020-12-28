@@ -1,3 +1,35 @@
+  // add 0 opacity to main icons.
+    //move social media icons
+    // add fa-fabars.   
+    let nav_mobile = document.getElementById("mobile-toggle");
+    nav_mobile.style.opacity=  1;
+
+    // remove nav main and social media from visibility.
+    let nav_main = document.querySelector(".nav-main");
+    let nav_social = document.querySelector(".social-media");
+    nav_main.style.opacity = 0;
+    nav_social.style.opacity = 0;
+    
+
+    // ############## increasing size of bar. ################
+    let body_container = document.querySelector(".container-main");
+    body_container.style.top = "13%";
+    let nav = document.querySelector("nav");
+    nav.style.height = "13%";
+    
+
+
+
+
+
+
+
+
+//TODO: add graphics on mouse over icon. 
+//TODO: add fa-bars slider 
+//TODO: increase fa-bars slider size.
+//TODO: allow fa-bars slider when width is very small. 
+
 // let nav_mobile = document.getElementById("mobile-toggle");
 // nav_mobile.style.opacity=  1;
 
@@ -41,4 +73,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     nav_main.style.opacity = 0;
     nav_social.style.opacity = 0;
     
+
+    // ############## increasing size of bar. ################
+    let body_container = document.querySelector("div.container-main");
+    body_container.style.top = 13;
 }
