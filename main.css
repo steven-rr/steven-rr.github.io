@@ -118,9 +118,9 @@ nav div.social-media ul li a:hover
 #mobile-toggle i 
 {
 	position: absolute;
-	top:8px;
+	top:14px;
 	color: #fff;
-	font-size: 50px;
+	/* font-size: 30px; */
 }
 
 /*  --------------- main body ---------------- */
