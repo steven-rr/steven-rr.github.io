@@ -1,4 +1,5 @@
-
+// lets look at window object. DOM is part of window object.
+// window is global object in the client side javascript. 
 //window methods / objects / properties
 
 // console.log(123);
@@ -64,3 +65,4 @@ val = window.navigator.vendor;
 val = window.navigator.language; //can get language of browser.
 
 console.log(val);
+
