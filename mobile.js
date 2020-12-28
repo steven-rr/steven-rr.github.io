@@ -13,9 +13,9 @@
 
     // ############## increasing size of bar. ################
     let body_container = document.querySelector(".container-main");
-    body_container.style.top = "10%";
+    body_container.style.top = "70px";
     let nav = document.querySelector("nav");
-    nav.style.height = "10%";
+    nav.style.height = "70px";
     
 
 
