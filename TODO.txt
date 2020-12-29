@@ -1,5 +1,6 @@
 -CODE
 	-NAVBAR Mobile
+		-somehow cap how much the top gets moved. 
 	-Picture.
 
 -Dynamic Text when I mouse over.
