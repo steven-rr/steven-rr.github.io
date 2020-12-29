@@ -55,11 +55,7 @@ function runNavClick(e)
 
 }
 
-// should nOT be doing this, don't modify display , it's dangerous and inefficient..
-if (window.innerWidth > 500)
-{
-    document.querySelector(".nav-main").style.display = "flex";
-}
+
 
 function runNavHover0(e)
 {
@@ -67,6 +63,11 @@ function runNavHover0(e)
     let anchor = nav_li[0].children[0];
     anchor.style.opacity ="0";
     anchor.classList.add("text-home");
+    runNavHoverRm1();
+    runNavHoverRm2();
+    runNavHoverRm3();
+    runNavHoverRm4();
+
 }
 function runNavHoverRm0(e)
 {
@@ -82,6 +83,10 @@ function runNavHover1(e)
     let anchor = nav_li[1].children[0];
     anchor.style.opacity ="0";
     anchor.classList.add("text-about");
+    runNavHoverRm0();
+    runNavHoverRm2();
+    runNavHoverRm3();
+    runNavHoverRm4();
 }
 
 function runNavHoverRm1(e)
@@ -99,6 +104,10 @@ function runNavHover2(e)
     let anchor = nav_li[2].children[0];
     anchor.style.opacity ="0";
     anchor.classList.add("text-skills");
+    runNavHoverRm0();
+    runNavHoverRm1();
+    runNavHoverRm3();
+    runNavHoverRm4();
 }
 
 function runNavHoverRm2(e)
@@ -115,6 +124,10 @@ function runNavHover3(e)
     let anchor = nav_li[3].children[0];
     anchor.style.opacity ="0";
     anchor.classList.add("text-work");
+    runNavHoverRm0();
+    runNavHoverRm1();
+    runNavHoverRm2();
+    runNavHoverRm4();
 }
 
 function runNavHoverRm3(e)
@@ -131,6 +144,10 @@ function runNavHover4(e)
     let anchor = nav_li[4].children[0];
     anchor.style.opacity ="0";
     anchor.classList.add("text-contact");
+    runNavHoverRm0();
+    runNavHoverRm1();
+    runNavHoverRm2();
+    runNavHoverRm3();
 }
 
 function runNavHoverRm4(e)

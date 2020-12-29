@@ -296,7 +296,6 @@ div.primary-msg
 	div.nav-main ul li
 	{
 		transition: all 0.3s ease-out;
-		content:
 	}
 	/*  --------------- navbar - social media ---------------- */
 	div.social-media
@@ -382,3 +381,4 @@ div.primary-msg
 
 
 }
+
