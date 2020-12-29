@@ -191,7 +191,7 @@ div.primary-msg
 	/*  --------------- navbar ---------------- */
 	nav
 	{
-		position: absolute;
+		position: fixed;
 		height: 60px;
 		min-height: 0 ;
 		width: 100%;
@@ -202,7 +202,7 @@ div.primary-msg
 	/*  --------------- navbar -  main ---------------- */
 	div.nav-main
 	{
-		position: absolute;
+		position: fixed;
 		display: block;
 		top: 60px;
 		left: 100%;
