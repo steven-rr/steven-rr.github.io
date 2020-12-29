@@ -1,10 +1,12 @@
 -CODE
 	-NAVBAR Mobile
 		-somehow cap how much the top gets moved. 
+			-done, had to implement min height so that it makes sense on low height high width environment. 
 	-Picture.
 
 -Dynamic Text when I mouse over.
-
+-Fa-fabars should be working.  
+-Red flare on mouse over social media for tablet case.
 
 
 

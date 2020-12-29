@@ -7,7 +7,8 @@ html, body
 	padding: 0;	
 	height: 100%;
 	margin: 0;
-	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: visible;
 }
 * 
 {
@@ -234,6 +235,7 @@ div.primary-msg
 	/*  --------------- main body container ---------------- */
 	div.container-main
 	{
+		
 		position: fixed;
 		left: 0;
 		top: 60px;
