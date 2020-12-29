@@ -58,6 +58,8 @@ div.nav-main ul
 div.nav-main ul li
 {
 	text-align: center;
+	width : 60px; 
+	height: 30px;
 }
 
 div.nav-main ul li a
@@ -71,6 +73,68 @@ nav div.nav-main ul li a:hover
 {
 	color: red;
 }
+nav div.nav-main ul li a:after
+{
+	position: relative;
+	text-align: center;
+	top: -23px;
+	opacity: 1;
+	color: red;
+}
+
+.text-home::after
+{
+	position: relative;
+	display: block;
+	padding: 0;
+	margin:0 ;
+	content: 'HOME';
+	width: 60px;
+	height: 10%
+}
+.text-about::after
+{
+	position: relative;
+	display: block;
+	padding: 0;
+	margin:0 ;
+	content: 'ABOUT';
+	width: 60px;
+	height: 10%
+}
+.text-skills::after
+{
+	position: relative;
+	display: block;
+	padding: 0;
+	margin:0 ;
+	content: 'SKILLS';
+	width: 60px;
+	height: 10%
+}
+
+.text-work::after
+{
+	position: relative;
+	display: block;
+	padding: 0;
+	margin:0 ;
+	content: 'WORK';
+	width: 60px;
+	height: 10%
+}
+
+.text-contact::after
+{
+	position: relative;
+	display: block;
+	padding: 0;
+	margin:0 ;
+	content: 'CONTACT';
+	width: 60px;
+	height: 10%
+}
+
 nav div.nav-main ul li a:hover i 
 {
 	opacity: 1;
@@ -232,7 +296,7 @@ div.primary-msg
 	div.nav-main ul li
 	{
 		transition: all 0.3s ease-out;
-		
+		content:
 	}
 	/*  --------------- navbar - social media ---------------- */
 	div.social-media

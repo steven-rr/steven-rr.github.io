@@ -1,16 +1,34 @@
-//TODO: add graphics on mouse over icon. 
-//TODO: add fa-bars slider 
+//TODO: add graphics on mouse over icon. (sort of done, need to make more efficient)
+//TODO: add fa-bars slider  (sort of done, somehow need to do a better animation here.)
 //TODO: increase fa-bars slider size. (DONE)
 //TODO: allow fa-bars slider when width is very small. (DONE)
 
-// if mobile_slider gets clicked, then change display none. else, display block.
-mobile_slider = document.getElementById("mobile-toggle");
-mobile_slider.addEventListener("click", runEvent);
+var mobile_slider = document.getElementById("mobile-toggle");
+mobile_slider.addEventListener("click", runNavClick);
 
-var count = 0;
+var nav_ul = document.getElementById("navHover");
+
+nav_li = nav_ul.children;
+
+
+nav_li[0].children[0].addEventListener("mouseover",runNavHover0);
+nav_li[0].children[0].addEventListener("mouseout",runNavHoverRm0);
+nav_li[1].children[0].addEventListener("mouseover",runNavHover1);
+nav_li[1].children[0].addEventListener("mouseout",runNavHoverRm1);
+nav_li[2].children[0].addEventListener("mouseover",runNavHover2);
+nav_li[2].children[0].addEventListener("mouseout",runNavHoverRm2);
+nav_li[3].children[0].addEventListener("mouseover",runNavHover3);
+nav_li[3].children[0].addEventListener("mouseout",runNavHoverRm3);
+nav_li[4].children[0].addEventListener("mouseover",runNavHover4);
+nav_li[4].children[0].addEventListener("mouseout",runNavHoverRm4);
+
+
+
+
 
 // if user has clicked even amount of times, then show , else , don't show. 
-function runEvent(e)
+var count = 0;
+function runNavClick(e)
 {
     nav_main = document.querySelector(".nav-main");
     console.log("hello");
@@ -30,9 +48,6 @@ function runEvent(e)
         // nav_main.style.opacity = "0.0";
         nav_main.style.left = "100%"
         nav_main.style.display = "none";
-
-
-
     }
 
     e.preventDefault();
@@ -40,59 +55,88 @@ function runEvent(e)
 
 }
 
+// should nOT be doing this, don't modify display , it's dangerous and inefficient..
+if (window.innerWidth > 500)
+{
+    document.querySelector(".nav-main").style.display = "flex";
+}
+
+function runNavHover0(e)
+{
+    console.log("hello");
+    let anchor = nav_li[0].children[0];
+    anchor.style.opacity ="0";
+    anchor.classList.add("text-home");
+}
+function runNavHoverRm0(e)
+{
+    console.log("hello");
+    let anchor = nav_li[0].children[0];
+    anchor.style.opacity ="1";
+    anchor.classList.remove("text-home");
+}
+
+function runNavHover1(e)
+{
+    console.log("hello");
+    let anchor = nav_li[1].children[0];
+    anchor.style.opacity ="0";
+    anchor.classList.add("text-about");
+}
+
+function runNavHoverRm1(e)
+{
+    console.log("hello");
+    let anchor = nav_li[1].children[0];
+    anchor.style.opacity ="1";
+    anchor.classList.remove("text-about");
+}
 
 
-// let nav_mobile = document.getElementById("mobile-toggle");
-// nav_mobile.style.opacity=  1;
+function runNavHover2(e)
+{
+    console.log("hello");
+    let anchor = nav_li[2].children[0];
+    anchor.style.opacity ="0";
+    anchor.classList.add("text-skills");
+}
 
-// // remove nav main and social media from visibility.
-// let nav_main = document.querySelector(".nav-main");
-// let nav_social = document.querySelector(".social-media");
-// // nav_main.style.opacity = 0;
-// // nav_social.style.opacity = 0;
+function runNavHoverRm2(e)
+{
+    console.log("hello");
+    let anchor = nav_li[2].children[0];
+    anchor.style.opacity ="1";
+    anchor.classList.remove("text-skills");
+}
 
+function runNavHover3(e)
+{
+    console.log("hello");
+    let anchor = nav_li[3].children[0];
+    anchor.style.opacity ="0";
+    anchor.classList.add("text-work");
+}
 
+function runNavHoverRm3(e)
+{
+    console.log("hello");
+    let anchor = nav_li[3].children[0];
+    anchor.style.opacity ="1";
+    anchor.classList.remove("text-work");
+}
 
-// // // add nav-mobile child.
-// // const nav_mobile = document.createElement("nav_mobile");
-// // nav_mobile.style.opacity = 1;
-// // nav_mobile.innerHTML = `<ul>
-// // <li><a href = "https://www.facebook.com/stevenator9001/" > <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-// // <li><a href = "https://github.com/steven-rr" ><i class="fa fa-github" aria-hidden="true"></i></a></li>
-// // <li><a href = "https://www.linkedin.com/in/steven-rivadeneira" ><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-// // <li> <a href = "https://www.instagram.com/steven__rr/" ><i class="fa fa-instagram" aria-hidden="true"></i></a> </li>
-// // </ul>`;
+function runNavHover4(e)
+{
+    console.log("hello");
+    let anchor = nav_li[4].children[0];
+    anchor.style.opacity ="0";
+    anchor.classList.add("text-contact");
+}
 
-// // let nav = document.querySelector("nav");
-// // val = nav;
-// // nav.appendChild(nav_mobile);
-
-
-// // // add fa-fa bars and styling to nav-mobile child.
-
-
-// if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) 
-// {
-//     // add 0 opacity to main icons.
-//     //move social media icons
-//     // add fa-fabars.   
-//     val = document.body.clientWidth;
-//     console.log(val);
-    
-//     if(document.body.clientWidth < 500)
-//     {
-//       let nav_mobile = document.getElementById("mobile-toggle");
-//       nav_mobile.style.opacity=  1;
-
-//       // remove nav main and social media from visibility.
-//       let nav_main = document.querySelector(".nav-main");
-//       let nav_social = document.querySelector(".social-media");
-//       nav_main.style.opacity = 0;
-//       nav_social.style.opacity = 0;
-      
-
-//       // ############## increasing size of bar. ################
-//       let body_container = document.querySelector("div.container-main");
-//       body_container.style.top = 13;
-//     }
-// }
+function runNavHoverRm4(e)
+{
+    console.log("hello");
+    let anchor = nav_li[4].children[0];
+    anchor.style.opacity ="1";
+    anchor.classList.remove("text-contact");
+}
