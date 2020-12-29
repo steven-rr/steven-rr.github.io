@@ -236,12 +236,13 @@ div.primary-msg
 	div.container-main
 	{
 		
-		position: fixed;
+		position: absolute;
 		left: 0;
 		top: 60px;
 		width: 100%;
 		margin: 0;
 		padding: 0;
+		
 	}
 }
 
@@ -249,16 +250,33 @@ div.primary-msg
 @media screen and (max-width: 550px)
 {
 	/*  --------------- main body ---------------- */
+	html
+	{
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+	body
+	{
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
 	/*  --------------- main body container ---------------- */
 	div.container-main
 	{
-		position: fixed;
+		position: absolute;
 		left: 0;
 		top: 60px;
 		width: 100%;
 		margin: 0;
 		padding: 0;
+		overflow-y: auto;
+		overflow-x: hidden;
 		
+	}
+	div.primary-msg
+	{
+		overflow-y: auto;
+		overflow-x: hidden;
 	}
 
 
