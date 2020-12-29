@@ -9,18 +9,26 @@ mobile_slider.addEventListener("click", runEvent);
 
 var count = 0;
 
-// Event Handler:
+// if user has clicked even amount of times, then show , else , don't show. 
 function runEvent(e)
 {
     nav_main = document.querySelector(".nav-main");
-
+    console.log("hello");
     if( (count % 2) === 0)
     {
-        nav_main.style.display = "block";
+        nav_main.style.opacity = "1.0";
+        nav_main.style.left = "0%"
+        // console.log("here");
+        // console.log(nav_main.style.opacity);
+        // console.log(nav_main.style.left = "0%");
+
     }
     else
     {
-        nav_main.style.display = "none";
+        nav_main.style.opacity = "0.0";
+        nav_main.style.left = "100%"
+
+
 
     }
 
