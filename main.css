@@ -198,19 +198,20 @@ div.primary-msg
 		top:0;
 		display: block;
 		z-index: 10;
+
 	}
 	/*  --------------- navbar -  main ---------------- */
 	div.nav-main
 	{
 		position: absolute;
 		display: block;
+		/* overflow-x: auto; */
+		/* overflow-y: auto;  */
 		top: 60px;
 		left: 100%;
-		overflow: hidden;
 		height: 60px;
 		background-color: black;
 		width: 100%;
-		opacity: 0;
 		transition: all 0.3s ease-out;
 
 	}
@@ -231,6 +232,7 @@ div.primary-msg
 	div.nav-main ul li
 	{
 		transition: all 0.3s ease-out;
+		
 	}
 	/*  --------------- navbar - social media ---------------- */
 	div.social-media

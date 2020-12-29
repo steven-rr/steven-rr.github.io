@@ -16,8 +16,10 @@ function runEvent(e)
     console.log("hello");
     if( (count % 2) === 0)
     {
-        nav_main.style.opacity = "1.0";
+        // nav_main.style.opacity = "1.0";
         nav_main.style.left = "0%"
+        nav_main.style.display = "block";
+
         // console.log("here");
         // console.log(nav_main.style.opacity);
         // console.log(nav_main.style.left = "0%");
@@ -25,8 +27,9 @@ function runEvent(e)
     }
     else
     {
-        nav_main.style.opacity = "0.0";
+        // nav_main.style.opacity = "0.0";
         nav_main.style.left = "100%"
+        nav_main.style.display = "none";
 
 
 
