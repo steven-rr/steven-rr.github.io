@@ -1,7 +1,35 @@
 //TODO: add graphics on mouse over icon. 
 //TODO: add fa-bars slider 
-//TODO: increase fa-bars slider size.
-//TODO: allow fa-bars slider when width is very small. 
+//TODO: increase fa-bars slider size. (DONE)
+//TODO: allow fa-bars slider when width is very small. (DONE)
+
+// if mobile_slider gets clicked, then change display none. else, display block.
+mobile_slider = document.getElementById("mobile-toggle");
+mobile_slider.addEventListener("click", runEvent);
+
+var count = 0;
+
+// Event Handler:
+function runEvent(e)
+{
+    nav_main = document.querySelector(".nav-main");
+
+    if( (count % 2) === 0)
+    {
+        nav_main.style.display = "block";
+    }
+    else
+    {
+        nav_main.style.display = "none";
+
+    }
+
+    e.preventDefault();
+    count = count + 1;
+
+}
+
+
 
 // let nav_mobile = document.getElementById("mobile-toggle");
 // nav_mobile.style.opacity=  1;
