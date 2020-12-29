@@ -196,21 +196,29 @@ div.primary-msg
 		width: 100%;
 		position: fixed;
 		top:0;
-		flex-direction: row;
-		justify-content: space-between;
+		display: block;
 	}
+	/*  --------------- navbar -  main ---------------- */
+	div.nav-main
+	{
+		display: none;
+	}
+	/*  --------------- navbar - social media ---------------- */
+	div.social-media
+	{
+		display: none;
+	}
+
 	
-	/*  --------------- navbar ---------------- */
+	/*  --------------- navbar - mobile ---------------- */
 	#mobile-toggle 
 	{
-		margin:0 ;
 		padding: 0;
 		position: absolute;
 		display: block;
-		left: 87%;
+		right: 20px;
 		top: 0;
-		height: 10%;
-		width: 10%;
+		min-width:30px;
 		text-decoration:none;
 		color: #fff;
 		opacity: 1;
@@ -220,15 +228,6 @@ div.primary-msg
 		position: absolute;
 		top:14px;
 		color: #fff;
-		/* font-size: 30px; */
-	}
-	div.nav-main
-	{
-		display: none;
-	}
-	div.social-media
-	{
-		display: none;
 	}
 
 }
