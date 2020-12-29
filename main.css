@@ -33,6 +33,7 @@ nav
 	justify-content: space-between;
 	align-items: center;
 }
+
 /*  --------------- navbar - navbar main ---------------- */
 div.nav-main
 {
@@ -76,7 +77,6 @@ nav div.nav-main ul li a:hover i
 
 
 /*  --------------- navbar-  social media ---------------- */
-
 nav div.social-media ul
 {
 	padding: 0;
@@ -100,6 +100,7 @@ nav div.social-media ul li a:hover
 {
 	color: red;
 }
+
 /*  --------------- navbar- mobile toggle ---------------- */
 #mobile-toggle 
 {
@@ -195,6 +196,8 @@ div.primary-msg
 		flex-direction: row;
 		justify-content: space-between;
 	}
+	
+	/*  --------------- navbar ---------------- */
 	#mobile-toggle 
 	{
 		margin:0 ;
