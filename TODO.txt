@@ -1,0 +1,15 @@
+-CODE
+	-NAVBAR Mobile
+	-Picture.
+
+-Dynamic Text when I mouse over.
+
+
+
+
+
+=================================================
+-DESIGN
+	-Font
+	-Background
+	-Website Icon

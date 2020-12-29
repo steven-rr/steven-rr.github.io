@@ -102,26 +102,10 @@ nav div.social-media ul li a:hover
 /*  --------------- navbar- mobile toggle ---------------- */
 #mobile-toggle 
 {
+	display:none;
+	
+}
 
-	margin:0 ;
-	padding: 0;
-	position: absolute;
-	display: block;
-	left: 87%;
-	top: 0;
-	height: 10%;
-	width: 10%;
-	text-decoration:none;
-	color: #fff;
-	opacity: 0;
-}
-#mobile-toggle i 
-{
-	position: absolute;
-	top:14px;
-	color: #fff;
-	/* font-size: 30px; */
-}
 
 /*  --------------- main body ---------------- */
 /*  --------------- main body container ---------------- */
@@ -150,8 +134,8 @@ div.primary-msg
 
 
 
-/* ############### mobile nav bar ###################*/
-@media screen and (max-width: 990px)
+/* ############### tablet nav bar ###################*/
+@media screen and (max-width: 990px) and (min-width: 551px)
 {
 	/*  --------------- navbar ---------------- */
 	nav
@@ -162,15 +146,6 @@ div.primary-msg
 		top:0;
 		flex-direction: row;
 		justify-content: space-between;
-	}
-	div.container-main
-	{
-		position: fixed;
-		left: 0;
-		top: 60px;
-		width: 100%;
-		margin: 0;
-		padding: 0;
 	}
 	/*  --------------- navbar main ---------------- */
 	div.nav-main
@@ -201,5 +176,87 @@ div.primary-msg
 	{
 		text-decoration: none;
 	}
+}
+
+
+
+/* ############### mobile nav bar ###################*/
+@media screen and (max-width: 550px)
+{
+	/*  --------------- navbar ---------------- */
+	nav
+	{
+		height: 60px;
+		width: 100%;
+		position: fixed;
+		top:0;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	#mobile-toggle 
+	{
+		margin:0 ;
+		padding: 0;
+		position: absolute;
+		display: block;
+		left: 87%;
+		top: 0;
+		height: 10%;
+		width: 10%;
+		text-decoration:none;
+		color: #fff;
+		opacity: 1;
+	}
+	#mobile-toggle i 
+	{
+		position: absolute;
+		top:14px;
+		color: #fff;
+		/* font-size: 30px; */
+	}
+	div.nav-main
+	{
+		display: none;
+	}
+	div.social-media
+	{
+		display: none;
+	}
+
+}
+
+
+/* ############### tablet body ###################*/
+@media screen and (max-width: 990px) and (min-width: 551px)
+{
+	/*  --------------- main body ---------------- */
+	/*  --------------- main body container ---------------- */
+	div.container-main
+	{
+		position: fixed;
+		left: 0;
+		top: 60px;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+/* ############### mobile body ###################*/
+@media screen and (max-width: 550px)
+{
+	/*  --------------- main body ---------------- */
+	/*  --------------- main body container ---------------- */
+	div.container-main
+	{
+		position: fixed;
+		left: 0;
+		top: 60px;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		
+	}
+
 
 }
