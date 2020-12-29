@@ -27,7 +27,8 @@ nav
 	display:flex;
 	width: 60px;
 	height: 100%;
-	position: fixed;
+	min-height: 500px;
+	position: absolute;
 	top:0;
 	flex-direction: column;
 	justify-content: space-between;
@@ -144,6 +145,7 @@ div.primary-msg
 	nav
 	{
 		height: 60px;
+		min-height: 0 ;
 		width: 100%;
 		position: fixed;
 		top:0;
@@ -190,6 +192,7 @@ div.primary-msg
 	nav
 	{
 		height: 60px;
+		min-height: 0 ;
 		width: 100%;
 		position: fixed;
 		top:0;
