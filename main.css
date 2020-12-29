@@ -206,6 +206,7 @@ div.primary-msg
 		display: block;
 		top: 60px;
 		left: 100%;
+		overflow: hidden;
 		height: 60px;
 		background-color: black;
 		width: 100%;
