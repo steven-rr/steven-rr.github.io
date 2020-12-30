@@ -12,12 +12,12 @@ nav_li = nav_ul.children;
 
 // MOBILE:
 nav_li[0].children[0].addEventListener("click",runNavClick0);
-nav_li[0].children[0].addEventListener("mouseover",runNavHover0);
-nav_li[0].children[0].addEventListener("mouseout",runNavHoverRm0);
+// nav_li[0].children[0].addEventListener("mouseover",runNavHover0);
+// nav_li[0].children[0].addEventListener("mouseout",runNavHoverRm0);
 
 nav_li[1].children[0].addEventListener("click",runNavClick1);
-nav_li[1].children[0].addEventListener("mouseover",runNavHover1);
-nav_li[1].children[0].addEventListener("mouseout",runNavHoverRm1);
+// nav_li[1].children[0].addEventListener("mouseover",runNavHover1);
+// nav_li[1].children[0].addEventListener("mouseout",runNavHoverRm1);
 
 
 // WEB ONLY:
@@ -32,8 +32,14 @@ nav_li[1].children[0].addEventListener("mouseout",runNavHoverRm1);
 function runNavClick0(e)
 {
     let anchor = nav_li[0].children[0];
-    anchor.style.opacity ="1";
-    anchor.classList.remove("text-home");
+    anchor.style.opacity ="0";
+    anchor.classList.add("text-home");
+    if(e.persisted)
+    {
+        console.log("hello!");
+        anchor.style.opacity ="1";
+        anchor.classList.remove("text-about");
+    }
 }
 function runNavClick1(e)
 {
