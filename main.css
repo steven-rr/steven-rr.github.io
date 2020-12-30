@@ -1,6 +1,10 @@
 
 /* ############### Universal  ###################*/
+html
+{
+	background-color: rgb(3, 8, 59);
 
+}
 html, body
 {
 	margin:0;
