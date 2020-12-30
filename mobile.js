@@ -1,3 +1,16 @@
+// NAV BAR: 
+// TODO : fa-bar slider animation transition.
+// TODO: hover text.
+// UNIVERSAL: 
+// TODO: Page transitions.
+// TODO: Thinking page in between page transitions.
+
+
+// STYLE:
+// NAV BAR:
+// Hover Text FONT style. 
+// Hover Text FONT color.
+
 //TODO: add graphics on mouse over icon. (sort of done, need to make more efficient)
 //TODO: add fa-bars slider  (sort of done, somehow need to do a better animation here.)
 //TODO: increase fa-bars slider size. (DONE)
