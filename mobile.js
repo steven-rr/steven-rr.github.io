@@ -15,11 +15,9 @@ nav_li[0].children[0].addEventListener("click",runNavClick0);
 nav_li[0].children[0].addEventListener("mouseover",runNavHover0);
 nav_li[0].children[0].addEventListener("mouseout",runNavHoverRm0);
 
-// nav_li[1].children[0].addEventListener("click",runNavClick1);
-// nav_li[1].children[0].addEventListener("mouseover",runNavHover1);
-// nav_li[1].children[0].addEventListener("mouseout",runNavHoverRm1);
-let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
-nav_li[1].children[0].addEventListener(touchEvent,runNavClick1);
+nav_li[1].children[0].addEventListener("click",runNavClick1);
+nav_li[1].children[0].addEventListener("mouseover",runNavHover1);
+nav_li[1].children[0].addEventListener("mouseout",runNavHoverRm1);
 
 
 // WEB ONLY:
@@ -42,6 +40,12 @@ function runNavClick1(e)
     let anchor = nav_li[1].children[0];
     anchor.style.opacity ="0";
     anchor.classList.add("text-about");
+    if(e.persisted)
+    {
+        console.log("hello!");
+        anchor.style.opacity ="1";
+        anchor.classList.remove("text-about");
+    }
 }
 
 
@@ -50,7 +54,6 @@ var count = 0;
 function runNavClick(e)
 {
     nav_main = document.querySelector(".nav-main");
-    console.log("hello");
     if( (count % 2) === 0)
     {
         // nav_main.style.opacity = "1.0";
@@ -78,14 +81,12 @@ function runNavClick(e)
 
 function runNavHover0(e)
 {
-    console.log("hello");
     let anchor = nav_li[0].children[0];
     anchor.style.opacity ="0";
     anchor.classList.add("text-home");
 }
 function runNavHoverRm0(e)
 {
-    console.log("hello");
     let anchor = nav_li[0].children[0];
     anchor.style.opacity ="1";
     anchor.classList.remove("text-home");
@@ -93,7 +94,6 @@ function runNavHoverRm0(e)
 
 function runNavHover1(e)
 {
-    console.log("hello");
     let anchor = nav_li[1].children[0];
     anchor.style.opacity ="0";
     anchor.classList.add("text-about");
@@ -101,7 +101,6 @@ function runNavHover1(e)
 
 function runNavHoverRm1(e)
 {
-    console.log("hello");
     let anchor = nav_li[1].children[0];
     anchor.style.opacity ="1";
     anchor.classList.remove("text-about");
@@ -110,7 +109,6 @@ function runNavHoverRm1(e)
 
 function runNavHover2(e)
 {
-    console.log("hello");
     let anchor = nav_li[2].children[0];
     anchor.style.opacity ="0";
     anchor.classList.add("text-skills");
@@ -118,7 +116,6 @@ function runNavHover2(e)
 
 function runNavHoverRm2(e)
 {
-    console.log("hello");
     let anchor = nav_li[2].children[0];
     anchor.style.opacity ="1";
     anchor.classList.remove("text-skills");
@@ -126,7 +123,6 @@ function runNavHoverRm2(e)
 
 function runNavHover3(e)
 {
-    console.log("hello");
     let anchor = nav_li[3].children[0];
     anchor.style.opacity ="0";
     anchor.classList.add("text-work");
@@ -134,7 +130,6 @@ function runNavHover3(e)
 
 function runNavHoverRm3(e)
 {
-    console.log("hello");
     let anchor = nav_li[3].children[0];
     anchor.style.opacity ="1";
     anchor.classList.remove("text-work");
@@ -142,7 +137,6 @@ function runNavHoverRm3(e)
 
 function runNavHover4(e)
 {
-    console.log("hello");
     let anchor = nav_li[4].children[0];
     anchor.style.opacity ="0";
     anchor.classList.add("text-contact");
@@ -150,7 +144,6 @@ function runNavHover4(e)
 
 function runNavHoverRm4(e)
 {
-    console.log("hello");
     let anchor = nav_li[4].children[0];
     anchor.style.opacity ="1";
     anchor.classList.remove("text-contact");
