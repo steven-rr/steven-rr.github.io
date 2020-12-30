@@ -10,20 +10,25 @@ var nav_ul = document.getElementById("navHover");
 
 nav_li = nav_ul.children;
 
+// MOBILE:
 nav_li[0].children[0].addEventListener("click",runNavClick0);
 nav_li[0].children[0].addEventListener("mouseover",runNavHover0);
 nav_li[0].children[0].addEventListener("mouseout",runNavHoverRm0);
 
-nav_li[1].children[0].addEventListener("click",runNavClick1);
-nav_li[1].children[0].addEventListener("mouseover",runNavHover1);
-nav_li[1].children[0].addEventListener("mouseout",runNavHoverRm1);
+// nav_li[1].children[0].addEventListener("click",runNavClick1);
+// nav_li[1].children[0].addEventListener("mouseover",runNavHover1);
+// nav_li[1].children[0].addEventListener("mouseout",runNavHoverRm1);
+let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
+nav_li[1].children[0].addEventListener(touchEvent,runNavClick1);
 
-nav_li[2].children[0].addEventListener("mouseover",runNavHover2);
-nav_li[2].children[0].addEventListener("mouseout",runNavHoverRm2);
-nav_li[3].children[0].addEventListener("mouseover",runNavHover3);
-nav_li[3].children[0].addEventListener("mouseout",runNavHoverRm3);
-nav_li[4].children[0].addEventListener("mouseover",runNavHover4);
-nav_li[4].children[0].addEventListener("mouseout",runNavHoverRm4);
+
+// WEB ONLY:
+// nav_li[2].children[0].addEventListener("mouseover",runNavHover2);
+// nav_li[2].children[0].addEventListener("mouseout",runNavHoverRm2);
+// nav_li[3].children[0].addEventListener("mouseover",runNavHover3);
+// nav_li[3].children[0].addEventListener("mouseout",runNavHoverRm3);
+// nav_li[4].children[0].addEventListener("mouseover",runNavHover4);
+// nav_li[4].children[0].addEventListener("mouseout",runNavHoverRm4);
 
 
 function runNavClick0(e)
@@ -36,6 +41,7 @@ function runNavClick1(e)
 {
     let anchor = nav_li[1].children[0];
     anchor.style.opacity ="0";
+    anchor.classList.add("text-about");
 }
 
 
