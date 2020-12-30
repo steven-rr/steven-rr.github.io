@@ -10,11 +10,14 @@ var nav_ul = document.getElementById("navHover");
 
 nav_li = nav_ul.children;
 
-
+nav_li[0].children[0].addEventListener("click",runNavClick0);
 nav_li[0].children[0].addEventListener("mouseover",runNavHover0);
 nav_li[0].children[0].addEventListener("mouseout",runNavHoverRm0);
+
+nav_li[1].children[0].addEventListener("click",runNavClick1);
 nav_li[1].children[0].addEventListener("mouseover",runNavHover1);
 nav_li[1].children[0].addEventListener("mouseout",runNavHoverRm1);
+
 nav_li[2].children[0].addEventListener("mouseover",runNavHover2);
 nav_li[2].children[0].addEventListener("mouseout",runNavHoverRm2);
 nav_li[3].children[0].addEventListener("mouseover",runNavHover3);
@@ -23,7 +26,17 @@ nav_li[4].children[0].addEventListener("mouseover",runNavHover4);
 nav_li[4].children[0].addEventListener("mouseout",runNavHoverRm4);
 
 
-
+function runNavClick0(e)
+{
+    let anchor = nav_li[0].children[0];
+    anchor.style.opacity ="1";
+    anchor.classList.remove("text-home");
+}
+function runNavClick1(e)
+{
+    let anchor = nav_li[1].children[0];
+    anchor.style.opacity ="0";
+}
 
 
 // if user has clicked even amount of times, then show , else , don't show. 
@@ -63,11 +76,6 @@ function runNavHover0(e)
     let anchor = nav_li[0].children[0];
     anchor.style.opacity ="0";
     anchor.classList.add("text-home");
-    runNavHoverRm1();
-    runNavHoverRm2();
-    runNavHoverRm3();
-    runNavHoverRm4();
-
 }
 function runNavHoverRm0(e)
 {
@@ -83,10 +91,6 @@ function runNavHover1(e)
     let anchor = nav_li[1].children[0];
     anchor.style.opacity ="0";
     anchor.classList.add("text-about");
-    runNavHoverRm0();
-    runNavHoverRm2();
-    runNavHoverRm3();
-    runNavHoverRm4();
 }
 
 function runNavHoverRm1(e)
@@ -104,10 +108,6 @@ function runNavHover2(e)
     let anchor = nav_li[2].children[0];
     anchor.style.opacity ="0";
     anchor.classList.add("text-skills");
-    runNavHoverRm0();
-    runNavHoverRm1();
-    runNavHoverRm3();
-    runNavHoverRm4();
 }
 
 function runNavHoverRm2(e)
@@ -124,10 +124,6 @@ function runNavHover3(e)
     let anchor = nav_li[3].children[0];
     anchor.style.opacity ="0";
     anchor.classList.add("text-work");
-    runNavHoverRm0();
-    runNavHoverRm1();
-    runNavHoverRm2();
-    runNavHoverRm4();
 }
 
 function runNavHoverRm3(e)
@@ -144,10 +140,6 @@ function runNavHover4(e)
     let anchor = nav_li[4].children[0];
     anchor.style.opacity ="0";
     anchor.classList.add("text-contact");
-    runNavHoverRm0();
-    runNavHoverRm1();
-    runNavHoverRm2();
-    runNavHoverRm3();
 }
 
 function runNavHoverRm4(e)
