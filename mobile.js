@@ -1,8 +1,11 @@
+// FINISH -- NAV BAR.
+// take weekend to build out body. 
+
 // NAV BAR: 
 // TODO : fa-bar slider animation transition.
 // TODO: hover text.
 // UNIVERSAL: 
-// TODO: Page transitions.
+// TODO: Page transitions, fadeout. 
 // TODO: Thinking page in between page transitions.
 
 
