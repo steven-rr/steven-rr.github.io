@@ -1,0 +1,362 @@
+/* ############### Desktop - Navigation  ###################*/
+/*  --------------- navbar ---------------- */
+nav
+{
+	background-color: black;
+	display:flex;
+	width: 100px;
+	height: 100%;
+	min-height: 615px;
+	position: fixed;
+	top:0;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/*  --------------- navbar - navbar SR icon ---------------- */
+.nav-SR-icon
+{
+	padding: 0;
+
+	margin: 0;
+	display:inline-block; 
+	width: 100px;
+	height: 88.391px;
+
+}
+
+.nav-SR-icon-img
+{
+	display: none;
+	padding: 0;
+	margin: 0;
+	width: 100px;
+	height: 88.391px;
+}
+.nav-SR-icon-a
+{
+	display: flex;
+	padding:0 ;
+	margin: 0;
+	width: 100px;
+	height: 88.391px;
+}
+
+/*  --------------- navbar - navbar main ---------------- */
+
+
+.nav-main
+{
+	width: 100%;
+	height: 300px;
+}
+
+.nav-main-ul
+{
+	width: 100%;
+	height: 300px;
+	padding: 0;
+	margin: 0;
+	display:flex;
+	flex-direction: column;
+	list-style-type: none;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+
+}
+.nav-main-li
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 20%;
+    border-top: 0.1px inset gray;
+
+}
+.nav-main-li-end
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 20%;
+	border-top: 0.1px inset gray;
+    border-bottom: 0.1px outset gray;
+}
+
+.nav-main-a
+{
+	display: flex; 
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	text-decoration: none;
+	font-family: Arial;
+	font-size: smaller;
+	width : 60px; 
+	height: 30px;
+}
+.nav-main-a-active
+{
+	color: #00ffff;
+	opacity: 1;
+	width : 60px; 
+	height: 30px;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	/* ...and now for the proper property */
+	transition:.3s ease-in;
+
+}
+.nav-main-a:active,
+.nav-main-a:hover
+{
+	color: #00ffff;
+	opacity: 1;
+	width : 60px; 
+	height: 30px;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	/* ...and now for the proper property */
+	transition:.3s ease-in;
+}
+
+
+
+
+/*  --------------- navbar-  social media ---------------- */
+.social-media-main-a
+{
+	
+}
+.social-media-main-ul
+{
+    list-style-type: none;
+	padding: 0;
+    color: #fff;
+
+}
+.social-media-main-li 
+{
+    
+	padding: 5px;
+}
+.social-media-main-a
+{
+	color: #fff;
+	text-decoration: none;
+	
+} 
+.social-media-main-i 
+{
+	font-size: 20px;
+}
+.social-media-main-a:hover
+{
+	color: #00ffff;
+}
+
+/* ############### Mobile - Navigation ###################*/
+@media screen and (max-width: 800px)
+{
+	/*  --------------- navbar ---------------- */
+	nav
+	{
+		/* position: absolute; */
+		position: absolute;
+		height: 100%;
+		min-height: 615px ;
+		width: 100%;
+		top:-10px;
+		opacity:0;
+		display: flex;
+		justify-content: space-between;
+		z-index: 0;
+		transition: all 0.1s ease-out; 
+
+	}
+	/*  --------------- navbar -  SR icon ---------------- */
+	.nav-SR-icon
+	{
+		display: none; /* turn off navbar "SR" icon for mobile*/
+	}
+
+	/*  --------------- navbar -  main ---------------- */
+	.nav-main
+	{
+		position: absolute;
+		top: 100px;
+		width: 100%;
+		height: 300px;
+
+	}	
+	.nav-main-ul
+	{
+		position: absolute;
+		width: 100%;
+		height: 300px;
+		padding: 0;
+		margin: 0;
+		display:flex;
+		flex-direction: column;
+		list-style-type: none;
+		justify-content: space-between;
+
+	}
+	.nav-main-li
+	{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 20%;
+		border-top: 0.1px inset gray;
+	
+	}
+	.nav-main-li-end
+	{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 20%;
+		border-top: 0.1px inset gray;
+		border-bottom: 0.1px outset gray;
+	}
+	
+	.nav-main-a
+	{
+		display: flex; 
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+		text-decoration: none;
+		font-family: Arial;
+		font-size: smaller;
+		width : 60px; 
+		height: 30px;
+	}
+	.nav-main-a-active
+	{
+		color: #00ffff;
+		opacity: 1;
+		width : 60px; 
+		height: 30px;
+		-o-transition:.5s;
+		-ms-transition:.5s;
+		-moz-transition:.5s;
+		-webkit-transition:.5s;
+		/* ...and now for the proper property */
+		transition:.3s ease-in;
+
+	}
+	.nav-main-a:active,
+	.nav-main-a:hover
+	{
+		color: #00ffff;
+		opacity: 1;
+		width : 60px; 
+		height: 30px;
+		-o-transition:.5s;
+		-ms-transition:.5s;
+		-moz-transition:.5s;
+		-webkit-transition:.5s;
+		/* ...and now for the proper property */
+		transition:.3s ease-in;
+	}
+	
+	/*  --------------- navbar-  social media ---------------- */
+	.social-media-main
+	{
+		position: absolute;
+		top: 600px;
+
+	}
+	.social-media-main-ul
+	{
+		display:flex;
+		list-style-type: none;
+		width: 100%;
+		height: 100px;
+		padding: 0;
+		margin: 0;
+		flex-direction: row;
+		list-style-type: none;
+		justify-content: space-between;
+
+	}
+	.social-media-main-li 
+	{
+		padding: 5px;
+	}
+	.social-media-main-a
+	{
+		color: #fff;
+		text-decoration: none;
+		
+	} 
+	.social-media-main-i 
+	{
+		font-size: 20px;
+	}
+	.social-media-main-a:hover
+	{
+		color: #00ffff;
+	}
+	
+	/*  --------------- navbar - mobile ---------------- */
+	.menu-buttn 
+	{
+		padding: 0;
+		position: absolute;
+		right: 20px;
+		top: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width:80px;
+		height: 88.391px;
+		text-decoration:none;
+		color: #fff;
+		z-index: 100;
+		opacity: 1;
+		cursor: pointer;
+	}
+
+	.menu-buttn-top
+	{
+		width: 30px;
+		height: 1px;
+		background: #fff;
+		border-radius: 5px;
+
+	}
+	.menu-buttn-top::after
+	{
+		content: '';
+		position: absolute;
+		text-align: center;
+		width: 30px;
+		height: 1px;
+		background: #fff;
+		border-radius: 5px;
+		transform: translateY(10px);
+	}
+
+	.menu-buttn.open .menu-buttn-top
+	{
+		transform: rotate(45deg) 
+	}	
+	.menu-buttn.open .menu-buttn-top::after
+	{
+		transform: rotate(90deg) 
+	}
+	
+}

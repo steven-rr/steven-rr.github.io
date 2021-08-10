@@ -1,0 +1,77 @@
+@media screen and (max-width: 800px)
+{	
+    /*  --------------- navbar - mobile ---------------- */
+	.menu-buttn 
+	{
+		padding: 0;
+		position: absolute;
+		right: 20px;
+		top: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width:80px;
+		height: 88.391px;
+		text-decoration:none;
+		color: #fff;
+		z-index: 100;
+		opacity: 1;
+        -o-transition:.5s;
+        -ms-transition:.5s;
+        -moz-transition:.5s;
+        -webkit-transition:.5s;
+        transition: .2s ease-out;
+		cursor: pointer;
+
+	}
+
+	.menu-buttn-top
+	{
+		width: 30px;
+		height: 1px;
+		background: #fff;
+		border-radius: 5px;
+        transition: all 0.2s ease-out;
+
+	}
+	.menu-buttn-top::after
+	{
+		content: '';
+		position: absolute;
+		text-align: center;
+		width: 30px;
+		height: 1px;
+		background: #fff;
+		border-radius: 5px;
+		transform: translateY(10px);
+        transition: all 0.2s ease-out;
+
+	}
+
+	.menu-buttn.open .menu-buttn-top
+	{
+		transform: rotate(45deg) ;
+        transition: all 0.2s ease-out;
+	}	
+	.menu-buttn.open .menu-buttn-top::after
+	{
+		transform: rotate(90deg) ;
+        transition: all 0.2s ease-out;
+	}
+
+    .transition .menu-buttn
+	{
+		transition:all 0.2s ease-out;
+	}	
+
+
+    .transition .menu-buttn.open .menu-buttn-top
+	{
+		transition: all 0.2s ease-out ;
+	}	
+	.transition .menu-buttn.open .menu-buttn-top::after
+	{
+		transition: all 0.2s ease-out;
+	}
+
+}
