@@ -22,24 +22,25 @@ function App()
   const name = 'Steven'
   // set menu open state.
   const [menuOpen, setMenuOpen] = useState(false);
+  const [fade, setFade]=  useState(false);
 
   //toggle menu click state.
   const handleMenuClick = () => {
+         setFade(true); 
          setMenuOpen(prevState =>
             {
                  return !prevState;
-             })
-          console.log("hi")
-          console.log(menuOpen)
-            
-     }
-  
+             })       
+     };
+  const onTransitionEnd = () => {
+          setFade(false); 
+        }; 
   // initialize desktop mode. 
   const desktopModeInit = () => {
-      var desktopMode = true;
+      var desktopMode = false;
       if(window.innerWidth > 800)
       {
-          desktopMode = true;
+          desktopMode = false;
       }
       else
       {
@@ -59,7 +60,7 @@ function App()
       if(window.innerWidth > 800)
       {
           setDesktopMode(() => {
-              return true;
+              return false;
           })
       }
       else
@@ -74,10 +75,13 @@ function App()
   return (
     <Router>
       <div className="App">
+        {console.log("start")}
         <NavButton 
           menuOpen={menuOpen}
           onClick = {handleMenuClick}
           desktopMode = {desktopMode}
+          fade = {fade}
+          onEnd = {onTransitionEnd}
         />
         <Navbar/>
         <Switch>
