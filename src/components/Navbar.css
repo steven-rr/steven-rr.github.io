@@ -171,7 +171,7 @@ nav
 	nav
 	{
 		/* position: absolute; */
-		position: absolute;
+		position: fixed;
 		height: 100%;
 		min-height: 615px ;
 		width: 100%;
