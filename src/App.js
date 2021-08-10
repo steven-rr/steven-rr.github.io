@@ -20,6 +20,15 @@ library.add(fab, faFacebookF)
 function App() 
 {
   const name = 'Steven'
+  // reset state when clicking a link in nav bar.
+  const [value, setValue]=  useState(0);
+  const submitHandler = e =>
+  {
+      setMenuOpen(false);
+      setFade(false);
+      setValue(value=> value+1);
+  }
+
   // set menu open state.
   const [menuOpen, setMenuOpen] = useState(false);
   const [fade, setFade]=  useState(false);
@@ -75,7 +84,6 @@ function App()
   return (
     <Router>
       <div className="App">
-        {console.log("start")}
         <NavButton 
           menuOpen={menuOpen}
           onClick = {handleMenuClick}
@@ -86,6 +94,7 @@ function App()
         <Navbar
           fade = {fade}
           menuOpen={menuOpen}
+          onClick ={submitHandler}
         />
         <Switch>
           <Route path="/" exact component = {Home} />

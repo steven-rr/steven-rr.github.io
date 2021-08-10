@@ -7,10 +7,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 
-const Navbar = ({fade, menuOpen}) => {
+
+
+
+const Navbar = ({fade, menuOpen, onClick}) => {
     return (
-        
-        <nav className={`navMenu ${menuOpen ? 'open' : '' }`}>
+        <nav className={`navMenu ${menuOpen ? 'open' : '' } ${fade ? 'transition': ''}`}>
             {/*insert steve website icon here*/}
              <div className="nav-SR-icon">
                 <Link to="/"  className="nav-SR-icon-a">
@@ -21,11 +23,11 @@ const Navbar = ({fade, menuOpen}) => {
             {/*insert nav bar main items here*/}
             <div className="nav-main">
                 <ul className = "nav-main-ul">
-                    <li className = "nav-main-li"><NavLink  exact to="/"  activeClassName="nav-main-a-active" className="nav-main-a"> HOME </NavLink></li>
-                    <li className = "nav-main-li"><NavLink  to="/about"  activeClassName="nav-main-a-active" className="nav-main-a"> ABOUT </NavLink></li>
-                    <li className = "nav-main-li"><NavLink  to="/skills" activeClassName="nav-main-a-active" className="nav-main-a"> SKILLS </NavLink></li>
-                    <li className = "nav-main-li"><NavLink  to="/work"  activeClassName="nav-main-a-active" className="nav-main-a"> WORK </NavLink></li>
-                    <li className = "nav-main-li-end"><NavLink to="/contact" activeClassName="nav-main-a-active" className="nav-main-a" > CONTACT </NavLink></li>
+                    <li className = "nav-main-li"><NavLink  exact to="/"  activeClassName="nav-main-a-active" className="nav-main-a" onClick={onClick}> HOME </NavLink></li>
+                    <li className = "nav-main-li"><NavLink  to="/about"  activeClassName="nav-main-a-active" className="nav-main-a" onClick={onClick}> ABOUT </NavLink></li>
+                    <li className = "nav-main-li"><NavLink  to="/skills" activeClassName="nav-main-a-active" className="nav-main-a" onClick={onClick}> SKILLS </NavLink></li>
+                    <li className = "nav-main-li"><NavLink  to="/work"  activeClassName="nav-main-a-active" className="nav-main-a" onClick={onClick}> WORK </NavLink></li>
+                    <li className = "nav-main-li-end"><NavLink to="/contact" activeClassName="nav-main-a-active" className="nav-main-a" onClick={onClick}> CONTACT </NavLink></li>
                 </ul>
 
             </div>
