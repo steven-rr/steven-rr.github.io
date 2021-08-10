@@ -1,9 +1,10 @@
 import React from 'react'
+import AboutCSS from './About.modules.css'
 
 function About() {
     return (
-        <div>
-            <h1>hello from about</h1>
+        <div className = "container-main">
+            <h1 className = "primary-msg">hello from about</h1>
         </div>
     )
 }
