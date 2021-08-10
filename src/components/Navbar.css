@@ -12,6 +12,7 @@ nav
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+	transition: all 0s;
 }
 
 /*  --------------- navbar - navbar SR icon ---------------- */
@@ -179,9 +180,21 @@ nav
 		display: flex;
 		justify-content: space-between;
 		z-index: 0;
-		transition: all 0.1s ease-out; 
 
 	}
+
+	.navMenu.open
+	{
+		top: 0;
+		opacity: 1;
+		z-index: 10;
+	}
+	.navMenu.transition
+	{
+		transition: 0.1s ease-out;
+	}
+
+	
 	/*  --------------- navbar -  SR icon ---------------- */
 	.nav-SR-icon
 	{
@@ -358,5 +371,6 @@ nav
 	{
 		transform: rotate(90deg) 
 	}
+	
 	
 }

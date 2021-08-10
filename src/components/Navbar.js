@@ -3,10 +3,14 @@ import SRicon from '../SR-icon.png'
 import {Link, NavLink} from 'react-router-dom'
 import './Navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-function Navbar() {
+
+
+
+
+const Navbar = ({fade, menuOpen}) => {
     return (
         
-        <nav className="navMenu">
+        <nav className={`navMenu ${menuOpen ? 'open' : '' }`}>
             {/*insert steve website icon here*/}
              <div className="nav-SR-icon">
                 <Link to="/"  className="nav-SR-icon-a">
@@ -40,6 +44,6 @@ function Navbar() {
         </nav>
        
 )
-}          
+}
 
 export default Navbar

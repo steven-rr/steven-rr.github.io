@@ -83,7 +83,10 @@ function App()
           fade = {fade}
           onEnd = {onTransitionEnd}
         />
-        <Navbar/>
+        <Navbar
+          fade = {fade}
+          menuOpen={menuOpen}
+        />
         <Switch>
           <Route path="/" exact component = {Home} />
           <Route path="/about"  component = {About} />
