@@ -1,5 +1,8 @@
 div.container-main
 {
+	
+	
+
 	left: 100px;
 	top: 0px;
 	width: 100%;
@@ -8,13 +11,16 @@ div.container-main
 	margin:0;
 	padding: 0;
 	background-color: rgb(3, 8, 59);
+
+	overflow-x: hidden;
+	overflow-y: scroll;
+	
 } 
 
 /*  --------------- main body primary msg ---------------- */
 
 div.primary-msg
 {
-	margin:0;
 	position: absolute;
 	top: 20%;
 	left: 150px;
@@ -22,6 +28,10 @@ div.primary-msg
 }
 
 h1
+{
+	color: #fff;
+}
+p
 {
 	color: #fff;
 }
