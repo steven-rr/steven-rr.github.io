@@ -6,7 +6,7 @@ import './NavButton.css'
 
 const NavButton = ({menuOpen, onClick, desktopMode, fade, onEnd}) => {
     return (
-        <div className = {`menu-buttn ${menuOpen ? 'open': ''} ${fade ? 'transition': ''}` } onClick={onClick} onTransitionEnd={onEnd} >
+        <div className = {`menu-buttn ${menuOpen ? 'open': ''} ${fade ? 'transition': ''}` } onTransitionEnd={onEnd} onClick={onClick}>
 			<div className={`menu-buttn-top ${fade ? 'transition': ''}` }></div>
 		</div>
     )

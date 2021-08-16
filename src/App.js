@@ -39,10 +39,14 @@ function App()
          setMenuOpen(prevState =>
             {
                  return !prevState;
-             })       
+             })   
+         console.log("fade_begin: ", fade);
+         console.log("menuOpen: ", menuOpen)
      };
   const onTransitionEnd = () => {
           setFade(false); 
+          console.log("fade_ended: ");
+          console.log(fade);
         }; 
   // initialize desktop mode. 
   const desktopModeInit = () => {
@@ -97,8 +101,8 @@ function App()
           onClick ={submitHandler}
         />
         <Switch>
+          <Route path="/build" component = {Home} />
           <Route path="/" exact component = {Home} />
-          <Route path="/index" component = {Home} />
           <Route path="/about"  component = {About} />
           <Route path="/contact"  component = {Contact} />
           <Route path="/skills"  component = {Skills} />
