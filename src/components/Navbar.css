@@ -324,53 +324,6 @@ nav
 		color: #00ffff;
 	}
 	
-	/*  --------------- navbar - mobile ---------------- */
-	.menu-buttn 
-	{
-		padding: 0;
-		position: absolute;
-		right: 20px;
-		top: 0;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width:80px;
-		height: 88.391px;
-		text-decoration:none;
-		color: #fff;
-		z-index: 100;
-		opacity: 1;
-		cursor: pointer;
-	}
-
-	.menu-buttn-top
-	{
-		width: 30px;
-		height: 1px;
-		background: #fff;
-		border-radius: 5px;
-
-	}
-	.menu-buttn-top::after
-	{
-		content: '';
-		position: absolute;
-		text-align: center;
-		width: 30px;
-		height: 1px;
-		background: #fff;
-		border-radius: 5px;
-		transform: translateY(10px);
-	}
-
-	.menu-buttn.open .menu-buttn-top
-	{
-		transform: rotate(45deg) 
-	}	
-	.menu-buttn.open .menu-buttn-top::after
-	{
-		transform: rotate(90deg) 
-	}
 	
 	
 }

@@ -1,5 +1,12 @@
+.menu-buttn 
+	{
+		height: 0;
+		width: 0;
+
+	}
+
 @media screen and (max-width: 800px)
-{	
+	{	
     /*  --------------- navbar - mobile ---------------- */
 	.menu-buttn 
 	{
@@ -19,7 +26,11 @@
 		cursor: pointer;
 
 	}
-
+	.menu-buttn.transition 
+	{
+		transition:all 0.2s ease-out;
+	}	
+	
 	.menu-buttn-top
 	{
 		width: 30px;

@@ -1,4 +1,4 @@
-import React , {useState} from 'react'
+import React from 'react'
 import SRicon from '../SR-icon.png'
 import {Link, NavLink} from 'react-router-dom'
 import './Navbar.css'

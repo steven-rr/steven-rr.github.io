@@ -10,7 +10,6 @@ import React , {useState} from 'react'
 
 import {fab} from '@fortawesome/free-brands-svg-icons'
 import {faFacebookF} from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
@@ -19,7 +18,6 @@ library.add(fab, faFacebookF)
 
 function App() 
 {
-  const name = 'Steven'
   // reset state when clicking a link in nav bar.
   const [value, setValue]=  useState(0);
   const submitHandler = e =>
@@ -44,56 +42,20 @@ function App()
          console.log("menuOpen: ", menuOpen)
      };
   const onTransitionEnd = () => {
-          setFade(false); 
           console.log("fade_ended: ");
+          setFade(false); 
           console.log(fade);
         }; 
-  // initialize desktop mode. 
-  const desktopModeInit = () => {
-      var desktopMode = false;
-      if(window.innerWidth > 800)
-      {
-          desktopMode = false;
-      }
-      else
-      {
-          desktopMode = false;
-      }
-      return desktopMode;
-  };
-  
-  // set desktkopMode.
-  const [desktopMode, setDesktopMode] = useState(desktopModeInit);
-  
-  // add event listener and toggler.
-  window.addEventListener('resize', desktopModeToggle);
-  function desktopModeToggle()
-  {
-      
-      if(window.innerWidth > 800)
-      {
-          setDesktopMode(() => {
-              return false;
-          })
-      }
-      else
-      {
-          setDesktopMode( () => {
-              return false;
-          })
-      }
-      return desktopMode;
-  };
+
 
   return (
     <Router>
       <div className="App">
         <NavButton 
           menuOpen={menuOpen}
-          onClick = {handleMenuClick}
-          desktopMode = {desktopMode}
-          fade = {fade}
-          onEnd = {onTransitionEnd}
+          onClick={handleMenuClick}
+          fade={fade}
+          onEnd={onTransitionEnd}
         />
         <Navbar
           fade = {fade}
@@ -101,7 +63,6 @@ function App()
           onClick ={submitHandler}
         />
         <Switch>
-          <Route path="/build" component = {Home} />
           <Route path="/" exact component = {Home} />
           <Route path="/about"  component = {About} />
           <Route path="/contact"  component = {Contact} />
