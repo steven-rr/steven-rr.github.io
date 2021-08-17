@@ -33,18 +33,24 @@ function App()
 
   //toggle menu click state.
   const handleMenuClick = () => {
+         console.log("fade_begin_before: ", fade);
          setFade(true); 
+         console.log("fade_begin: ", fade);
          setMenuOpen(prevState =>
             {
                  return !prevState;
              })   
-         console.log("fade_begin: ", fade);
          console.log("menuOpen: ", menuOpen)
      };
-  const onTransitionEnd = () => {
-          console.log("fade_ended: ");
-          setFade(false); 
-          console.log(fade);
+  const onTransitionEnd = (e) => {
+          if(e.pseudoElement == "::after")
+          {
+            console.log("fade_ended_before: ", fade);
+            setFade(false); 
+            console.log("fade_ended: ", fade);
+
+          }
+          
         }; 
 
 

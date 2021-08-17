@@ -29,8 +29,8 @@
 	.menu-buttn.transition 
 	{
 		transition:all 0.2s ease-out;
-	}	
-	
+	}		
+
 	.menu-buttn-top
 	{
 		width: 30px;
@@ -51,29 +51,27 @@
 		transform: translateY(10px);
 
 	}
-
-	.menu-buttn.open .menu-buttn-top
+	
+	
+	.menu-buttn-top.open
 	{
 		transform: rotate(45deg) ;
+		transition: inherit;
 	}	
-	.menu-buttn.open .menu-buttn-top::after
+	.menu-buttn-top.open::after
 	{
 		transform: rotate(90deg) ;
+		transition: inherit;
 	}
-
-    .menu-buttn.transition 
+	
+	.menu-buttn-top.closed,
+	.menu-buttn-top.closed::after
 	{
-		transition:all 0.2s ease-out;
-	}	
-
-    .menu-buttn-top.transition
-    {
-        transition:all 0.2s ease-out;
-    }
-    .menu-buttn-top::after.transition
-    {
-        transition:all 0.2s ease-out;
-    }
+		transform: 0;
+		transition: inherit;
+	}
+	
+    
    
 
 }
