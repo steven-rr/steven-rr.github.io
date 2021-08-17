@@ -22,27 +22,29 @@ function App()
   const [value, setValue]=  useState(0);
   const submitHandler = e =>
   {
-      setMenuOpen(false);
-      setFade(false);
-      setValue(value=> value+1);
+    setState( currentState => {
+      return { ...currentState, fade: false, menuOpen: false}
+    })
+    setValue(value=> value+1);
+    console.log("WOW")
   }
 
-  // set menu open state.
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [fade, setFade]=  useState(false);
+  // set menu bar state.
+  const[state, setState] = useState({menuOpen: false, fade: true});
 
   //toggle menu click state.
   const handleMenuClick = () => {
-         setFade(true); 
-         setMenuOpen(prevState =>
-            {
-                 return !prevState;
-             })   
+         setState( currentState => {
+           return { ...currentState, fade: true, menuOpen: !currentState.menuOpen}
+         })
      };
+  // when transition ends, end transition (set fade to false)
   const onTransitionEnd = (e) => {
           if(e.pseudoElement == "::after")
           {
-            setFade(false); 
+            setState(currentState => {
+              return {...currentState, fade: false}
+            })
           }
           
         }; 
@@ -52,14 +54,14 @@ function App()
     <Router>
       <div className="App">
         <NavButton 
-          menuOpen={menuOpen}
+          menuOpen={state.menuOpen}
           onClick={handleMenuClick}
-          fade={fade}
+          fade={state.fade}
           onEnd={onTransitionEnd}
         />
         <Navbar
-          fade = {fade}
-          menuOpen={menuOpen}
+          fade = {state.fade}
+          menuOpen={state.menuOpen}
           onClick ={submitHandler}
         />
         <Switch>
