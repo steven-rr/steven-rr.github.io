@@ -19,6 +19,22 @@
 	min-height: 615px;
 	left: 50%;
 }
+.aboutPicContainer
+{
+	width: 50%;
+	height: 100%;
+	min-height: 615px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.aboutPic
+{
+	width: 50%;	
+	height: 50%;
+}
+
+
 h1
 {
 	color: #fff;

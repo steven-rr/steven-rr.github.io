@@ -6,7 +6,9 @@ function Home() {
     return (
         <div className = {HomeCSS.containerMain}>
              <div className = {HomeCSS.primaryMsg}>
-                <h1>Steven Rivadeneira</h1>
+                <div className = {HomeCSS.headerClass}> Steven Rivadeneira </div>
+                <div className = {HomeCSS.subtitleClass}>Engineer | Developer | Lifelong-learner </div>
+                <button className= {HomeCSS.buttonClass}> Learn More</button>
              </div>
              <div className = {HomeCSS.primaryBGpic}>
                 <img className = {HomeCSS.BGpic} src= {landingPagePic1}/>
