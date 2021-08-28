@@ -5,6 +5,9 @@ import verticalAboutPic from '../verticalAboutPic.JPG'
 function About() {
     return (
         <div className = {AboutCSS.containerMain}>
+             <div className = {AboutCSS.aboutPicContainer}>
+                <img className = {AboutCSS.aboutPic} src= {verticalAboutPic}/>
+             </div>
              <div className = {AboutCSS.primaryMsg}>
                 <h1 className={AboutCSS.h1}>My passion and focus is engineering a better world</h1>
                 <p> I am Steven Rivadeneira, born in Lima, Peru, raised in Miami, FL. I have spent many years in a variety of locations in the U.S learning about technology, making friends, and trying to make a difference in the world.</p>
@@ -13,9 +16,7 @@ function About() {
 
                     <p>I spent my college years in Boston, MA, pursuing a Bachelor's Degree in Aerospace Engineering from the Massachusetts Institute of Technology (MIT). I'm currently a Guidance Navigation and Control Engineer, developing algorithms in C++ for Lockheed Martin aircraft, while pursuing a Master's in Aerospace Engineering from Georgia Tech.
                 </p>
-             </div>
-             <div className = {AboutCSS.aboutPicContainer}>
-                <img className = {AboutCSS.aboutPic} src= {verticalAboutPic}/>
+                <button className= {AboutCSS.buttonClass}> Contact </button>
              </div>
         </div>
     )

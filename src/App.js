@@ -3,7 +3,7 @@ import NavButton from "./components/NavButton"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
 import Home from "./pages/Home"
-import Skills from "./pages/Skills"
+import Timeline from "./pages/Timeline"
 import Work from "./pages/Work"
 import {library} from '@fortawesome/fontawesome-svg-core'
 import React , {useState} from 'react'
@@ -32,7 +32,7 @@ function App()
       <div className="App">
         <Home></Home>
         <About></About>
-        <Skills></Skills>
+        <Timeline></Timeline>
         <Work></Work>
       </div>
     </Router>
