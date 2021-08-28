@@ -1,10 +1,11 @@
 import React from 'react'
+import WorkCSS from './Work.module.css'
 
 function Work() {
     return (
-        <div className = "container-main">
-             <div className = "primary-msg">
-                <h1>hello from portfolio</h1>
+        <div className={WorkCSS.containerMain}>
+             <div className={WorkCSS.primaryMsg}>
+                <h1> Portfolio</h1>
              </div>
         </div>
     )

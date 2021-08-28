@@ -1,10 +1,11 @@
 import React from 'react'
+import SkillsCSS from './Skills.module.css'
 
 function Skills() {
     return (
-        <div className = "container-main">
-             <div className = "primary-msg">
-                <h1>hello from skills</h1>
+        <div className = {SkillsCSS.containerMain}>
+             <div className = {SkillsCSS.primaryMsg}>
+                <h1>TimeLine</h1>
              </div>
         </div>
     )

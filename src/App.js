@@ -30,16 +30,11 @@ function App()
   return (
     <Router>
       <div className="App">
-        <Navbar onClick ={submitHandler}/>
-        <Switch>
-          <Route path="/" exact component = {Home} />
-          <Route path="/about"  component = {About} />
-          <Route path="/contact"  component = {Contact} />
-          <Route path="/skills"  component = {Skills} />
-          <Route path="/work"  component = {Work} />
-
-        </Switch>
-             </div>
+        <Home></Home>
+        <About></About>
+        <Skills></Skills>
+        <Work></Work>
+      </div>
     </Router>
   );
 }
