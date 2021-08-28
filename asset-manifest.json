@@ -1,25 +1,29 @@
 {
   "files": {
-    "main.css": "./static/css/main.ae5f0f90.chunk.css",
-    "main.js": "./static/js/main.6c9b035e.chunk.js",
-    "main.js.map": "./static/js/main.6c9b035e.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.7a419ca9.js",
-    "runtime-main.js.map": "./static/js/runtime-main.7a419ca9.js.map",
-    "static/js/2.75c3291d.chunk.js": "./static/js/2.75c3291d.chunk.js",
-    "static/js/2.75c3291d.chunk.js.map": "./static/js/2.75c3291d.chunk.js.map",
-    "static/js/3.1569aba7.chunk.js": "./static/js/3.1569aba7.chunk.js",
-    "static/js/3.1569aba7.chunk.js.map": "./static/js/3.1569aba7.chunk.js.map",
+    "main.css": "./static/css/main.ca2a3e5d.chunk.css",
+    "main.js": "./static/js/main.71628917.chunk.js",
+    "main.js.map": "./static/js/main.71628917.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.73d775bb.js",
+    "runtime-main.js.map": "./static/js/runtime-main.73d775bb.js.map",
+    "static/js/2.80915c2c.chunk.js": "./static/js/2.80915c2c.chunk.js",
+    "static/js/2.80915c2c.chunk.js.map": "./static/js/2.80915c2c.chunk.js.map",
+    "static/js/3.868bd0bd.chunk.js": "./static/js/3.868bd0bd.chunk.js",
+    "static/js/3.868bd0bd.chunk.js.map": "./static/js/3.868bd0bd.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.ae5f0f90.chunk.css.map": "./static/css/main.ae5f0f90.chunk.css.map",
-    "static/js/2.75c3291d.chunk.js.LICENSE.txt": "./static/js/2.75c3291d.chunk.js.LICENSE.txt",
+    "static/css/main.ca2a3e5d.chunk.css.map": "./static/css/main.ca2a3e5d.chunk.css.map",
+    "static/js/2.80915c2c.chunk.js.LICENSE.txt": "./static/js/2.80915c2c.chunk.js.LICENSE.txt",
+    "static/media/GT_logo.svg.69942b55.png": "./static/media/GT_logo.svg.69942b55.png",
+    "static/media/LM_logo.023f9295.png": "./static/media/LM_logo.023f9295.png",
+    "static/media/MDC_logo.21ac9752.png": "./static/media/MDC_logo.21ac9752.png",
     "static/media/SR-icon.6e602dfc.png": "./static/media/SR-icon.6e602dfc.png",
+    "static/media/binera_logo.427901aa.png": "./static/media/binera_logo.427901aa.png",
     "static/media/landingPagePic1.8cbad022.JPG": "./static/media/landingPagePic1.8cbad022.JPG",
     "static/media/verticalAboutPic.0bc4b0a0.JPG": "./static/media/verticalAboutPic.0bc4b0a0.JPG"
   },
   "entrypoints": [
-    "static/js/runtime-main.7a419ca9.js",
-    "static/js/2.75c3291d.chunk.js",
-    "static/css/main.ae5f0f90.chunk.css",
-    "static/js/main.6c9b035e.chunk.js"
+    "static/js/runtime-main.73d775bb.js",
+    "static/js/2.80915c2c.chunk.js",
+    "static/css/main.ca2a3e5d.chunk.css",
+    "static/js/main.71628917.chunk.js"
   ]
 }
