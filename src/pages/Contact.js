@@ -1,5 +1,7 @@
 import React from 'react'
 import ContactCSS from './Contact.module.css'
+
+// TODO: gray out and on hover make it light up. also add color to title and to boxes.
 function Contact() {
     return (
         <div className = {ContactCSS.containerMain}>
