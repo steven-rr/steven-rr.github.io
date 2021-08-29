@@ -34,6 +34,7 @@ function App()
         <About></About>
         <Timeline></Timeline>
         <Work></Work>
+        <Contact></Contact>
       </div>
     </Router>
   );

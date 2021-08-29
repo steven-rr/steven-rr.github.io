@@ -7,8 +7,8 @@ const TimelineItem = ({companyName, positionName, logoImg, startDate, endDate, s
                 <img className = {TimelineItemCSS.logo} src= {logoImg}/>
             </div>
             <div className={TimelineItemCSS.textContainer}>
-                <div className={TimelineItemCSS.textClass}> {companyName}</div>
-                <div className={TimelineItemCSS.textClass}> {positionName} </div>
+                <div className={TimelineItemCSS.titleClass}> {companyName}</div>
+                <div className={TimelineItemCSS.titleClass}> {positionName} </div>
                 <div className={TimelineItemCSS.textClass}> {startDate} - {endDate} </div>
                 <ul className={TimelineItemCSS.textClass}>
                     <li>{sentence1}</li>
