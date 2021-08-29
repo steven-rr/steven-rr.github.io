@@ -1,0 +1,31 @@
+.timelineItemContainer
+{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.logoContainer
+{
+    width: 150px;
+    height: 150px;
+}
+
+.logo
+{
+    width: 100px;
+}
+
+.textContainer
+{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.textClass
+{
+    color: #fff
+}
