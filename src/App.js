@@ -4,7 +4,7 @@ import About from "./pages/About"
 import Contact from "./pages/Contact"
 import Home from "./pages/Home"
 import Timeline from "./pages/Timeline"
-import Work from "./pages/Work"
+import Projects from "./pages/Projects"
 import {library} from '@fortawesome/fontawesome-svg-core'
 import React , {useState} from 'react'
 
@@ -33,7 +33,7 @@ function App()
         <Home></Home>
         <About></About>
         <Timeline></Timeline>
-        <Work></Work>
+        <Projects></Projects>
         <Contact></Contact>
       </div>
     </Router>

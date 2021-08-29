@@ -6,7 +6,7 @@ import MIT_logo from '../MIT_logo.png'
 import GT_logo from '../GT_logo.svg.png'
 import MDC_logo from '../MDC_logo.png'
 import Binera_logo from '../binera_logo.png'
-function Skills() {
+function Timeline() {
     return (
         <div className = {TimelineCSS.containerMain}>
             <div className={TimelineCSS.subcontainerMain}>
@@ -59,4 +59,4 @@ function Skills() {
         </div>
     )
 }
-export default Skills
+export default Timeline
