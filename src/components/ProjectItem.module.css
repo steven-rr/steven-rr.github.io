@@ -11,10 +11,16 @@
 {
     width: 50%;
     height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 .image
 {
-    width: 100%;
+    max-height: 90%;
+    max-width: 90%;
+
 }
 
 .textContainer
@@ -31,5 +37,10 @@
 .titleClass
 {
     color: #fff;
-    font-size: 40px;
+    font-size: 33px;
+}
+
+.descriptionClass
+{
+    text-align: center;
 }
