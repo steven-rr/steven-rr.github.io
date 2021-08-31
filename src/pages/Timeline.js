@@ -9,6 +9,8 @@ import Binera_logo from '../binera_logo.png'
 function Timeline() {
     return (
         <div className = {TimelineCSS.containerMain}>
+            <hr className={TimelineCSS.hrClass}></hr>
+
             <div className={TimelineCSS.subcontainerMain}>
                 <div className={TimelineCSS.headerClass}>Timeline</div>
                 <TimelineItem

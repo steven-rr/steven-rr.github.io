@@ -5,6 +5,7 @@ import ContactCSS from './Contact.module.css'
 function Contact() {
     return (
         <div className = {ContactCSS.containerMain}>
+            <hr className={ContactCSS.hrClass}></hr>
              <div className = {ContactCSS.subcontainerMain}>
                  <div className= {ContactCSS.headerClass}>Reach Out Today. </div>
                  <div className ={ContactCSS.tilesContainerClass}>
@@ -25,7 +26,7 @@ function Contact() {
                     </div>
                 </div>
              </div>
-             
+             <hr className={ContactCSS.hrClass}></hr>
         </div>
     )
 }

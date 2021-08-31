@@ -13,9 +13,10 @@ import MIT_logo from '../MIT_logo.png'
 function Projects() {
     return (
         <div>
-            <div className={ProjectsCSS.headerClass}>Projects</div>
+            <hr className={ProjectsCSS.hrClass}></hr>
             <div className={ProjectsCSS.containerMain}>
                 <div className={ProjectsCSS.subcontainerMain}>
+                    <div className={ProjectsCSS.headerClass}>Projects</div>
                     <ProjectItem1
                     title= "C++ Simulation"
                     description= "Simulation of 6-DOF physics of UAV with self-designed flight controls"

@@ -5,6 +5,9 @@ import Contact from "./pages/Contact"
 import Home from "./pages/Home"
 import Timeline from "./pages/Timeline"
 import Projects from "./pages/Projects"
+import Footer from "./pages/Footer"
+import Technologies from "./pages/Technologies"
+
 import {library} from '@fortawesome/fontawesome-svg-core'
 import React , {useState} from 'react'
 
@@ -34,7 +37,9 @@ function App()
         <About></About>
         <Timeline></Timeline>
         <Projects></Projects>
+        <Technologies></Technologies>
         <Contact></Contact>
+        <Footer></Footer>
       </div>
     </Router>
   );
