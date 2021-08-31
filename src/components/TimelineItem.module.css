@@ -27,14 +27,21 @@
 
 .textClass
 {
-    color: #fff
+    color: #fff;
+
 }
-.titleClass
+.titlePositionClass
+{
+    color: #fff;
+    font-size: 20px;
+}
+.titleCompanyClass
 {
     color: #fff;
     font-size: 20px;
 }
 .bulletPointClass
 {
-    color: gray;
+    color: #fff;
+
 }
