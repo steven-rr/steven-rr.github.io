@@ -25,6 +25,8 @@ function Contact() {
                         <div> Github, LinkedIn</div>
                     </div>
                 </div>
+                <div className={ContactCSS.headerClass} > herro</div>
+
              </div>
              <hr className={ContactCSS.hrClass}></hr>
         </div>
