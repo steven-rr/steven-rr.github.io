@@ -1,6 +1,6 @@
 import React from 'react'
 import TimelineItemCSS from './TimelineItem.module.css'
-const TimelineItem = ({companyName, positionName, logoImg, startDate, endDate, sentence1, sentence2}) => {
+const TimelineItem = ({companyName, positionName, logoImg, startDate, endDate, bullets} ) => {
     return (
         <div className={TimelineItemCSS.timelineItemContainer}>
             <div className={TimelineItemCSS.logoContainer}> 
@@ -10,8 +10,13 @@ const TimelineItem = ({companyName, positionName, logoImg, startDate, endDate, s
                 <div className={TimelineItemCSS.titlePositionClass}> {positionName} </div>
                 <div className={TimelineItemCSS.titleCompanyClass}> {companyName},  {startDate} - {endDate} </div>
                 <ul className={TimelineItemCSS.textClass}>
-                    <li className={TimelineItemCSS.bulletPointClass}>{sentence1}</li>
-                    <li className={TimelineItemCSS.bulletPointClass}>{sentence2}</li>
+                    {bullets.map(item =>(
+                        <li key={item.id}>
+                            <div className= {TimelineItemCSS.bulletPointClass}>{item.bullet}</div>
+                        </li>
+                    ))
+
+                    }
                 </ul>
             </div>
         </div>
