@@ -16,6 +16,7 @@ function Timeline() {
                 <TimelineItem
                 logoImg = {LM_logo}
                 companyName= "Lockheed Martin"
+                URL = "https://lockheedmartin.com"
                 positionName= "AI/ML Engineer"
                 startDate = "Summer 2021"
                 endDate = "Present"
@@ -41,6 +42,7 @@ function Timeline() {
                 <TimelineItem
                 logoImg = {Binera_logo}
                 companyName= "Binera"
+                URL = "https://binera.com"
                 positionName= "Aerospace Engineer | Data Analyst"
                 startDate = "Summer 2017"
                 endDate = "Spring 2019"
@@ -58,6 +60,7 @@ function Timeline() {
                 <TimelineItem
                 logoImg = {GT_logo}
                 companyName= "Georgia Institute of Technology"
+                URL = "https://gatech.edu"
                 positionName= "Master's of Science in Aerospace Engineering — Distance Learning"
                 startDate = "Fall 2019"
                 endDate = "Present"
@@ -74,6 +77,7 @@ function Timeline() {
                 <TimelineItem
                 logoImg = {MIT_logo}
                 companyName= "Massachusetts Institute of Technology"
+                URL = "https://mit.edu"
                 positionName= "Bachelor's of Science in Aerospace Engineering"
                 startDate = "Fall 2013"
                 endDate = "Spring 2017"

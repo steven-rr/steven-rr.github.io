@@ -5,8 +5,8 @@ const ProjectItem2 = ({title, description, image}) => {
     return (
         <div className={ProjectItemCSS.projectItemContainer}>
             <div className={ProjectItemCSS.textContainer}>
-                <div class={ProjectItemCSS.titleClass}> {title}</div>
-                <div class={ProjectItemCSS.descriptionClass}> {description}</div>
+                <div className={ProjectItemCSS.titleClass}> {title}</div>
+                <div className={ProjectItemCSS.descriptionClass}> {description}</div>
                 {/* <div> Optional Buttons.</div> */}
             </div>
             <div className={ProjectItemCSS.imageContainer}>
