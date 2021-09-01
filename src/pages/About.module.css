@@ -54,12 +54,23 @@
 .paragraphText
 {
 	color: #fff;
+	font-family: Poppins;
 
 }
 
-h1
+.linkText
+{
+	color:rgb(117, 35, 35);
+	font-family: Poppins;
+	text-decoration: none;
+
+}
+.titleClass
 {
 	color: #fff;
+	font-size: 35px;
+	margin-bottom: 40px;
+	font-weight: 600;
 }
 
 p

@@ -7,8 +7,8 @@ const ProjectItem = ({title, description, image}) => {
                 <img className = {ProjectItemCSS.image} src= {image}/>
             </div>
             <div className={ProjectItemCSS.textContainer}>
-                <div class={ProjectItemCSS.titleClass}> {title}</div>
-                <div> {description}</div>
+                <div className={ProjectItemCSS.titleClass}> {title}</div>
+                <div className={ProjectItemCSS.descriptionClass}> {description}</div>
                 {/* <div> Optional Buttons.</div> */}
             </div>
         </div>

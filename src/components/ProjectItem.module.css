@@ -38,9 +38,12 @@
 {
     color: #fff;
     font-size: 33px;
+    margin-bottom: 30px;
 }
 
 .descriptionClass
 {
     text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
 }

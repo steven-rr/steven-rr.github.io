@@ -50,6 +50,7 @@
 	color: #fff;
 	font-size: 30px;
 	font-weight: lighter;
+	margin-bottom: 15px;
 }
 .buttonClass
 {
@@ -60,7 +61,8 @@
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 12px;
+	font-size: 15px;
+	font-family: Poppins;
 	margin: 4px 2px;
 	cursor: pointer;
 }

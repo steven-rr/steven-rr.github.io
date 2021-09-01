@@ -22,13 +22,13 @@ function Timeline() {
                 sentence1 = "Hyperparameter tuning of YOLOv4 using tensor flow RT and tensorboard for object detection"
                 sentence2 = "Lead feature detection trade study involving algorithms such as ORB, GFTT, SIFT, FAST, Harris Laplace."
                 /> 
-                <TimelineItem
+                {/* <TimelineItem
                 positionName= "Guidance Navigation & Control Engineer"
                 startDate = "Spring 2019"
                 endDate = "Present"
                 sentence1 = "Lead guidance navigation control standup for the hypersonic missiles: ARRW and TBG in C++ and Simulink. "
                 sentence2 = "Lead ARRW software development of guidance and control algorithms in C++."
-                /> 
+                />  */}
                 <TimelineItem
                 logoImg = {Binera_logo}
                 companyName= "Binera"

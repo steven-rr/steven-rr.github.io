@@ -8,8 +8,7 @@ const TimelineItem = ({companyName, positionName, logoImg, startDate, endDate, s
             </div>
             <div className={TimelineItemCSS.textContainer}>
                 <div className={TimelineItemCSS.titlePositionClass}> {positionName} </div>
-                <div className={TimelineItemCSS.titleCompanyClass}> {companyName}</div>
-                <div className={TimelineItemCSS.textClass}> {startDate} - {endDate} </div>
+                <div className={TimelineItemCSS.titleCompanyClass}> {companyName},  {startDate} - {endDate} </div>
                 <ul className={TimelineItemCSS.textClass}>
                     <li className={TimelineItemCSS.bulletPointClass}>{sentence1}</li>
                     <li className={TimelineItemCSS.bulletPointClass}>{sentence2}</li>
