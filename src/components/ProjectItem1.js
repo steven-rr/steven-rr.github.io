@@ -1,6 +1,6 @@
 import React from 'react'
 import ProjectItemCSS from './ProjectItem.module.css'
-const ProjectItem = ({title, description, image}) => {
+const ProjectItem1 = ({title, description, image}) => {
     return (
         <div className={ProjectItemCSS.projectItemContainer}>
             <div className={ProjectItemCSS.imageContainer}>
@@ -15,4 +15,4 @@ const ProjectItem = ({title, description, image}) => {
     )
 }
 
-export default ProjectItem
+export default ProjectItem1
