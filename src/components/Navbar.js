@@ -6,21 +6,19 @@ import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scro
 const Navbar = () => {
     return (
         <div className={NavbarCSS.containerMain}>
-                {/* <div className={NavbarCSS.navHome}> */}
-                    {/* HOME */}
-                    {/* <Link to="/"  className="nav-SR-icon-a">
-                        <img className="nav-SR-icon-img" src={SRicon}/>  
-                    </Link>      */}
-                {/* </div> */}
+                <div className={NavbarCSS.navHome}>
+                    HOME 
+                </div>
 
                 <div className={NavbarCSS.navMain}>
-                        <Link to="about" href="#" spy={true} smooth={true}>ABOUT</Link>
+                    <ul className={NavbarCSS.navMainUl}>
+                        <li><Link to="about"  spy={true} smooth='easeInQuart'>ABOUT</Link></li>
+                        <li><Link to="timeline"  spy={true}  smooth='easeInQuart'>TIMELINE</Link></li>
+                        <li><Link to="projects"  spy={true}  smooth='easeInQuart' >PROJECTS</Link></li>
+                        <li><a href="../Resume.pdf">RESUME </a></li>
+                    </ul>
                 </div>
-                <div  id="hey" className={NavbarCSS.herro}>
-                    <div>
-                        herro
-                    </div>
-                </div>
+                
         </div>
     )
 }
