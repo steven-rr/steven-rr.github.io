@@ -3,7 +3,6 @@
 {
 	position: fixed;
     background-color: rgb(32,32,32);
-	/* width: 100vw; */
 	width: 100vw;
 	height: 70px;
 	display:flex;
@@ -60,4 +59,24 @@
 .navMainLi
 {
 	width: 100px;
+	height: 70px;
+	padding-left: 50px;
+	padding-right: 50px;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+}
+.active
+{
+	color: rgb(255,0,0);
+}
+@media screen and (max-width: 1100px)
+{
+	.navMain
+	{
+		display: none;		
+	}
 }
