@@ -12,7 +12,7 @@ import MIT_logo from '../MIT_logo.png'
 
 function Projects() {
     return (
-        <div>
+        <div id="projects">
             <hr className={ProjectsCSS.hrClass}></hr>
             <div className={ProjectsCSS.containerMain}>
                 <div className={ProjectsCSS.subcontainerMain}>

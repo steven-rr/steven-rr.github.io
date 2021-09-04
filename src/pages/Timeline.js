@@ -8,7 +8,7 @@ import MDC_logo from '../MDC_logo.png'
 import Binera_logo from '../binera_logo.png'
 function Timeline() {
     return (
-        <div className = {TimelineCSS.containerMain}>
+        <div id="timeline" className = {TimelineCSS.containerMain} >
             <hr className={TimelineCSS.hrClass}></hr>
 
             <div className={TimelineCSS.subcontainerMain}>

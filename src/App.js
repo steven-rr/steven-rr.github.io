@@ -31,8 +31,8 @@ function App()
 
 
   return (
-    <Router>
       <div className="App">
+        <Navbar></Navbar>
         <Home></Home>
         <About></About>
         <Timeline></Timeline>
@@ -40,8 +40,8 @@ function App()
         <Technologies></Technologies>
         <Contact></Contact>
         <Footer></Footer>
+
       </div>
-    </Router>
   );
 }
 

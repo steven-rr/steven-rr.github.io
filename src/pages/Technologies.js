@@ -3,12 +3,12 @@ import TechnologiesCSS from './Technologies.module.css'
 
 const Technologies = () => {
     return (
-        <div className={TechnologiesCSS.containerMain}>
+        <div className={TechnologiesCSS.containerMain} id="technologies">
             <hr className={TechnologiesCSS.hrClass}></hr>
             <div className={TechnologiesCSS.subcontainerMain}>
                 <div className={TechnologiesCSS.headerClass}>Technologies</div>
                 <div className = {TechnologiesCSS.skillsClass} > 
-                    <ul className={TechnologiesCSS.textClass}>
+                    <ul className={TechnologiesCSS.ulClass}>
                         <li>C++</li>
                         <li>Python</li>
                         <li>React.JS</li>

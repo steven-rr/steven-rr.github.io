@@ -4,7 +4,7 @@ import ContactCSS from './Contact.module.css'
 // TODO: gray out and on hover make it light up. also add color to title and to boxes.
 function Contact() {
     return (
-        <div className = {ContactCSS.containerMain}>
+        <div id="contact" className = {ContactCSS.containerMain} >
             <hr className={ContactCSS.hrClass}></hr>
              <div className = {ContactCSS.subcontainerMain}>
                  <div className= {ContactCSS.headerClass}>Reach Out Today. </div>

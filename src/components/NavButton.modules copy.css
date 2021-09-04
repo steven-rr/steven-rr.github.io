@@ -1,0 +1,78 @@
+.menu-buttn 
+	{
+		height: 0;
+		width: 0;
+
+	}
+
+@media screen and (max-width: 800px)
+	{	
+    /*  --------------- navbar - mobile ---------------- */
+	.menu-buttn 
+	{
+		opacity: 1;
+		padding: 0;
+		position: absolute;
+		right: 20px;
+		top: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width:80px;
+		height: 88.391px;
+		text-decoration:none;
+		color: #fff;
+		z-index: 100;
+		opacity: 1;
+		cursor: pointer;
+
+	}
+	.menu-buttn.transition 
+	{
+		transition:all 0.2s ease-out;
+	}		
+
+	.menu-buttn-top
+	{
+		width: 30px;
+		height: 1px;
+		background: #fff;
+		border-radius: 5px;
+
+	}
+	.menu-buttn-top::after
+	{
+		content: '';
+		position: absolute;
+		text-align: center;
+		width: 30px;
+		height: 1px;
+		background: #fff;
+		border-radius: 5px;
+		transform: translateY(10px);
+
+	}
+	
+	
+	.menu-buttn-top.open
+	{
+		transform: rotate(45deg) ;
+		transition: inherit;
+	}	
+	.menu-buttn-top.open::after
+	{
+		transform: rotate(90deg) ;
+		transition: inherit;
+	}
+	
+	.menu-buttn-top.closed,
+	.menu-buttn-top.closed::after
+	{
+		transform: 0;
+		transition: inherit;
+	}
+	
+    
+   
+
+}

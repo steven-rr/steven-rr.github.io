@@ -4,7 +4,7 @@ import verticalAboutPic from '../verticalAboutPic.JPG'
 
 function About() {
     return (
-        <div className = {AboutCSS.containerMain}>
+        <div id="about" className = {AboutCSS.containerMain} >
              <div className = {AboutCSS.aboutPicContainer}>
                 <img className = {AboutCSS.aboutPic} src= {verticalAboutPic}/>
              </div>
