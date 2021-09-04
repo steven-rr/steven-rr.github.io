@@ -8,7 +8,7 @@ const Navbar = () => {
     return (
         <div className={NavbarCSS.containerMain}>
                 <div className={NavbarCSS.navHome}>
-                    <Link  >HOME</Link> 
+                    <Link to="home" spy={true} smooth='easeInQuart'>HOME</Link> 
                 </div>
 
                 <div className={NavbarCSS.navMain}>
