@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.f66aebef.chunk.css",
-    "main.js": "./static/js/main.cab13717.chunk.js",
-    "main.js.map": "./static/js/main.cab13717.chunk.js.map",
+    "main.js": "./static/js/main.9204b98f.chunk.js",
+    "main.js.map": "./static/js/main.9204b98f.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.be41cfde.js",
     "runtime-main.js.map": "./static/js/runtime-main.be41cfde.js.map",
     "static/js/2.9d9df251.chunk.js": "./static/js/2.9d9df251.chunk.js",
@@ -19,6 +19,7 @@
     "static/media/LM_Biglogo.44966f05.jpg": "./static/media/LM_Biglogo.44966f05.jpg",
     "static/media/LM_logo.023f9295.png": "./static/media/LM_logo.023f9295.png",
     "static/media/MDC_logo.21ac9752.png": "./static/media/MDC_logo.21ac9752.png",
+    "static/media/Resume.46de7759.pdf": "./static/media/Resume.46de7759.pdf",
     "static/media/YOLOv4.cad50d1c.png": "./static/media/YOLOv4.cad50d1c.png",
     "static/media/landingPagePic1.8cbad022.JPG": "./static/media/landingPagePic1.8cbad022.JPG",
     "static/media/simpleSim.f7bcdfe6.png": "./static/media/simpleSim.f7bcdfe6.png",
@@ -28,6 +29,6 @@
     "static/js/runtime-main.be41cfde.js",
     "static/js/2.9d9df251.chunk.js",
     "static/css/main.f66aebef.chunk.css",
-    "static/js/main.cab13717.chunk.js"
+    "static/js/main.9204b98f.chunk.js"
   ]
 }
