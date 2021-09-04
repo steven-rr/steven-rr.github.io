@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "./static/css/main.c0a48a8b.chunk.css",
-    "main.js": "./static/js/main.5b5a6b25.chunk.js",
-    "main.js.map": "./static/js/main.5b5a6b25.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.b1f5f4c2.js",
-    "runtime-main.js.map": "./static/js/runtime-main.b1f5f4c2.js.map",
-    "static/js/2.b41ba90d.chunk.js": "./static/js/2.b41ba90d.chunk.js",
-    "static/js/2.b41ba90d.chunk.js.map": "./static/js/2.b41ba90d.chunk.js.map",
-    "static/js/3.d757a809.chunk.js": "./static/js/3.d757a809.chunk.js",
-    "static/js/3.d757a809.chunk.js.map": "./static/js/3.d757a809.chunk.js.map",
+    "main.css": "./static/css/main.c9789d2f.chunk.css",
+    "main.js": "./static/js/main.87f095ab.chunk.js",
+    "main.js.map": "./static/js/main.87f095ab.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.be41cfde.js",
+    "runtime-main.js.map": "./static/js/runtime-main.be41cfde.js.map",
+    "static/js/2.7c285067.chunk.js": "./static/js/2.7c285067.chunk.js",
+    "static/js/2.7c285067.chunk.js.map": "./static/js/2.7c285067.chunk.js.map",
+    "static/js/3.a3f3683b.chunk.js": "./static/js/3.a3f3683b.chunk.js",
+    "static/js/3.a3f3683b.chunk.js.map": "./static/js/3.a3f3683b.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.c0a48a8b.chunk.css.map": "./static/css/main.c0a48a8b.chunk.css.map",
-    "static/js/2.b41ba90d.chunk.js.LICENSE.txt": "./static/js/2.b41ba90d.chunk.js.LICENSE.txt",
+    "static/css/main.c9789d2f.chunk.css.map": "./static/css/main.c9789d2f.chunk.css.map",
+    "static/js/2.7c285067.chunk.js.LICENSE.txt": "./static/js/2.7c285067.chunk.js.LICENSE.txt",
     "static/media/AI_project.de12eea5.png": "./static/media/AI_project.de12eea5.png",
     "static/media/Binera_Biglogo.1036f1bc.png": "./static/media/Binera_Biglogo.1036f1bc.png",
     "static/media/DL_project.7c3f02a7.png": "./static/media/DL_project.7c3f02a7.png",
@@ -19,16 +19,15 @@
     "static/media/LM_Biglogo.44966f05.jpg": "./static/media/LM_Biglogo.44966f05.jpg",
     "static/media/LM_logo.023f9295.png": "./static/media/LM_logo.023f9295.png",
     "static/media/MDC_logo.21ac9752.png": "./static/media/MDC_logo.21ac9752.png",
-    "static/media/SR-icon.6e602dfc.png": "./static/media/SR-icon.6e602dfc.png",
     "static/media/YOLOv4.cad50d1c.png": "./static/media/YOLOv4.cad50d1c.png",
     "static/media/landingPagePic1.8cbad022.JPG": "./static/media/landingPagePic1.8cbad022.JPG",
     "static/media/simpleSim.f7bcdfe6.png": "./static/media/simpleSim.f7bcdfe6.png",
     "static/media/verticalAboutPic.0bc4b0a0.JPG": "./static/media/verticalAboutPic.0bc4b0a0.JPG"
   },
   "entrypoints": [
-    "static/js/runtime-main.b1f5f4c2.js",
-    "static/js/2.b41ba90d.chunk.js",
-    "static/css/main.c0a48a8b.chunk.css",
-    "static/js/main.5b5a6b25.chunk.js"
+    "static/js/runtime-main.be41cfde.js",
+    "static/js/2.7c285067.chunk.js",
+    "static/css/main.c9789d2f.chunk.css",
+    "static/js/main.87f095ab.chunk.js"
   ]
 }
