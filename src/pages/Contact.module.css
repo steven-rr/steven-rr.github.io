@@ -28,10 +28,10 @@
 	display: block;
 	color: #fff;
 	font-size: 60px;
-	height: 60px;
+	height: 100%;
 	width: 100%;
 	text-align: center;
-	margin-bottom: 4vw;
+	margin-bottom: 80px;
 }
 
 .tilesContainerClass
@@ -128,14 +128,15 @@
 		justify-content: space-between;
 		height: 700px;
 		width: 100%;
+		margin-bottom: 40px;
 		
 	}
 	.tileClass
 	{
 		color: #fff;
-		width: 60%;
-		padding-right: 6vw;
-		padding-left: 6vw;
+		width: 300px;
+		padding-right: 50px;
+		padding-left: 50px;
 		
 	}
 }
