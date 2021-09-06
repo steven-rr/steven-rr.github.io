@@ -9,6 +9,7 @@ import YOLOv4 from '../YOLOv4.png'
 import LM_biglogo from '../LM_Biglogo.jpg'
 import binera_biglogo from '../Binera_Biglogo.png'
 import MIT_logo from '../MIT_logo.png'
+import DL_Proj_PDF from "../StevenRiva_DL_Project.pdf"
 
 function Projects() {
     return (
@@ -32,12 +33,27 @@ function Projects() {
                     <ProjectItem2
                     title= "Debunking Efficient Market Hypothesis"
                     description= "Using different deep learning architectures such as ResNet, VGG, AlexNet, RNN to find best stock market predictor and ultimately beat the market with 33% gain/year"
+                    bttnList={[
+                        {
+                            id: '0',
+                            title: "Paper",
+                            link: DL_Proj_PDF,
+                            downloadIn: "Steven_Riva_DL_Proj.pdf"
+                        }
+                    ]}
                     image = {DL_project}
                     />
                     <ProjectItem1
                     title= "Reinforcement Learning based Control"
                     description= "Using Reinforcement Learning and Model Predictive Control to implement and control dynamical systems such as Linked Rotational Springs, Carts, and Electrical Circuits"
                     image = {AI_project}
+                    bttnList={[
+                        {
+                            id: '0',
+                            title: "Source Code",
+                            link: "https://github.com/steven-rr/AE8843"
+                        }
+                    ]}
                     />
                     <ProjectItem2
                     title= "Deep Learning for Object Detection"
