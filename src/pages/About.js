@@ -17,7 +17,7 @@ function About() {
                 <p className={AboutCSS.paragraphText}> In my spare time, I enjoy side quests: writing, playing piano, running, and grinding for numerous video game titles.  </p>
 
     
-              <Link to="contact"  spy={true} smooth='easeInQuart'><button className= {AboutCSS.buttonClass}>Contact</button></Link>
+              <Link to="contact" offset={-70} spy={true} smooth='easeInQuart'><button className= {AboutCSS.buttonClass}>Contact</button></Link>
              </div>
         </div>
     )
