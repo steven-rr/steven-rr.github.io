@@ -1,11 +1,10 @@
 .menu-buttn 
 	{
-		height: 0;
-		width: 0;
+		display:none;
 
 	}
 
-@media screen and (max-width: 800px)
+@media screen and (max-width: 1100px)
 	{	
     /*  --------------- navbar - mobile ---------------- */
 	.menu-buttn 
@@ -19,7 +18,7 @@
 		justify-content: center;
 		align-items: center;
 		width:80px;
-		height: 88.391px;
+		height: 70px;
 		text-decoration:none;
 		color: #fff;
 		z-index: 100;

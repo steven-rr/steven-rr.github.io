@@ -1,64 +1,87 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import NavbarCSS from './Navbar.module.css'
 import * as Scroll from 'react-scroll';
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import resumePDF from "../Resume.pdf"
+import NavButton from './NavButton';
 
-const Navbar = () => {
+const Navbar = ({onClick}) => {
+
+     // reset state when clicking a link in nav bar.
+     const handleOnClick = () =>
+     {
+         onClick();
+         setState( currentState => {
+             return { ...currentState, fade: false, menuOpen: false}
+             })
+     }
+ 
+     // set menu bar state.
+     const[state, setState] = useState({menuOpen: false, fade: true});
+ 
+     //toggle menu click state.
+     const handleMenuClick = () => {
+             setState( currentState => {
+             return { ...currentState, fade: true, menuOpen: !currentState.menuOpen}
+             })
+         };
+     // when transition ends, end transition (set fade to false)
+     const onTransitionEnd = (e) => {
+             if(e.pseudoElement == "::after")
+             {
+                 setState(currentState => {
+                 return {...currentState, fade: false}
+                 })
+             }
+             
+             }; 
+
+    // handle scrolling for useEffect(). When scrolling and menu is open, close the menu (with faded animation). 
+    const handleOnScroll = (e) => {
+        console.log(state.menuOpen)
+        window.onscroll = () => {
+            if(state.menuOpen==true)
+            {   
+                setState( currentState => {
+                
+                    return { ...currentState, fade: true, menuOpen: false}
+                })
+            }
+            };
+    };
+
+    // useEffect for navbar scrolling. Only rerun when opening or closing menu.    
+    useEffect(()=> {
+        window.addEventListener('scroll', handleOnScroll());
+        return () => {
+            window.removeEventListener('scroll', handleOnScroll());
+            };
+    }, [state.menuOpen] )
+  
+        
     return (
-        <div className={NavbarCSS.containerMain}>
+        <div onTransitionEnd={onTransitionEnd} className={ `${NavbarCSS.containerMain} ${state.menuOpen ? NavbarCSS.open : '' } ${state.fade ? NavbarCSS.transition : '' } ` }>
+            <div className={NavbarCSS.navLinkItems}>
                 <div className={NavbarCSS.navHome}>
-                    <Link 
-                    to="home" 
-                    spy={true} 
-                    smooth='easeInQuart'
-                    activeClass={NavbarCSS.active}>
-                        HOME
-                    </Link> 
+                    <Link to="home" spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}> HOME</Link> 
                 </div>
 
                 <div className={NavbarCSS.navMain}>
                     <ul className={NavbarCSS.navMainUl}>
-                        <li className={NavbarCSS.navMainLi}>
-                            <Link 
-                            to="about"  
-                            spy={true} 
-                            smooth='easeInQuart'
-                            activeClass={NavbarCSS.active}>
-                                ABOUT
-                            </Link>
-                        </li>
-                        <li className={NavbarCSS.navMainLi}>
-                            <Link 
-                            to="timeline"  
-                            spy={true}  
-                            smooth='easeInQuart'
-                            activeClass={NavbarCSS.active}>
-                                TIMELINE
-                            </Link>
-                        </li>
-                        <li className={NavbarCSS.navMainLi}>
-                            <Link 
-                            to="projects"  
-                            spy={true}  
-                            smooth='easeInQuart'
-                            activeClass={NavbarCSS.active}>
-                                PROJECTS
-                            </Link>
-                        </li>
-                        <li className={NavbarCSS.navMainLi}>
-                            <Link 
-                            to="contact"  
-                            spy={true}  
-                            smooth='easeInQuart'
-                            activeClass={NavbarCSS.active}>
-                                CONTACT
-                            </Link>
-                        </li>
-                        <li className={NavbarCSS.navMainLi}><a href={resumePDF} download="StevenRivadeneiraResume.pdf">RESUME </a></li>
+                        <li className={NavbarCSS.navMainLi}><Link  to="about"   spy={true}  smooth='easeInQuart' activeClass={NavbarCSS.active}>  ABOUT</Link> </li>
+                        <li className={NavbarCSS.navMainLi}><Link  to="timeline"  spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}> TIMELINE </Link> </li>
+                        <li className={NavbarCSS.navMainLi}><Link to="projects" spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}>   PROJECTS </Link> </li>
+                        <li className={NavbarCSS.navMainLi}><Link to="contact"  spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}>   CONTACT </Link> </li>
+                        <li className={NavbarCSS.navMainLi}><a href={resumePDF} download="StevenRivadeneiraResume.pdf"> RESUME </a></li>
                     </ul>
                 </div>
-                
+            </div>
+            <NavButton
+                menuOpen={state.menuOpen}
+                onClick={handleMenuClick}
+                fade={state.fade}
+                onEnd={onTransitionEnd}>       
+            </NavButton>
         </div>
     )
 }

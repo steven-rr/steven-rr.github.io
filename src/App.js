@@ -26,13 +26,11 @@ function App()
   const submitHandler = e =>
   {
     setValue(currentValue=> currentValue+1);
-    console.log("WOW")
   }
-
 
   return (
       <div className="App">
-        <Navbar></Navbar>
+        <Navbar onClick ={submitHandler}></Navbar>
         <Home></Home>
         <About></About>
         <Timeline></Timeline>
