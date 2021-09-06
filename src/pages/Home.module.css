@@ -70,6 +70,12 @@
 	margin: 4px 2px;
 	cursor: pointer;
 }
+.buttonClass:hover
+{
+	background-color: rgb(117,35,35);
+	transition: all 0.1s ease-out;
+}
+
 p
 {
 	color: #fff;

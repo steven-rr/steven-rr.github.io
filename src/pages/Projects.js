@@ -20,6 +20,13 @@ function Projects() {
                     <ProjectItem1
                     title= "C++ Simulation"
                     description= "Simulation of 6-DOF physics of UAV with self-designed flight controls"
+                    bttnList={[
+                        {
+                            id: '0',
+                            title: "Source Code",
+                            link: "https://github.com/steven-rr/simple-sim"
+                        }
+                    ]}
                     image = {simpleSim}
                     />
                     <ProjectItem2
@@ -46,6 +53,13 @@ function Projects() {
                     title= "Binera - Aerospace Engineer"
                     description= "Lead data munge / classification of text data from ISS crew logs. Reliability engineering of parts, mean time before failure. "
                     image = {binera_biglogo}
+                    bttnList={[
+                        {
+                            id: '0',
+                            title: "Publication",
+                            link: "https://ntrs.nasa.gov/api/citations/20190033167/downloads/20190033167.pdf"
+                        }
+                    ]}
                     />
                     <ProjectItem1
                     title= "Aerospace Engineering"

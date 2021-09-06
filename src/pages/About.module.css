@@ -53,6 +53,11 @@
 	margin: 4px 2px;
 	cursor: pointer;
 }
+.buttonClass:hover
+{
+	background-color: rgb(117,35,35);
+	transition: all 0.1s ease-out;
+}
 .paragraphText
 {
 	color: #fff;
@@ -66,6 +71,10 @@
 	font-family: Poppins;
 	text-decoration: none;
 
+}
+.linkText:hover
+{
+	color:rgb(80, 24, 24);
 }
 .titleClass
 {

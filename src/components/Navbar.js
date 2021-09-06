@@ -6,6 +6,8 @@ import resumePDF from "../Resume.pdf"
 import NavButton from './NavButton';
 
 const Navbar = ({onClick}) => {
+     // set menu bar state.
+     const[state, setState] = useState({menuOpen: false, fade: false});
 
      // reset state when clicking a link in nav bar.
      const handleOnClick = () =>
@@ -16,8 +18,7 @@ const Navbar = ({onClick}) => {
              })
      }
  
-     // set menu bar state.
-     const[state, setState] = useState({menuOpen: false, fade: false});
+
  
      //toggle menu click state.
      const handleMenuClick = () => {
@@ -68,10 +69,10 @@ const Navbar = ({onClick}) => {
 
                 <div className={NavbarCSS.navMain}>
                     <ul className={NavbarCSS.navMainUl}>
-                        <li className={NavbarCSS.navMainLi}><Link  to="about"   spy={true}  smooth='easeInQuart' activeClass={NavbarCSS.active}>  ABOUT</Link> </li>
-                        <li className={NavbarCSS.navMainLi}><Link  to="timeline"  spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}> TIMELINE </Link> </li>
-                        <li className={NavbarCSS.navMainLi}><Link to="projects" spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}>   PROJECTS </Link> </li>
-                        <li className={NavbarCSS.navMainLi}><Link to="contact"  spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}>   CONTACT </Link> </li>
+                        <li className={NavbarCSS.navMainLi}><Link className={NavbarCSS.navMainAnchor, NavbarCSS.fromRight} to="about"   spy={true}  smooth='easeInQuart' activeClass={NavbarCSS.active}>  ABOUT</Link> </li>
+                        <li className={NavbarCSS.navMainLi}><Link className={NavbarCSS.navMainAnchor} to="timeline"  spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}> TIMELINE </Link> </li>
+                        <li className={NavbarCSS.navMainLi}><Link className={NavbarCSS.navMainAnchor} to="projects" spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}>   PROJECTS </Link> </li>
+                        <li className={NavbarCSS.navMainLi}><Link className={NavbarCSS.navMainAnchor} to="contact"  spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}>   CONTACT </Link> </li>
                         <li className={NavbarCSS.navMainLi}><a href={resumePDF} download="StevenRivadeneiraResume.pdf"> RESUME </a></li>
                     </ul>
                 </div>

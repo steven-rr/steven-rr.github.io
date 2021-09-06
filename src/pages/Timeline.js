@@ -29,15 +29,23 @@ function Timeline() {
                         id: '1',
                         bullet: "Lead feature detection trade study involving algorithms such as ORB, GFTT, SIFT, FAST, Harris Laplace."
                     }
-                ]}/>
-                {/* s */}
-                {/* <TimelineItem
-                positionName= "Guidance Navigation & Control Engineer"
-                startDate = "Spring 2019"
-                endDate = "Present"
-                sentence1 = "Lead guidance navigation control standup for the hypersonic missiles: ARRW and TBG in C++ and Simulink. "
-                sentence2 = "Lead ARRW software development of guidance and control algorithms in C++."
-                />  */}
+                ]}
+                multiplePositions= {true}
+                positionName2 = "Guidance Navigation & Control Engineer" 
+                startDate2 = "Fall 2019"
+                endDate2 = "Present"
+                bullets2 = {[
+                    {
+                        id: '1',
+                        bullet: "Lead guidance navigation control standup for the hypersonic missiles: ARRW and TBG in C++ and Simulink."
+                    },
+                    {
+                        id: '2',
+                        bullet: "Lead ARRW software development of guidance and control algorithms in C++."
+                    }
+                ]}
+                />
+                
 
                 <TimelineItem
                 logoImg = {Binera_logo}

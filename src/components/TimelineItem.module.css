@@ -57,6 +57,25 @@
 	text-decoration: none;
 
 }
+
+.linkText:hover
+{
+	color:rgb(80, 24, 24);
+}
+/* Timeline additional container */
+
+.timelineItemAdditionalContainer
+{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vw;
+}
+.deactivated
+{
+    display: none;
+}
 @media screen and (max-width: 1100px)
 {
 

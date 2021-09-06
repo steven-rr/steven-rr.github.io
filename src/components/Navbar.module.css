@@ -44,7 +44,7 @@
 .navHome
 {	
 	position: absolute;
-	top: 20px;
+	top: 24px;
 	left: 20px;
     width: 100px;
 	height: 70px;
@@ -80,13 +80,44 @@
 	padding-right: 50px;
 	display: flex;
 	align-items:center;
-	cursor: pointer;
 	margin: 0;
 	padding: 0;
 }
+.navMainAnchor
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	text-transform:uppercase;
+}
 .active
 {
-	border-bottom: 2px solid rgb(255,255,255);
+	border-bottom: 1px solid rgb(255,255,255);
+}
+/* .navMainAnchor:hover
+{
+	border-bottom: 1px solid rgb(255,255,255);
+	transition: 1s;
+} */
+
+.navMainAnchor:after {
+	display: block;
+	content: '';
+	border-bottom: 1px solid rgb(255,255,255);
+	transform: scaleX(0);
+	transition: transform 250ms ease-in-out;
+
+}
+.navMainAnchor:hover:after {
+    transform: scaleX(1);
+}
+.navMainAnchor.fromRight:after
+{
+	transform-origin:100% 50%;
 }
 @media screen and (max-width: 1100px)
 {
