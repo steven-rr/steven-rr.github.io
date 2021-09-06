@@ -17,13 +17,7 @@ function About() {
                 <p className={AboutCSS.paragraphText}> In my spare time, I enjoy side quests: writing, playing piano, running, and grinding for numerous video game titles.  </p>
 
     
-
-                {/* <p className={AboutCSS.paragraphText}> I am Steven Rivadeneira, born in Lima, Peru, raised in Miami, FL. I have spent many years in a variety of locations in the U.S learning about technology, connecting with others, and trying to make a difference in the world.</p>
-
-                <p className={AboutCSS.paragraphText}> Born to tinker, learning new things is a hobby. I enjoy side quests: writing, playing piano, running a 10k, and achieving Season 7 Diamond rank (top 1%) in League of Legends. Most importantly, due to the obstacles my family and I once faced, I am passionate about helping others. Being an immigrant who has broken many barriers, I thrive in solving tough challenges that empower others and make the world a better place.</p>
-
-                <p className={AboutCSS.paragraphText}>I spent my college years in Boston, MA, pursuing a Bachelor's Degree in Aerospace Engineering from the Massachusetts Institute of Technology (MIT). I'm currently a Guidance Navigation and Control Engineer, developing algorithms in C++ for Lockheed Martin aircraft, while pursuing a Master's in Aerospace Engineering from Georgia Tech.</p> */}
-                <Link to="contact"  spy={true} smooth='easeInQuart'><button className= {AboutCSS.buttonClass}>Contact</button></Link>
+              <Link to="contact"  spy={true} smooth='easeInQuart'><button className= {AboutCSS.buttonClass}>Contact</button></Link>
              </div>
         </div>
     )

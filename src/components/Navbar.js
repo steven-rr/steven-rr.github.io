@@ -17,7 +17,7 @@ const Navbar = ({onClick}) => {
      }
  
      // set menu bar state.
-     const[state, setState] = useState({menuOpen: false, fade: true});
+     const[state, setState] = useState({menuOpen: false, fade: false});
  
      //toggle menu click state.
      const handleMenuClick = () => {
