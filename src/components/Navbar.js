@@ -69,7 +69,7 @@ const Navbar = ({onClick}) => {
 
                 <div className={NavbarCSS.navMain}>
                     <ul className={NavbarCSS.navMainUl}>
-                        <li className={NavbarCSS.navMainLi}><Link className={NavbarCSS.navMainAnchor, NavbarCSS.fromRight} to="about"   spy={true}  smooth='easeInQuart' activeClass={NavbarCSS.active}>  ABOUT</Link> </li>
+                        <li className={NavbarCSS.navMainLi}><Link className={NavbarCSS.navMainAnchor} to="about"   spy={true}  smooth='easeInQuart' activeClass={NavbarCSS.active}>  ABOUT</Link> </li>
                         <li className={NavbarCSS.navMainLi}><Link className={NavbarCSS.navMainAnchor} to="timeline"  spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}> TIMELINE </Link> </li>
                         <li className={NavbarCSS.navMainLi}><Link className={NavbarCSS.navMainAnchor} to="projects" spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}>   PROJECTS </Link> </li>
                         <li className={NavbarCSS.navMainLi}><Link className={NavbarCSS.navMainAnchor} to="contact"  spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}>   CONTACT </Link> </li>
