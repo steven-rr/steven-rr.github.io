@@ -12,7 +12,7 @@ const ProjectItem1 = ({title, description, bttnList=[], image}) => {
                 {/* optional buttons */}
                 <div className={ProjectItemCSS.buttonContainer}>
                     {bttnList.map(bttn =>(
-                                <a href={bttn.link}>
+                                <a href={bttn.link} download={bttn.downloadIn}  >
                                     <div className={ProjectItemCSS.buttonClass} key={bttn.id}>
                                         {bttn.title}
                                     </div>
