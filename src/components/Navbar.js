@@ -69,10 +69,10 @@ const Navbar = ({onClick}) => {
 
                 <div className={NavbarCSS.navMain}>
                     <ul className={NavbarCSS.navMainUl}>
-                        <li className={NavbarCSS.navMainLi}><Link className={NavbarCSS.navMainAnchor} to="about"   spy={true}  smooth='easeInQuart' activeClass={NavbarCSS.active}>  ABOUT</Link> </li>
-                        <li className={NavbarCSS.navMainLi}><Link className={NavbarCSS.navMainAnchor} to="timeline"  spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}> TIMELINE </Link> </li>
-                        <li className={NavbarCSS.navMainLi}><Link className={NavbarCSS.navMainAnchor} to="projects" spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}>   PROJECTS </Link> </li>
-                        <li className={NavbarCSS.navMainLi}><Link className={NavbarCSS.navMainAnchor} to="contact"  spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}>   CONTACT </Link> </li>
+                        <li className={NavbarCSS.navMainLi}><Link className={NavbarCSS.navMainAnchor} to="about" offset={-70}  spy={true}  smooth='easeInQuart' activeClass={NavbarCSS.active}>  ABOUT</Link> </li>
+                        <li className={NavbarCSS.navMainLi}><Link className={NavbarCSS.navMainAnchor} to="timeline"  offset={-70} spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}> TIMELINE </Link> </li>
+                        <li className={NavbarCSS.navMainLi}><Link className={NavbarCSS.navMainAnchor} to="projects" offset={-70} spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}>   PROJECTS </Link> </li>
+                        <li className={NavbarCSS.navMainLi}><Link className={NavbarCSS.navMainAnchor} to="contact"  offset={-70}  spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}>   CONTACT </Link> </li>
                         <li className={NavbarCSS.navMainLi}><a href={resumePDF} download="StevenRivadeneiraResume.pdf"> RESUME </a></li>
                     </ul>
                 </div>
