@@ -61,7 +61,7 @@
 	background-color: Transparent;
 	border: 2px solid rgb(117, 35, 35);
 	color: white;
-	padding: 15px 32px;
+	padding: 21px 46px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -69,6 +69,12 @@
 	font-weight: 600;
 	margin: 4px 2px;
 	cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.bttnNotActive
+{
+    display: none;
 }
 .buttonClass:hover
 {
@@ -79,13 +85,14 @@
 {
 	text-decoration: none;
     color: white;
+    
 }
 @media screen and (max-width: 1100px)
 {
     .projectItemContainer
     {
         width: 100%;
-        height: 600px;
+        height: auto;
         display: flex;
         flex-direction: column;
         
@@ -104,6 +111,7 @@
     {
         max-height: 90%;
         max-width: 90%;
+        order: 1;
 
     }
 
@@ -111,7 +119,7 @@
     {
         color: #fff;
         width: 100%;
-        height: 300px;
+        height: 100%;
         padding-bottom: 100px;
         display: flex;
         flex-direction: column;
@@ -142,5 +150,14 @@
         font-size: 33px;
         margin-bottom: 30px;
         text-align: center;
+        order: 2;
+    }
+    .descriptionClass
+    {
+        order: 3;
+    }
+    .buttonContainer
+    {
+        order: 4;
     }
 }

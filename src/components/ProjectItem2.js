@@ -8,8 +8,8 @@ const ProjectItem2 = ({title, description, bttnList=[],image}) => {
             <div className={ProjectItemCSS.textContainer}>
                 <div className={ProjectItemCSS.titleClass}> {title}</div>
                 <div className={ProjectItemCSS.descriptionClass}> {description}</div>
-                {/* optional buttons */}
-                <div className={ProjectItemCSS.buttonContainer}>
+                {/* optional buttons. only activate if bttnList is nonempty.*/}
+                <div className={ `${ProjectItemCSS.buttonContainer} ${ (bttnList.length >0) ? '':ProjectItemCSS.bttnNotActive} `}>
                     {bttnList.map(bttn =>(
                                 <a href={bttn.link} download={bttn.downloadIn}  >
                                     <div className={ProjectItemCSS.buttonClass} key={bttn.id}>

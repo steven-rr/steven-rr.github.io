@@ -10,6 +10,7 @@ import LM_biglogo from '../LM_Biglogo.jpg'
 import binera_biglogo from '../Binera_Biglogo.png'
 import MIT_logo from '../MIT_logo.png'
 import DL_Proj_PDF from "../StevenRiva_DL_Project.pdf"
+import RL_Proj_PDF from "../StevenRiva_RL_Project.pdf"
 
 function Projects() {
     return (
@@ -39,6 +40,11 @@ function Projects() {
                             title: "Paper",
                             link: DL_Proj_PDF,
                             downloadIn: "Steven_Riva_DL_Proj.pdf"
+                        },
+                        {
+                            id: '1',
+                            title: "Source Code",
+                            link: "https://github.com/steven-rr/dlFinalProject"
                         }
                     ]}
                     image = {DL_project}
@@ -50,6 +56,12 @@ function Projects() {
                     bttnList={[
                         {
                             id: '0',
+                            title: "Paper",
+                            link: RL_Proj_PDF,
+                            downloadIn: "Steven_Riva_RL_Proj.pdf"
+                        },
+                        {
+                            id: '1',
                             title: "Source Code",
                             link: "https://github.com/steven-rr/AE8843"
                         }
