@@ -14,6 +14,7 @@
 	linear-gradient(#000, #000), 
 	linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
 	background-clip: content-box, padding-box;
+	border: none;
 
 } 
 .hrClass
@@ -41,6 +42,7 @@
     padding-left: 8vw;
     padding-bottom: 3vw;
     padding-top: 3vw;
+	border: none;
 }
 /*  --------------- main body primary msg ---------------- */
 .headerClass

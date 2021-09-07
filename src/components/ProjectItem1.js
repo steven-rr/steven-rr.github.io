@@ -1,9 +1,9 @@
 import React from 'react'
 import ProjectItemCSS from './ProjectItem.module.css'
-const ProjectItem1 = ({title, description, bttnList=[], image}) => {
+const ProjectItem1 = ({title, description, bttnList=[], image, heightImgContainer=300}) => {
     return (
         <div className={ProjectItemCSS.projectItemContainer}>
-            <div className={ProjectItemCSS.imageContainer}>
+            <div style={{height: heightImgContainer }} className={ProjectItemCSS.imageContainer}>
                 <img className = {ProjectItemCSS.image} src= {image}/>
             </div>
             <div className={ProjectItemCSS.textContainer}>

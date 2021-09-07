@@ -76,11 +76,13 @@ function Projects() {
                     title= "Lockheed Martin - GNC Engineer"
                     description= "Stand up C++ guidance and controls from inception of the program. Lead C++ development and testing of Guidance and Control algorithms. Support hardware in the loop testing. "
                     image = {LM_biglogo}
+                    heightImgContainer= {250}
                     />
                     <ProjectItem2
                     title= "Binera - Aerospace Engineer"
                     description= "Lead data munge / classification of text data from ISS crew logs. Reliability engineering of parts, mean time before failure. "
                     image = {binera_biglogo}
+                    heightImgContainer= {200}
                     bttnList={[
                         {
                             id: '0',

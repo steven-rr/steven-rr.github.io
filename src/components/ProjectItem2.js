@@ -2,7 +2,7 @@ import React from 'react'
 import ProjectItemCSS from './ProjectItem.module.css'
 import DL_Proj_PDF from "../StevenRiva_DL_Project.pdf"
 
-const ProjectItem2 = ({title, description, bttnList=[],image}) => {
+const ProjectItem2 = ({title, description, bttnList=[],image, heightImgContainer=300}) => {
     return (
         <div className={ProjectItemCSS.projectItemContainer}>
             <div className={ProjectItemCSS.textContainer}>
@@ -19,7 +19,7 @@ const ProjectItem2 = ({title, description, bttnList=[],image}) => {
                                 ))}
                 </div>
             </div>
-            <div className={ProjectItemCSS.imageContainer}>
+            <div style={{height: heightImgContainer }} className={ProjectItemCSS.imageContainer}>
                 <img className = {ProjectItemCSS.image} src= {image}/>
             </div>
         </div>
