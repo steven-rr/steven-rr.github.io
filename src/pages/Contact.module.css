@@ -157,3 +157,12 @@
 		
 	}
 }
+
+@media screen and (max-width: 400px)
+{
+	.tileClass
+	{
+		width: 255px;
+		
+	}
+}
