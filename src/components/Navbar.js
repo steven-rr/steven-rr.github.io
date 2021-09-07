@@ -74,7 +74,7 @@ const Navbar = ({onClick}) => {
                         <li className={NavbarCSS.navMainLi}><Link className={`${NavbarCSS.navMainAnchor} ${NavbarCSS.underline}`} to="timeline"  offset={-70} spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}> TIMELINE </Link> </li>
                         <li className={NavbarCSS.navMainLi}><Link className={`${NavbarCSS.navMainAnchor} ${NavbarCSS.underline}`} to="projects" offset={-70} spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}>   PROJECTS </Link> </li>
                         <li className={NavbarCSS.navMainLi}><Link className={`${NavbarCSS.navMainAnchor} ${NavbarCSS.underline}`} to="contact"  offset={-70}  spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}>   CONTACT </Link> </li>
-                        <li className={NavbarCSS.navMainLi}><a className={NavbarCSS.resumeButtn}href={resumePDF} download="StevenRivadeneiraResume.pdf"> RESUME </a></li>
+                        <li className={NavbarCSS.navMainLi}><a className={NavbarCSS.resumeButtn} href={resumePDF} download="StevenRivadeneiraResume.pdf"> RESUME </a></li>
                     </ul>
                 </div>
             </div>
