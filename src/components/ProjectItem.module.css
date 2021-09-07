@@ -61,7 +61,7 @@
 	background-color: Transparent;
 	border: 2px solid rgb(117, 35, 35);
 	color: white;
-	padding: 21px 46px;
+	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -159,5 +159,23 @@
     .buttonContainer
     {
         order: 4;
+    }
+}
+
+@media screen and (max-width: 390px)
+{
+    .buttonContainer
+    {
+        margin-top: 25px;
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .buttonClass
+    {
+        margin-top:10px;
     }
 }
