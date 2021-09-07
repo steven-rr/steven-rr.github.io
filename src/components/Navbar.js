@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import NavbarCSS from './Navbar.module.css'
 import * as Scroll from 'react-scroll';
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import realResumePDF from "../realResume.pdf"
 import resumePDF from "../Resume.pdf"
 import NavButton from './NavButton';
 
