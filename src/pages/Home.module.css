@@ -4,7 +4,7 @@
 	display:block;
 	width: 100%;
 	height: 100%;
-	min-height: 615px;
+	min-height: 675px;
 	margin:0;
 	padding: 0;
 	background-color: rgba(0, 0, 0);
@@ -23,22 +23,23 @@
 	flex-direction: column;
 	width: 100%;
 	height: 100%;
-	min-height: 615px;
+	min-height: 675px;
 	z-index: 10;
 }
 .primaryBGpic
 {
 	width:100%;
 	height: 100%;
-	min-height: 575px;
+	min-height: 675px;
+	min-width: 900px;
 	z-index: -1;
 }
 .BGpic
 {
 	width: 100%;
 	height: 100%;
-	min-height: 575px;
-	min-width: 765px;
+	min-height: 675px;
+	min-width: 900px;
 	opacity: 0.7;
 }
 
@@ -84,4 +85,14 @@ p
 {
 	height: 100%;
 	width: 100%;
+}
+
+@media screen and (max-width: 900px)
+{
+	.BGpic
+	{
+		position: absolute;
+		left: calc(50vw - 450px);
+
+	}
 }
