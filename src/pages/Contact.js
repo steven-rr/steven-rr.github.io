@@ -13,15 +13,15 @@ function Contact() {
                     <div className ={ContactCSS.tilesContainerClass}>
                         <div className={ContactCSS.tileClass}>
                             <div className={ContactCSS.tileHeader}> Email </div>
-                            <div className={ContactCSS.tileContentContainer}><a className={`${ContactCSS.socialMediaMainA} ${ContactCSS.underline}`} href="mailto:steven.r.riva@gmail.com">steven.r.riva@gmail.com</a></div>
+                            <div className={`${ContactCSS.tileContentContainer} ${ContactCSS.email}`}><a className={`${ContactCSS.socialMediaMainA} ${ContactCSS.underline}`} href="mailto:steven.r.riva@gmail.com">steven.r.riva@gmail.com</a></div>
                         </div>
                         <div className={ContactCSS.tileClass}>
                             <div className={ContactCSS.tileHeader}> Phone </div>
-                            <div className={ContactCSS.tileContentContainer}><a className={`${ContactCSS.socialMediaMainA} ${ContactCSS.underline}`} href="tel:+17862274198"> +1 (786) 227 4198</a></div>
+                            <div className={`${ContactCSS.tileContentContainer} ${ContactCSS.mobile}`}><a className={`${ContactCSS.socialMediaMainA} ${ContactCSS.underline}`} href="tel:+17862274198"> +1 (786) 227 4198</a></div>
                         </div>
                         <div className={ContactCSS.tileClass}>
                             <div className={ContactCSS.tileHeader}> Socials </div>
-                            <div className={ContactCSS.tileContentContainer}> 
+                            <div className={`${ContactCSS.tileContentContainer} ${ContactCSS.socials}`}> 
                                 <ul className = {ContactCSS.socialMediaMainUl}>
                                     <li><a className={ContactCSS.socialMediaMainAnchorIcons} href = "https://www.facebook.com/stevenator9001/" ><FontAwesomeIcon icon={['fab','facebook-f']} size='lg'/></a></li>
                                     <li><a className={ContactCSS.socialMediaMainAnchorIcons} href = "https://github.com/steven-rr" ><FontAwesomeIcon icon={['fab','github']} size='lg'/></a></li>
