@@ -10,7 +10,7 @@ function Home() {
              <div className = {HomeCSS.primaryMsg}>
                 <div className = {HomeCSS.headerClass}> Steven Rivadeneira </div>
                 <div className = {HomeCSS.subtitleClass}>Engineer | Developer | Lifelong-learner </div>
-                <Link to="about" offset={-70} spy={true} smooth={true} duration={700}><button className= {HomeCSS.buttonClass}> Learn More</button></Link>
+                <Link to="about" offset={-70} spy={true} smooth={true} duration={700}><button className= {HomeCSS.buttonClass}> LEARN MORE </button></Link>
              </div>
              <div className = {HomeCSS.primaryBGpic}>
                 <img className = {HomeCSS.BGpic} src= {landingPagePic1}/>

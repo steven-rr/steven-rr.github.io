@@ -67,7 +67,9 @@
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
-	font-weight: 600;
+	font-family: Poppins;
+	letter-spacing: .10rem;
+	font-weight: 400;
 	margin: 4px 2px;
 	cursor: pointer;
 }

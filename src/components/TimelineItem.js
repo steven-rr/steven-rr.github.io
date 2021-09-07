@@ -18,7 +18,7 @@ const TimelineItem = ({companyName,URL,positionName, logoImg, startDate, endDate
                     </ul>
                     <div className = {`${multiplePositions ? TimelineItemCSS.timelineItemAdditionalContainer : TimelineItemCSS.deactivated  }`} >
                         <div className={TimelineItemCSS.titlePositionClass}> {positionName2} </div>
-                        <div className={TimelineItemCSS.titleCompanyClass}> <a className={TimelineItemCSS.linkText} href={URL}>{companyName}</a>,  {startDate2} - {endDate2} </div>
+                        <div className={TimelineItemCSS.titleCompanyClass}> <a className={TimelineItemCSS.linkText}  href={URL}>{companyName}</a>,  {startDate2} - {endDate2} </div>
                         <ul className={TimelineItemCSS.textClass}>
                             {bullets2.map(item =>(
                             <li key={item.id}>

@@ -25,7 +25,7 @@ function Projects() {
                     bttnList={[
                         {
                             id: '0',
-                            title: "Source Code",
+                            title: "SOURCE CODE",
                             link: "https://github.com/steven-rr/simple-sim"
                         }
                     ]}
@@ -37,13 +37,13 @@ function Projects() {
                     bttnList={[
                         {
                             id: '0',
-                            title: "Paper",
+                            title: "PAPER",
                             link: DL_Proj_PDF,
                             downloadIn: "Steven_Riva_DL_Proj.pdf"
                         },
                         {
                             id: '1',
-                            title: "Source Code",
+                            title: "SOURCE CODE",
                             link: "https://github.com/steven-rr/dlFinalProject"
                         }
                     ]}
@@ -56,13 +56,13 @@ function Projects() {
                     bttnList={[
                         {
                             id: '0',
-                            title: "Paper",
+                            title: "PAPER",
                             link: RL_Proj_PDF,
                             downloadIn: "Steven_Riva_RL_Proj.pdf"
                         },
                         {
                             id: '1',
-                            title: "Source Code",
+                            title: "SOURCE CODE",
                             link: "https://github.com/steven-rr/AE8843"
                         }
                     ]}
@@ -86,7 +86,7 @@ function Projects() {
                     bttnList={[
                         {
                             id: '0',
-                            title: "Publication",
+                            title: "PUBLICATION",
                             link: "https://ntrs.nasa.gov/api/citations/20190033167/downloads/20190033167.pdf"
                         }
                     ]}

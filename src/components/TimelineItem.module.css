@@ -53,15 +53,18 @@
 
 .linkText
 {
+	position: relative;
 	color:rgb(117, 35, 35);
-	text-decoration: none;
+	text-decoration: underline;
+	transition: 0.1s;
+	
 
 }
-
 .linkText:hover
 {
-	color:rgb(80, 24, 24);
+	color:rgb(165, 52, 52);
 }
+
 /* Timeline additional container */
 
 .timelineItemAdditionalContainer
@@ -76,6 +79,7 @@
 {
     display: none;
 }
+
 @media screen and (max-width: 1100px)
 {
 

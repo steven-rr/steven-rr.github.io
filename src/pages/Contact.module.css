@@ -109,17 +109,11 @@
 .socialMediaMainA
 {
 	color: rgb(255, 255, 255);
-	border-bottom: 1px solid rgb(255, 255, 255);
 	text-decoration: none;
 	
 } 
 
-.socialMediaMainA:hover
-{
-	color: rgb(179, 179, 179);
-	border-bottom: 1px solid rgb(179, 179, 179);
-	transition: all 0.1s ease-out;
-}
+
 
 .socialMediaMainAnchorIcons
 {
@@ -132,6 +126,36 @@
 {
 	color: rgb(179, 179, 179);
 	transition: all 0.1s ease-out;
+}
+
+.underline 
+{
+	display: inline;
+	position: relative;
+	overflow: hidden;
+	
+  }
+.underline:after 
+{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	width: 100%;
+	bottom: 1.8px;
+	background: rgb(255, 255, 255);
+	height: 2px;
+	transition-property: width;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+}
+.underline:hover:after,
+.underline:focus:after,
+.underline:active:after 
+{
+	right: 0;
+	left: auto;
+	width: 0%;
 }
 
 
@@ -152,8 +176,8 @@
 	{
 		color: #fff;
 		width: 300px;
-		padding-right: 50px;
-		padding-left: 50px;
+		padding-right: 10px;
+		padding-left: 10px;
 		
 	}
 }

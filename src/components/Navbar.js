@@ -65,16 +65,16 @@ const Navbar = ({onClick}) => {
         <div onTransitionEnd={onTransitionEnd} className={ `${NavbarCSS.containerMain} ${state.menuOpen ? NavbarCSS.open : '' } ${state.fade ? NavbarCSS.transition : '' } ` }>
             <div className={NavbarCSS.navLinkItems}>
                 <div className={NavbarCSS.navHome}>
-                    <Link to="home" spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}> HOME</Link> 
+                    <Link to="home" className={NavbarCSS.underline} spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}> HOME</Link> 
                 </div>
 
                 <div className={NavbarCSS.navMain}>
                     <ul className={NavbarCSS.navMainUl}>
-                        <li className={NavbarCSS.navMainLi}><Link className={NavbarCSS.navMainAnchor} to="about" offset={-70}  spy={true}  smooth='easeInQuart' activeClass={NavbarCSS.active}>  ABOUT</Link> </li>
-                        <li className={NavbarCSS.navMainLi}><Link className={NavbarCSS.navMainAnchor} to="timeline"  offset={-70} spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}> TIMELINE </Link> </li>
-                        <li className={NavbarCSS.navMainLi}><Link className={NavbarCSS.navMainAnchor} to="projects" offset={-70} spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}>   PROJECTS </Link> </li>
-                        <li className={NavbarCSS.navMainLi}><Link className={NavbarCSS.navMainAnchor} to="contact"  offset={-70}  spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}>   CONTACT </Link> </li>
-                        <li className={NavbarCSS.navMainLi}><a href={resumePDF} download="StevenRivadeneiraResume.pdf"> RESUME </a></li>
+                        <li className={NavbarCSS.navMainLi}><Link className={`${NavbarCSS.navMainAnchor} ${NavbarCSS.underline}`} to="about" offset={-70}  spy={true}  smooth='easeInQuart' activeClass={NavbarCSS.active}>  ABOUT</Link> </li>
+                        <li className={NavbarCSS.navMainLi}><Link className={`${NavbarCSS.navMainAnchor} ${NavbarCSS.underline}`} to="timeline"  offset={-70} spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}> TIMELINE </Link> </li>
+                        <li className={NavbarCSS.navMainLi}><Link className={`${NavbarCSS.navMainAnchor} ${NavbarCSS.underline}`} to="projects" offset={-70} spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}>   PROJECTS </Link> </li>
+                        <li className={NavbarCSS.navMainLi}><Link className={`${NavbarCSS.navMainAnchor} ${NavbarCSS.underline}`} to="contact"  offset={-70}  spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}>   CONTACT </Link> </li>
+                        <li className={NavbarCSS.navMainLi}><a className={NavbarCSS.resumeButtn}href={resumePDF} download="StevenRivadeneiraResume.pdf"> RESUME </a></li>
                     </ul>
                 </div>
             </div>

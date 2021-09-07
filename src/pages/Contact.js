@@ -13,11 +13,11 @@ function Contact() {
                     <div className ={ContactCSS.tilesContainerClass}>
                         <div className={ContactCSS.tileClass}>
                             <div className={ContactCSS.tileHeader}> Email </div>
-                            <div className={ContactCSS.tileContentContainer}><a className={ContactCSS.socialMediaMainA} href="mailto:steven.r.riva@gmail.com">steven.r.riva@gmail.com</a></div>
+                            <div className={ContactCSS.tileContentContainer}><a className={`${ContactCSS.socialMediaMainA} ${ContactCSS.underline}`} href="mailto:steven.r.riva@gmail.com">steven.r.riva@gmail.com</a></div>
                         </div>
                         <div className={ContactCSS.tileClass}>
                             <div className={ContactCSS.tileHeader}> Phone </div>
-                            <div className={ContactCSS.tileContentContainer}><a className={ContactCSS.socialMediaMainA} href="tel:+17862274198"> +1 (786) 227 4198</a></div>
+                            <div className={ContactCSS.tileContentContainer}><a className={`${ContactCSS.socialMediaMainA} ${ContactCSS.underline}`} href="tel:+17862274198"> +1 (786) 227 4198</a></div>
                         </div>
                         <div className={ContactCSS.tileClass}>
                             <div className={ContactCSS.tileHeader}> Socials </div>

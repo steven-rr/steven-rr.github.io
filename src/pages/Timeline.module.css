@@ -8,13 +8,8 @@
 	height: 100%;
 	min-height: 615px;
 	margin:0;
-	padding: 0;
-	/* background-color: rgba(0, 0, 0); */
-	background-image: 
-	linear-gradient(#000, #000), 
-	linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
-	background-clip: content-box, padding-box;
-	border: none;
+	padding: 0;	
+	border: none;  
 
 } 
 .hrClass
@@ -71,3 +66,35 @@ h1
 {
 	color: #fff;
 }
+
+.underline 
+{
+	display: inline;
+	position: relative;
+	overflow: hidden;
+	white-space: nowrap
+	
+  }
+.underline:after 
+{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	width: 100%;
+	bottom: 1.8px;
+	background: rgb(117, 35, 35);
+	height: 2px;
+	transition-property: width;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+}
+.underline:hover:after,
+.underline:focus:after,
+.underline:active:after 
+{
+	right: 0;
+	left: auto;
+	width: 0%;
+}
+
