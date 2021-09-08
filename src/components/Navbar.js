@@ -65,7 +65,7 @@ const Navbar = ({onClick}) => {
         <div onTransitionEnd={onTransitionEnd} className={ `${NavbarCSS.containerMain} ${state.menuOpen ? NavbarCSS.open : '' } ${state.fade ? NavbarCSS.transition : '' } ` }>
             <div className={NavbarCSS.navLinkItems}>
                 <div className={NavbarCSS.navHome}>
-                    <Link to="home" className={NavbarCSS.underline} spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}> HOME</Link> 
+                    <Link to="home" className={`${NavbarCSS.navMainAnchor} ${NavbarCSS.underline}`} spy={true} smooth='easeInQuart' activeClass={NavbarCSS.active}> HOME</Link> 
                 </div>
 
                 <div className={NavbarCSS.navMain}>
