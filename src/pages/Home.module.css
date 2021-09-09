@@ -46,14 +46,14 @@
 .headerClass
 {
 	color: #fff;
-	font-size: calc((6.4 - 1) * 1.2vw + 1rem);
+	font-size: calc(5.4 * 1.2vw + 1rem);
 	text-align: center;
 }
 
 .subtitleClass
 {
 	color: #fff;
-	font-size: calc((6.4 - 1)*(1/10) * 1.2vw + 1rem);
+	font-size: calc(5.4*(1/10) * 1.4vw + 0.8rem);
 	font-weight: lighter;
 	margin-bottom: 15px;
 }
@@ -91,6 +91,7 @@ p
 
 @media screen and (max-width: 900px)	
 {
+	/* moves the landing picture to the left dynamically to stay to left of button */
 	.BGpic
 	{
 		position: absolute;

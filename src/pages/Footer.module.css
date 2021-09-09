@@ -15,5 +15,6 @@
 {
     color: rgb(117, 112, 112);
 	font-family: Poppins;
-	font-size: 13px;
+	font-size: clamp(10px, calc(3vw),13px);
+
 }
