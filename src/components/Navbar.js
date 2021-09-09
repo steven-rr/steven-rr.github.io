@@ -40,7 +40,6 @@ const Navbar = ({onClick}) => {
 
     // handle scrolling for useEffect(). When scrolling and menu is open, close the menu (with faded animation). 
     const handleOnScroll = (e) => {
-        console.log(state.menuOpen)
         window.onscroll = () => {
             if(state.menuOpen==true)
             {   
