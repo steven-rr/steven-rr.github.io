@@ -43,7 +43,7 @@
 
 .navHome
 {	
-	position: absolute;
+	/* position: absolute;
 	top: 19px;
 	left: 50px;
     width: 100px;
@@ -55,9 +55,19 @@
 	font-size: 17px;
 	letter-spacing: 1.5px;
 	text-align: left;
+	cursor: pointer; */
+	position: absolute;
+	top: 24px;
+	left: 20px;
+	width: 100px;
+	height: 70px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
 	cursor: pointer;
-	
-	
+	color: #fff;
+	font-family: Poppins;
+	font-size: 13px;
 }
 .navHomeAnchor
 {
@@ -229,11 +239,11 @@ width: 100%;
 	}
 	.navHome
 	{
-		position: absolute;
-		display:inline;
+		/* position: absolute;
+		display:inline; */
 		/* flex-direction: column; */
-		left: 50px;
-		top: 19px;
+		/* left: 50px;
+		top: 23px;
 		width: 100px;
 		height: 70px;
 		padding: 0;
@@ -242,7 +252,19 @@ width: 100%;
 		font-family: Poppins;
 		text-align: left;
 		font-size: 17px;
-		letter-spacing: 1.5px;
+		letter-spacing: 1.5px; */
+		position: absolute;
+		top: 24px;
+		left: 20px;
+		width: 100px;
+		height: 70px;
+		padding: 0;
+		margin: 0;
+		text-align: center;
+		cursor: pointer;
+		color: #fff;
+		font-family: Poppins;
+		font-size: 13px;
 	}
 	
 
@@ -277,7 +299,7 @@ width: 100%;
 		align-items: center;
 		justify-content: center;
 		width: 100px;
-		height: 70px;
+		height: 220px;
 		color: #fff;
 		font-family: Poppins;
 		font-size: 13px;
@@ -286,7 +308,7 @@ width: 100%;
 	.navMainUl
 	{
 		width: 100%;
-		height: 70px;
+		height: 220px;
 		padding: 0;
 		margin: 0;
 		display:flex;
