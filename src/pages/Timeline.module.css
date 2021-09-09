@@ -53,7 +53,9 @@
 	margin-top:0;
 	margin-left:0;
 
-	margin-bottom: 4vw;
+	/* margin-bottom: 4vw; */
+	margin-bottom: 4vw; 
+
 	padding-left: 80px;
 	border-left: 7px solid rgb(117, 35, 35);
 }
@@ -99,6 +101,27 @@ h1
 	width: 0%;
 }
 
+.disclaimerClass
+{
+	flex-direction: row;
+	color: gray;
+	width: 100%;
+	margin-bottom: 4vw;
+	font-family: Poppins;
+	font-size: 15px;
+}
+.disclaimerLinkClass
+{
+	color: rgb(117, 35, 35);
+	padding: 0;
+	cursor: pointer;
+	text-decoration: none;
+}
+.disclaimerLinkClass:hover
+{
+	color:rgb(165, 52, 52);
+}
+
 @media screen and (max-width: 1000px)	
 {
 	.subcontainerMain
@@ -118,7 +141,16 @@ h1
 		margin: 0;
 		padding: 0;
 		border: 0;
-		margin-bottom: 10vw;
+		margin-bottom: 7vw;
 
+	}
+	.disclaimerClass
+	{
+		text-align: center;
+		margin-bottom: 9vw;
+	}
+	.disclaimerLinkClass
+	{
+		display: inline
 	}
 }

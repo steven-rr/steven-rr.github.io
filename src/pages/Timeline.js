@@ -13,6 +13,7 @@ function Timeline() {
             <div className = {TimelineCSS.containerMain}>
                 <div className={TimelineCSS.subcontainerMain}>
                     <div className={TimelineCSS.headerClass}>Timeline</div>
+                    <div className={TimelineCSS.disclaimerClass}> Please see my  <a className={TimelineCSS.disclaimerLinkClass} href = "https://www.linkedin.com/in/steven-rivadeneira">LinkedIn </a>for the complete list of my past work experiences. </div>
                     <TimelineItem
                     logoImg = {LM_logo}
                     companyName= "Lockheed Martin"
