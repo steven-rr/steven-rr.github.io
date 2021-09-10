@@ -1,4 +1,7 @@
-
+.navContainer
+{
+    display: none;
+}
 .menuButtnContainer
 {
     display: none;
@@ -6,24 +9,34 @@
 
 @media screen and (max-width: 1000px)
 {
+    .navContainer
+    {
+        display: block;
+        position: relative;
+        right: 20px;
+        width: 80px;
+        height: 100%;
+    }
     .menuButtnContainer
     {
+        position: absolute;
+        cursor: pointer;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        position: relative;
+        top: 0px;
         right: 20px;
         width: 80px;
         height: 70px;
         text-transform: none;
         margin: 0;
         padding: 0;
-
+        z-index: 1000;
     }
     .menuButtn
     {
-        position : relative;
+        position : absolute;
         width: 30px;
         height: 70px;
         margin: 0;

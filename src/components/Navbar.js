@@ -83,7 +83,12 @@ const Navbar = ({onClick}) => {
                 fade={state.fade}
                 onEnd={onTransitionEnd}>       
             </NavButton> */}
-            <NavButton2/>
+            <NavButton2
+                menuOpen={state.menuOpen}
+                onClick={handleMenuClick}
+                fade={state.fade}
+                onEnd={onTransitionEnd}
+            />
             
         </div>
     )
