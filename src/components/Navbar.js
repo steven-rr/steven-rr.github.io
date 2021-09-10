@@ -4,8 +4,8 @@ import * as Scroll from 'react-scroll';
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import realResumePDF from "../realResume.pdf"
 import resumePDF from "../Resume.pdf"
-import NavButton from './NavButton';
-
+import NavButton from './NavButton'
+import NavButton2 from './NavButton2'
 const Navbar = ({onClick}) => {
      // set menu bar state.
      const[state, setState] = useState({menuOpen: false, fade: false});
@@ -77,12 +77,14 @@ const Navbar = ({onClick}) => {
                     </ul>
                 </div>
             </div>
-            <NavButton
+            {/* <NavButton
                 menuOpen={state.menuOpen}
                 onClick={handleMenuClick}
                 fade={state.fade}
                 onEnd={onTransitionEnd}>       
-            </NavButton>
+            </NavButton> */}
+            <NavButton2/>
+            
         </div>
     )
 }
