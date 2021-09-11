@@ -29,17 +29,16 @@ const Navbar = ({onClick}) => {
          };
      // when transition ends, end transition (set fade to false)
      const onTransitionEnd = (e) => {
-             if(e.pseudoElement == "::after")
-             {
+             
                  setState(currentState => {
                  return {...currentState, fade: false}
                  })
-             }
+             
              
              }; 
 
     // handle scrolling for useEffect(). When scrolling and menu is open, close the menu (with faded animation). 
-    const handleOnScroll = (e) => {
+    const handleOnScroll = (e) => { 
         window.onscroll = () => {
             if(state.menuOpen==true)
             {   
