@@ -5,7 +5,7 @@ import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scro
 import realResumePDF from "../realResume.pdf"
 import resumePDF from "../Resume.pdf"
 import NavButton from './NavButton'
-import NavButton2 from './NavButton2'
+import NavButton2 from './NavButton'
 const Navbar = ({onClick}) => {
      // set menu bar state.
      const[state, setState] = useState({menuOpen: false, fade: false});
@@ -76,13 +76,8 @@ const Navbar = ({onClick}) => {
                     </ul>
                 </div>
             </div>
-            {/* <NavButton
-                menuOpen={state.menuOpen}
-                onClick={handleMenuClick}
-                fade={state.fade}
-                onEnd={onTransitionEnd}>       
-            </NavButton> */}
-            <NavButton2
+            
+            <NavButton
                 menuOpen={state.menuOpen}
                 onClick={handleMenuClick}
                 fade={state.fade}

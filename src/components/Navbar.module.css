@@ -189,21 +189,7 @@ width: 100%;
 	background-color: rgb(117,35,35);
 	transition: all 0.1s ease-out;
 }
-/* .navMainAnchor:after {
-	display: block;
-	content: '';
-	border-bottom: 1px solid rgb(255,255,255);
-	transform: scaleX(0);
-	transition: transform 250ms ease-in-out;
 
-}
-.navMainAnchor:hover:after {
-    transform: scaleX(1);
-}
-.navMainAnchor.fromRight:after
-{
-	transform-origin:100% 50%;
-} */
 @media screen and (max-width: 1000px)
 {
 	.resumeButtn
@@ -259,7 +245,7 @@ width: 100%;
 		position: absolute;
 		top: 24px;
 		
-		left: 20px;
+		left: 15px;
 		width: 100px;
 		height: 70px;
 		padding: 0;
@@ -296,7 +282,7 @@ width: 100%;
 	.navMain
 	{
 		position:absolute;
-		left: 50px;
+		left: 45px;
 		top: 70px;
 		display:flex;
 		flex-direction: column;
