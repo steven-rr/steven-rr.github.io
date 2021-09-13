@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.1dd036fa.chunk.css",
-    "main.js": "./static/js/main.d3724ffb.chunk.js",
-    "main.js.map": "./static/js/main.d3724ffb.chunk.js.map",
+    "main.js": "./static/js/main.ae56f580.chunk.js",
+    "main.js.map": "./static/js/main.ae56f580.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.1a1b05fa.js",
     "runtime-main.js.map": "./static/js/runtime-main.1a1b05fa.js.map",
     "static/js/2.b3f901a0.chunk.js": "./static/js/2.b3f901a0.chunk.js",
@@ -24,7 +24,6 @@
     "static/media/StevenRiva_RL_Project.2eec5db9.pdf": "./static/media/StevenRiva_RL_Project.2eec5db9.pdf",
     "static/media/YOLOv4.cad50d1c.png": "./static/media/YOLOv4.cad50d1c.png",
     "static/media/landingPagePic1.8cbad022.JPG": "./static/media/landingPagePic1.8cbad022.JPG",
-    "static/media/realResume.46de7759.pdf": "./static/media/realResume.46de7759.pdf",
     "static/media/simpleSim.f7bcdfe6.png": "./static/media/simpleSim.f7bcdfe6.png",
     "static/media/verticalAboutPic.0bc4b0a0.JPG": "./static/media/verticalAboutPic.0bc4b0a0.JPG"
   },
@@ -32,6 +31,6 @@
     "static/js/runtime-main.1a1b05fa.js",
     "static/js/2.b3f901a0.chunk.js",
     "static/css/main.1dd036fa.chunk.css",
-    "static/js/main.d3724ffb.chunk.js"
+    "static/js/main.ae56f580.chunk.js"
   ]
 }
