@@ -1,6 +1,6 @@
 # Description 
 
-This is a personal portfolio website developed and made by Steven Rivadeneira. 
+This is a personal portfolio website developed and made by Steven Rivadeneira. \
 Website Link: https://steven-rr.github.io/
 
 # Technologies 
