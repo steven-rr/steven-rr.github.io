@@ -106,7 +106,11 @@ p
 		object-fit: cover;
 
 	}
-	
+	.BGpic
+	{
+		object-fit: cover;
+
+	}
 }
 
 /*  when screen width is too small, don't use vh since image becomes too narrow. */
