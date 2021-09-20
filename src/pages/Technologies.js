@@ -20,6 +20,9 @@ const Technologies = () => {
                         <li>Javascript</li>
                     </ul>
                     <ul className={TechnologiesCSS.ulClass}>
+                        <li>Node.JS</li>
+                        <li>Express.JS</li>
+                        <li>SQL</li>
                         <li>Matlab</li>
                         <li>Mathematica</li>
                         <li>Git</li>
